@@ -49,21 +49,18 @@ luke.hansell\@holidayextras.com
 Table of Contents {#table-of-contents .Fake-header}
 =================
 
-[1) Introduction to my Year in Industry
+[Introduction to my Year in Industry
 5](#introduction-to-my-year-in-industry)
 
-[1.1) Why Holiday Extras? 5](#why-holiday-extras)
+[Why Holiday Extras? 5](#why-holiday-extras)
 
-[1.2) Application Process 5](#application-process)
+[Application Process 5](#application-process)
 
-[1.2.1) Initial Interviews 5](#initial-interviews)
+[Initial Interviews 5](#initial-interviews)
 
-[1.2.2) Application + Interview with HX
-6](#application-interview-with-hx)
+[Application + Interview with HX 6](#application-interview-with-hx)
 
-[1.2.3) Offer from HX 6](#offer-from-hx)
-
-[1.3) Basics of my Role 6](#section-1)
+[Offer from HX 6](#offer-from-hx)
 
 Introduction to my Year in Industry
 ===================================
@@ -76,8 +73,8 @@ sounded so much more fleshed out and enriching here. Having this passion
 before I had even made it to the year in the industry really fuelled my
 anticipation for the year.
 
-1.1) Why Holiday Extras?
-------------------------
+Why Holiday Extras?
+-------------------
 
 It's fair to say that before Holiday Extras came to present at the
 university I had never heard of them, so what was so enticing? Whilst
@@ -101,15 +98,15 @@ initially passed up the opportunity and only came back to apply when
 applications re-opened. By that time, I had realised that the work
 environment, benefits, and opportunities were too good to ignore.
 
-1.2) Application Process
-------------------------
+Application Process
+-------------------
 
 Having come into the placement process with no previous work experience
 I was at a complete fresh start without even a CV prepared. Luckily, by
 the time it came to my application at HX I'd already sorted out my CV,
 sent applications and even had an interview.
 
-### 1.2.1) Initial Interviews
+### Initial Interviews
 
 The interview was with a company called SquaredUp who are a small
 start-up close to my home in London. Whilst it was useful to gain
@@ -119,7 +116,7 @@ However, it also showed me that interviews are a two-way process, from
 those questions alone I knew that company was too 'hippy' to be a good
 fit for me.
 
-### 1.2.2) Application + Interview with HX
+### Application + Interview with HX
 
 After putting in an application to HX I received an invitation to an
 assessment day. This day consisted of a group task, presentation, and
@@ -153,12 +150,9 @@ as well as being sure that this type of environment was for me. I began
 to realise how much this role would resonate with me despite my initial
 feelings.
 
-### 1.2.3) Offer from HX
+### Offer from HX
 
 After about a month I received a phone call telling me that HX would
 like to offer me the position. I accepted the role then and there
 because I'd spent all of the time since the assessment day feeling sure
 that it was the right fit for me.
-
-1.3)
-----
