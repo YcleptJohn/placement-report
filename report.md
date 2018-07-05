@@ -28,7 +28,7 @@ extended until 31^st^ August)
 
 **Job Title:** Engineer
 
-### Placement Address
+*Placement Address*
 
 Holiday Extras Ltd,
 
@@ -38,7 +38,7 @@ Kent,
 
 CT21 4JF
 
-### Supervisor
+*Supervisor*
 
 Luke Hansell
 
@@ -49,16 +49,21 @@ luke.hansell\@holidayextras.com
 Table of Contents {#table-of-contents .Fake-header}
 =================
 
-[Introduction to my Year in Industry
+[1) Introduction to my Year in Industry
 5](#introduction-to-my-year-in-industry)
 
-[Application Process 5](#application-process)
+[1.1) Why Holiday Extras? 5](#why-holiday-extras)
 
-[Why Holiday Extras? 5](#why-holiday-extras)
+[1.2) Application Process 5](#application-process)
 
-[Interview + Assessment day 5](#interview-assessment-day)
+[1.2.1) Initial Interviews 5](#initial-interviews)
 
-[Basics of my Role 5](#basics-of-my-role)
+[1.2.2) Application + Interview with HX
+6](#application-interview-with-hx)
+
+[1.2.3) Offer from HX 6](#offer-from-hx)
+
+[1.3) Basics of my Role 6](#section-1)
 
 Introduction to my Year in Industry
 ===================================
@@ -71,8 +76,8 @@ sounded so much more fleshed out and enriching here. Having this passion
 before I had even made it to the year in the industry really fuelled my
 anticipation for the year.
 
-Why Holiday Extras?
--------------------
+1.1) Why Holiday Extras?
+------------------------
 
 It's fair to say that before Holiday Extras came to present at the
 university I had never heard of them, so what was so enticing? Whilst
@@ -96,13 +101,15 @@ initially passed up the opportunity and only came back to apply when
 applications re-opened. By that time, I had realised that the work
 environment, benefits, and opportunities were too good to ignore.
 
-Application Process
--------------------
+1.2) Application Process
+------------------------
 
 Having come into the placement process with no previous work experience
 I was at a complete fresh start without even a CV prepared. Luckily, by
 the time it came to my application at HX I'd already sorted out my CV,
 sent applications and even had an interview.
+
+### 1.2.1) Initial Interviews
 
 The interview was with a company called SquaredUp who are a small
 start-up close to my home in London. Whilst it was useful to gain
@@ -111,6 +118,8 @@ some fart-assy questions that put me on the spot more than expected.
 However, it also showed me that interviews are a two-way process, from
 those questions alone I knew that company was too 'hippy' to be a good
 fit for me.
+
+### 1.2.2) Application + Interview with HX
 
 After putting in an application to HX I received an invitation to an
 assessment day. This day consisted of a group task, presentation, and
@@ -144,30 +153,12 @@ as well as being sure that this type of environment was for me. I began
 to realise how much this role would resonate with me despite my initial
 feelings.
 
+### 1.2.3) Offer from HX
+
 After about a month I received a phone call telling me that HX would
 like to offer me the position. I accepted the role then and there
 because I'd spent all of the time since the assessment day feeling sure
 that it was the right fit for me.
 
-Mention:
-
--   Having multiple applications sent out already, GE, Amazon..
-
--   Stupid interview at SquaredUp making me worried about how good I am
-    on the spot
-
--   Initial reluctance still but I went with it for interview practice
-    if nothing else.. At the applicant day I realised I'd love the
-    culture and how relaxed I had felt throughout the process.
-
--   The out of the blue phone call when I just said yes on the spot
-    because why not
-
-Interview + Assessment day
---------------------------
-
-Should I break this back out of my application process part above? Make
-level 3 subheadings?
-
-Basics of my Role
------------------
+1.3)
+----
