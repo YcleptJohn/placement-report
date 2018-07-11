@@ -78,6 +78,8 @@ Table of Contents {#table-of-contents .Fake-header}
 
 [2.3.1 Sprint Structure 9](#sprint-structure)
 
+[2.4 What's it actually like? 11](#whats-it-actually-like)
+
 Introduction to my Year in Industry
 ===================================
 
