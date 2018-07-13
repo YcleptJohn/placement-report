@@ -80,6 +80,10 @@ Table of Contents {#table-of-contents .Fake-header}
 
 [2.4 What's it actually like? 11](#whats-it-actually-like)
 
+[3 Timeline 12](#timeline)
+
+[4 Onboarding 13](#onboarding)
+
 Introduction to my Year in Industry
 ===================================
 
@@ -483,6 +487,131 @@ because of how comfortably I can approach people and gain insight
 easily. Whilst my personal skills have improved tenfold, especially
 moulded by office chatter and special social events helping me network
 with colleagues.
+
+Timeline
+========
+
+![](media/image2.png){width="7.048611111111111in"
+height="3.964583333333333in"}This section will give a quick overview of
+where I've spent my time during my journey at HX. Providing context for
+the next few sections of the report that will detail my experiences
+during onboarding, time with different pods and other notable events.
+
+Onboarding
+==========
+
+When jo­ining HX there is an initial three-month onboarding period in
+which a basic set of objectives must be achieved to ensure you're fit
+for the company. This period had a high focus on our individual learning
+as Industrial Placement Students (IPs).
+
+Workshops were hosted for us every Tuesday and Thursday which provided
+us with knowledge about Node, git, frameworks like React and specific
+platforms at HX. Some of the earliest sessions were overly basic but
+brimming with HX context. Although I can remember them ramping up in
+difficulty, with a talk by Mark Fermor about containerisation with
+Docker being far too complex. Looking back, my start at HX would have
+been a lot slower had it not been for these classes at the beginning.
+
+Weekly 1-2-1s
+-------------
+
+Throughout this period, I also had to meet with my manager on a weekly
+basis for what HX calls a 1-2-1. At first this made me a little nervous,
+coming from no work experience I'd never had a manager to report to
+about my progress. However, after my first 1-2-1 I realised there wasn't
+much to fear and that it was actually quite casual. They felt like more
+of a catch-up with gentle guidance around benefitting more from my
+onboarding time.
+
+Looking back, I can recognise that these sessions helped me
+considerably. Before joining HX I struggled to reflect and envision ways
+I could improve myself as an individual. This is why I came into my year
+with simplistic objectives (((Describe my pre-year objectives during my
+intro and link back to section))) about gaining experience in the
+industry. It was the realisations that I came to in my reflective 1-2-1
+sessions that highlighted key areas where I could focus my efforts and
+improve. I can remember discussing my communicative weaknesses early on
+and being able to evidence improvements just weeks later. The reactive
+nature of these meetings proved extremely useful and having them every
+week enabled me to adapt quickly during this period. This set me leaps
+and bounds ahead in comparison to when I first joined.
+
+Pod Rotations
+-------------
+
+Following my first introductory week I spent three weeks rotating into
+different pods, gaining insight into what they each did and how they
+worked. This also offered a good opportunity to get to meet other
+members of the team, building up a repertoire of familiar faces. As part
+of this experience our manager had us present to himself and the other
+IPs at the end of each rotation. This gave us an opportunity to share in
+each other's learnings as well as practice our presentation skills.
+
+### New Products 
+
+### API 
+
+### Customer Experience
+
+**Mention**:
+
+-   Intro to onboarding period
+
+-   Workshops
+
+    -   Frequency
+
+    -   Node, git (connor), react, HAPI, microservices (oli),
+        containerisation (fermy)
+
+    -   
+
+-   Weekly 1-2-1s
+
+    -   Quick, reactive, adaptive -- allowed me to fix up my
+        communication skills faster
+
+    -   "scary" concept at first or some bullshit reflection?
+
+        -   Manager weekly etc
+
+    -   Saw the benefit of how quickly I could shape myself during the
+        onboarding period
+
+-   Pod rotations
+
+    -   New Products
+
+        -   Introduction to rental cars, the fairfx unwanted product
+            (£10 thing)
+
+        -   The failure with FastTrack being sold at cost price for \~ 6
+            weeks
+
+    -   API pod
+
+        -   The NOMREP files, daily diffing, thunderbird explained
+
+    -   Customer Experience
+
+        -   The silliness of rotating through my final pod
+
+    -   The presentations with the other IPs
+
+        -   Benefits of sharing our learnings,
+
+        -   It encouraged me to actually dig deeper and pay a lot of
+            attention, ask questions etc since I needed to find out
+            enough information about the pod to be able to present about
+            all of the people, process and work etc
+
+        -   Was a bit worried about presenting in front of my manager
+
+            -   Actually, went well and found the experience useful
+                (spreading knowledge, good practice etc)
+
+-   Announcement in the shout out (unfortunately not with Tom Nunn)
 
 Loose bibliography
 
