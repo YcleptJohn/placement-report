@@ -206,6 +206,10 @@ reliance on the call centre for business.
 \#\#\# Should get something about awards in here somewhere? Might be in
 Section \#2
 
+\#\#\# Need to add a description of my objectives for the year or what I
+want to gain, expected outcomes etc (job confirmation, initially few but
+gained more about communication etc)
+
 My Job Role
 -----------
 
@@ -405,6 +409,8 @@ in if the sprint is going well. The agile coach will play an important
 balancing game during these meetings to ensure the sprint stays in
 equilibrium.
 
+{{{ Post-sprint DEMO to stakeholders }}}
+
 #### Post-sprint Retrospective (retro)
 
 At the end of the sprint there will be a retrospective session that will
@@ -423,13 +429,60 @@ first-hand contrast in another team.
 What's it actually like?
 ------------------------
 
--   -   Is it as relaxed as I initially expected?  
+In many ways Holiday Extras does manage to live up to its ethos and
+start-up vibe. Even without having worked anywhere else I can still
+recognise the uniqueness of the workplace. The entire open plan office
+has an air of friendliness where the atmosphere stays relaxed, and
+everyone is approachable. This really helped me in my early days when I
+was adjusting and settling in to the office. The ability to go to anyone
+in the web team for help in such an easy and inviting environment really
+sped up my initial learnings. I feel thankful to have had that
+opportunity when I needed it most.
 
-    -   The feeling of the office
+Even more than the casual discussions around desks that keep the
+day-to-day entertaining there are plenty of fun events organised. As
+early as my first week with HX we were outside playing tennis and eating
+strawberries with cream to celebrate Wimbledon.
 
-    -   The actual workflow on a day to day
+<http://take.ms/ESIEt>
 
-    -   Shoutouts/PLs and other things you don't really get elsewhere
+These events have continued throughout my time here including recently
+bush craft, human foosball and a rounders tournament. It's been really
+refreshing to attend the events just to get out of the continuous work
+mode and get to know colleagues better.
+
+Besides the organised events there are often impromptu goings on and
+treats hosted for us. For example, we were given mince pies around
+Christmas, our own Easter eggs at Easter and frequent free ice cream
+throughout the summer. It's nice to receive these little boosts
+throughout the day and further shows the uniqueness of the HX workplace.
+
+We also have the hosted 'shout outs' every Thursday afternoon where
+directors or even the CEO himself will update us on the business'
+progress, our success against the budget, any new starters, leavers and
+more. Another key feature is the calling out cards which are essentially
+nominations given out for notably displaying the HX values. I can
+remember being called out as part of the Customer Experience pod and
+appreciating the recognition and gratitude for my work. It definitely
+goes a long way to making hard work feel worthwhile when it's noticed
+and rewarded.
+
+Another huge element of HX that makes it stand out as a unique culture
+is the Project Lounge (PL) Fridays. These occur on a fortnightly basis
+and offer an entire day just for personal development or working on a
+project to help push the business forward. It's great to be given this
+free reign and have the ability to make a difference through creative
+ideas. I benefitted hugely from these during the start of my placement
+since I could spend an entire day digging deep into HX's technology and
+frameworks. I've continued to enjoy PL time throughout the year and have
+found the time extremely beneficial to my own development.
+
+In summary, I've found the environment at HX has really aided my overall
+development throughout this year. My technical skills have been improved
+because of how comfortably I can approach people and gain insight
+easily. Whilst my personal skills have improved tenfold, especially
+moulded by office chatter and special social events helping me network
+with colleagues.
 
 Loose bibliography
 
