@@ -84,6 +84,16 @@ Table of Contents {#table-of-contents .Fake-header}
 
 [4 Onboarding 13](#onboarding)
 
+[4.1 Weekly 1-2-1s 13](#weekly-1-2-1s)
+
+[4.2 Pod Rotations 13](#pod-rotations)
+
+[4.2.1 New Products 14](#new-products)
+
+[4.2.2 API 14](#api)
+
+[4.2.3 Customer Experience 14](#customer-experience)
+
 Introduction to my Year in Industry
 ===================================
 
@@ -505,6 +515,10 @@ which a basic set of objectives must be achieved to ensure you're fit
 for the company. This period had a high focus on our individual learning
 as Industrial Placement Students (IPs).
 
+{{{ Talk about my introduction week, laptop setup, time spent shadowing
+Jamie+Becky, laptop setup, repo setup.. shock of how many projects I'd
+need etc }}}
+
 Workshops were hosted for us every Tuesday and Thursday which provided
 us with knowledge about Node, git, frameworks like React and specific
 platforms at HX. Some of the earliest sessions were overly basic but
@@ -550,9 +564,125 @@ each other's learnings as well as practice our presentation skills.
 
 ### New Products 
 
+For my first rotation I spent a week with the new products pod. They
+focus on creating new ventures for the company outside of the
+traditional core products. This involves a full flow from
+conceptualisation, creation, market launch and maintenance during the
+initial growth. Some of their more successful products include rental
+car hire, resort transfers and FastTrack passes, even if those passes
+were sold at cost price for the first 6 weeks.
+
+During my time with new products I managed to get my hands stuck in and
+helped work on some tickets whilst also being exposed to more of the
+sprint process. Just within my first two days they had their end of
+sprint demo to their stakeholders, followed the next day by the planning
+of their upcoming sprint. At first it felt strange to be attending their
+serious meetings, but they were very accommodating and didn't expect
+much from me, it was more to give me the experience and see what they
+were like. I appreciate the exposure that I gained from this when I look
+back on it.
+
 ### API 
 
+Having gotten to grips with the work I was given in the new products pod
+and beginning to understand the sprint process I was excited coming into
+my week with the API pod, especially seeing as it had the potential to
+be more technical than I'd seen so far.
+
+During the week that I spent with the API pod they were fairly far into
+a large project called Thunderbird. This project aimed to merge together
+our UK booking system with its German counterpart so that we had a
+single central platform, rather than having a difficult to expand
+system-per-country. The unified result of this project would make it
+much easier to globalise HX's business.
+
+To achieve this, we would spend time every day at 2pm comparing diffs
+between responses from the live systems with the experimental unified
+system. Over time this would highlight every single difference there is
+until the responses are always the same. I enjoyed getting involved with
+this work since it was a big get together as a team, all working to
+investigate the differences and seeing what needed changing and where.
+This helped me expand on my group communication at the stages where it
+was becoming clearer as one of my weakest areas.
+
+Aside from this I also managed to get my hands dirty and picked up some
+quite technical work within the pod. They already had figured out the
+diff process for the responses from both systems and asked me to expand
+this for NOMREP files. I had no idea what the NOMREP files were at
+first, but George Bates helped get me up to speed explaining that they
+were essentially transactional logs in an ugly tab-separated format. By
+the end of the week I had successfully implemented a diff process for
+these files which produced readable output in the browser with colour
+highlighting, shown below.
+
+![](media/image3.png){width="2.5708661417322833in"
+height="2.188976377952756in"}
+
+I was really glad to have been able to get stuck into this challenging
+ticket with the pod due to my concern about whether the placement would
+be technical enough for me. It had me re-assured that there was still
+plenty on offer for me at HX despite some pods having a large web focus.
+
 ### Customer Experience
+
+{{{ Should I actually explain what CEX is here seeing as they're my next
+permanent pod section??? (explain and link to the section where I go
+deep) }}}
+
+My final rotation was into the customer experience (CEX) pod which felt
+like a bit of a strange choice in this process, seeing as they would be
+my first permanent pod anyway. I would have preferred the opportunity to
+be immersed into another pod's work to broaden my horizons further.
+Despite this I still managed to enjoy the week getting to know my final
+pod and gaining a head start into working with them.
+
+I spent the majority of this rotation pairing up with Tom Price who as
+an ex-IP was quick to offer me assistance, running me through CEX's
+projects as a whole and pairing with me on my first ticket. This really
+helped me kickstart my week with them and lead to me completing a few
+tickets with a reasonable level of independence. This boosted my
+confidence in my technical ability at this early stage, leaving me
+feeling more comfortable to work on my own even so early on. I'm glad HX
+offered the opportunity for this autonomy. {{{ Could quote the feedback
+tom gave me on this? }}}
+
+The one ticket that stands out to me was a re-design of the CARE login
+page, this is used daily by the call centre (CC) staff and hadn't been
+changed for a long time. Tom regretfully admitted to me that the
+original was actually something he had made in a rush before. The reason
+this ticket stands out is that it was done during one of CEX's CC sit-in
+days, where we would work from desks within the CC, so they could
+approach us to raise issues as one of the pod's "customers". This
+allowed me to spend time on a few designs of a new login page and
+actually go and collect opinions from the CC. Initially it was quite
+intimidating to approach people in the CC but Han had offered to support
+me and it ended up being fine. I feel that this ticket was extremely
+beneficial to me as it showed me the importance of the design stage, as
+well as communicating with the customers at the earliest opportunity. My
+final product could have been a lot worse had I not sought out
+![](media/image4.tiff){width="3.472205818022747in" height="2.0in"}their
+opinions before the actual implementation.
+
+{{{ Can't find an original gabble screenshot }}}
+
+\[\[\[CEX-1418\]\]\]
+
+### Finishing off
+
+As the onboarding period drew to a close it was time to prepare for my
+review with my manager, aiming to prove that I had achieved the
+objectives set out for the three months. A lot of this was done based on
+feedback collected through the 360 system, which is used to collect
+opinions from up to ten colleagues. I luckily received a lot of good
+feedback from the people I'd worked with closely and those who'd seen me
+during rotations. On top of this, I discussed the huge improvements in
+my communication over a short course of time, which Luke agreed with
+also.
+
+After successfully passing onboarding we were welcomed to the team in
+the week's shoutout where we were each given a HX hoodie and bottle of
+champagne. It felt nice to be invited into the team with this
+announcement as a recognition of a good start.
 
 **Mention**:
 
@@ -596,6 +726,21 @@ each other's learnings as well as practice our presentation skills.
     -   Customer Experience
 
         -   The silliness of rotating through my final pod
+
+        -   Call centre day -- Gabble login designs, struggling for a
+            third, nervous to walk around the CC and do a survey, Han
+            Cork went with me and spoke
+
+        -   Tom Price announcing he is leaving, becoming the only DEV in
+            the office
+
+        -   Trying to get a handover from Tom on Friday, email PR
+            handover
+
+        -   He seemed to put trust in me with this stuff, which is
+            probably a good sign about the impression I made on him
+
+        -   
 
     -   The presentations with the other IPs
 
