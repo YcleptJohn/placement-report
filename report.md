@@ -684,79 +684,78 @@ the week's shoutout where we were each given a HX hoodie and bottle of
 champagne. It felt nice to be invited into the team with this
 announcement as a recognition of a good start.
 
-**Mention**:
+Customer Experience
+===================
 
--   Intro to onboarding period
+Mention:
 
--   Workshops
+-   What they do, mission, process
 
-    -   Frequency
+-   Who? Han Cork etc -- initial pod
 
-    -   Node, git (connor), react, HAPI, microservices (oli),
-        containerisation (fermy)
+-   Tom Price's disappearance, handover of work on the Friday -- his
+    email PRs
 
-    -   
+    -   Pressure of being the only dev in the office
 
--   Weekly 1-2-1s
+    -   Han's support and messages to check up and see it wasn't
+        worrying me
 
-    -   Quick, reactive, adaptive -- allowed me to fix up my
-        communication skills faster
+-   People stuff (probably don't mention it all)
 
-    -   "scary" concept at first or some bullshit reflection?
+    -   Sam Smart joining
 
-        -   Manager weekly etc
+        -   Taught him a lot, good 360 feedback about the grasp I have
+            on microservices
 
-    -   Saw the benefit of how quickly I could shape myself during the
-        onboarding period
+        -   "I couldn't have done any of this microservice stuff without
+            you" when helping on the booking history service
 
--   Pod rotations
+    -   Tom Vance joining as a part time base camp
 
-    -   New Products
+    -   Han Cork going on pregnancy leave
 
-        -   Introduction to rental cars, the fairfx unwanted product
-            (£10 thing)
+    -   Kiril resigining
 
-        -   The failure with FastTrack being sold at cost price for \~ 6
-            weeks
+    -   Adrian moving to booking pod
 
-    -   API pod
+    -   Jordan Clague joining
 
-        -   The NOMREP files, daily diffing, thunderbird explained
+        -   His shadowing of me
 
-    -   Customer Experience
+        -   360 feedback!!!
 
-        -   The silliness of rotating through my final pod
+    -   Mark Cridland moves to wales thing
 
-        -   Call centre day -- Gabble login designs, struggling for a
-            third, nervous to walk around the CC and do a survey, Han
-            Cork went with me and spoke
+    -   Phil Murphy joins, ends up resigning
 
-        -   Tom Price announcing he is leaving, becoming the only DEV in
-            the office
+    -   Jamie Matthews to new products
 
-        -   Trying to get a handover from Tom on Friday, email PR
-            handover
+    -   Myself, Mike and Becky become the only people still around from
+        when I joined the pod
 
-        -   He seemed to put trust in me with this stuff, which is
-            probably a good sign about the impression I made on him
+-   Pod becoming dysfunctional over the sprint process, Jamie's stubborn
+    attitude
 
-        -   
+-   The general work, almost all work can be justified as CEX, bit of a
+    bottom of the filter, "the CC is our customer too" justification
+    bullshit
 
-    -   The presentations with the other IPs
+-   Building up confidence and establishing myself within the pod
 
-        -   Benefits of sharing our learnings,
+    -   The booking history case thing? Might be better here as an
+        establishing move but I don't want to take it away from the
+        projects section
 
-        -   It encouraged me to actually dig deeper and pay a lot of
-            attention, ask questions etc since I needed to find out
-            enough information about the pod to be able to present about
-            all of the people, process and work etc
+-   The point when Sam spoke to Luke about us moving pods and Luke
+    essentially said that right now I'm too vital to CEX that I can't
+    leave
 
-        -   Was a bit worried about presenting in front of my manager
+    -   Annoying that I was being restricted like that as an IP
 
-            -   Actually, went well and found the experience useful
-                (spreading knowledge, good practice etc)
+    -   Also, a compliment that I was so pivotal at that moment
 
--   Announcement in the shout out (unfortunately not with Tom Nunn)
+-   
 
 Loose bibliography
 
