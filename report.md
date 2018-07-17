@@ -777,6 +777,45 @@ our own purpose built microservices.
 
 ### Booking History
 
+One of my earliest projects was the new booking history service, this
+was handed over to me from Tom Price and ended up being my sole focus
+for my first two to three months in the pod.
+
+The booking history service aimed to form a new centralised source of
+booking information. Before it's conception booking data was siloed in
+to a few different data stores across platforms, making it hard to
+retrieve a holistic set of data on bookings. The pre-existing method to
+look up bookings involved talking directly to CHIPS, the legacy booking
+platform at the centre of our operations. Besides limitations in the
+expandability here as CHIPS is maintained externally, it's also an
+unnecessary load added to an outdated platform that won't always handle
+it gracefully.
+
+####  {#section-1 .ListParagraph}
+
+With this aim in mind the solution took the form of a microservice using
+our in-house dockyard architecture, which consisted of tools that aimed
+to make it simple for engineers to create, deploy and maintain smaller
+individual codebases. This contrasts hugely with some of HX's core
+projects, like HAPI, which were monolithic projects with little
+separation of responsibilities. The booking history service would
+actually become one of the earlier projects built on this architecture
+offering. It was exciting to be building on top of brand new technology
+to HX at the time.
+
+When Tom handed over to me the service had actually already been started
+by him, but he hadn't pushed too far into it. He talked me through it
+during the handover I arranged which enabled me to pick up exactly where
+it had been left.
+
+The overall design of the service included listening to events from our
+in-house purpose-built data pipeline and populate a MySQL database with
+the information provided. The pipeline provided a way of sending and
+receiving events, where we would be relying on the "server\_ecommerce"
+event being sent when a booking is made. We would need to listen for
+these events and extract data from them, which would be stored into the
+database.
+
 Structure
 
 -   Intro
@@ -794,6 +833,15 @@ Structure
         -   Trustedness
 
 -   Explain detailed progress of the project
+
+    -   DIFFICULTIES
+
+        -   Primary key being a timestamp + ref, store rows for
+            different events
+
+        -   DUPLICATE EVENTS
+
+    -   Dockyard introduction, microservices etc
 
     -   Figuring it out with some support from Mike Holloway when needed
 
