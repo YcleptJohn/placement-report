@@ -1,4 +1,4 @@
-![](media/image1.png){width="1.5196850393700787in"
+![](media/image2.png){width="1.5196850393700787in"
 height="1.3031496062992125in"}
 
 My Year in Industry
@@ -501,7 +501,7 @@ with colleagues.
 Timeline
 ========
 
-![](media/image2.png){width="7.048611111111111in"
+![](media/image3.png){width="7.048611111111111in"
 height="3.964583333333333in"}This section will give a quick overview of
 where I've spent my time during my journey at HX. Providing context for
 the next few sections of the report that will detail my experiences
@@ -615,7 +615,7 @@ the end of the week I had successfully implemented a diff process for
 these files which produced readable output in the browser with colour
 highlighting, shown below.
 
-![](media/image3.png){width="2.5708661417322833in"
+![](media/image4.png){width="2.5708661417322833in"
 height="2.188976377952756in"}
 
 I was really glad to have been able to get stuck into this challenging
@@ -660,7 +660,7 @@ me and it ended up being fine. I feel that this ticket was extremely
 beneficial to me as it showed me the importance of the design stage, as
 well as communicating with the customers at the earliest opportunity. My
 final product could have been a lot worse had I not sought out
-![](media/image4.tiff){width="3.472205818022747in" height="2.0in"}their
+![](media/image5.tiff){width="3.472205818022747in" height="2.0in"}their
 opinions before the actual implementation.
 
 {{{ Can't find an original gabble screenshot }}}
@@ -686,6 +686,86 @@ announcement as a recognition of a good start.
 
 Customer Experience
 ===================
+
+Having already spent a week with CEX during my onboarding rotations my
+actual joining of this pod didn't feel hugely ceremonious. Although I
+was still glad to make a start on settling into my long-term pod, saying
+goodbye to the learning intensive onboarding period.
+
+Background
+----------
+
+The customer experience pod (CEX) are focussed around fixing
+customer-raised issues and enhancing their interactions with us, as well
+as supporting operations in the call centre to improve how well we can
+serve customers. In a realistic world, the vagueness of what can improve
+a customer's experience leaves some odd work filtering down to the pod.
+The primary focus during my time in the pod was to encourage customers
+to self-serve rather than relying on the call centre for support.
+
+### People
+
+The pod had a fairly typical structure and process according to the
+agile process I've already described ( {{{ link }}} ), originally
+consisting of:
+
+-   Mark Cridland (Product Manager)
+
+-   Han Cork (Agile Coach)
+
+-   Becky Cox (50% Tester)
+
+-   Jamie Matthews (Tester)
+
+-   Mike Holloway (Remote Engineer - UK)
+
+-   Adrian Kateliev (Remote Engineer -- Bulgaria)
+
+-   Kiril Panchev (Remote Engineer -- Bulgaria)
+
+-   Tom Price (Engineer -- UK)
+
+The people within the pod ended up changing far more frequently than it
+probably should have due to re-structures, resignations and maternity
+leave. Therefore, I'm not going to detail every change to this and
+instead highlight only ones that made a pivotal difference in my year.
+
+Notable events? Challenges? Idk ...name
+---------------------------------------
+
+### Void of Tom Price
+
+Speaking of the fluidity of persons within the pod, after only one day
+of officially joining the pod it was announced Tom Price would be
+moving. They needed his resources in a pop-up pod to fix a data
+violation that google would punish us for in SEO rankings. This shook
+some of the confidence I'd built as Tom was one of the people I'd worked
+closest with thus far. I was a bit worried about now being the only
+engineer within the pod that works from the office, especially trying to
+fill in where Tom's vast knowledge was.
+
+I knew I had one week left with Tom in the pod and had the easiest
+access to him in the office, therefore I turned his departure in an
+opportunity to cement myself within the pod. I spent the rest of the
+week working with him and had arranged a full handover on the Friday,
+where he ran me through all of the stuff he was in the middle of
+including handing over PRs directly to me. I tried to gather as much
+knowledge as possible to carry forth for the pod's benefit. This settled
+my nerves a little and left me feeling comfortable as what I was calling
+the "Budget Tom Price". I was further re-assured during my following
+1-2-1 where Mark and Han had fed back to Luke the value they found in my
+investment.
+
+My work...name
+--------------
+
+During my time in the pod I managed to pick up quite varied work as was
+the nature of CEX's tickets. I found this useful as a new starter since
+it gave me a good breadth of knowledge about areas across the business.
+Having said that, I also managed to find opportunities to cover some
+areas more thoroughly through projects that I took the lead on.
+
+{{{ Maybe do a journey through the pod? Timeline? }}}
 
 Mention:
 
@@ -755,7 +835,15 @@ Mention:
 
     -   Also, a compliment that I was so pivotal at that moment
 
--   
+-   PROJECTES
+
+    -   Booking history
+
+    -   Reviews service
+
+        -   When Ricardo started pointing people to me
+
+        -   Frustrating and annoying underlying problems
 
 Loose bibliography
 
