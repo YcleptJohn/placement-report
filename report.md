@@ -756,8 +756,8 @@ the "Budget Tom Price". I was further re-assured during my following
 1-2-1 where Mark and Han had fed back to Luke the value they found in my
 investment.
 
-My work...name
---------------
+What I did
+----------
 
 During my time in the pod I managed to pick up quite varied work as was
 the nature of CEX's tickets. I found this useful as a new starter since
@@ -765,9 +765,92 @@ it gave me a good breadth of knowledge about areas across the business.
 Having said that, I also managed to find opportunities to cover some
 areas more thoroughly through projects that I took the lead on.
 
+The broader areas of my work in the pod involved picking up tickets on
+Render, which was a front-end platform we were the owners of. This means
+that we had some semblance of responsibility for maintenance, enforcing
+best practices and playing a role in the bigger decisions surrounding
+its future. We also consistently worked with HAPI, which is HX's own API
+for handling bookings, product lookups, supplier info and other data
+retrieval to support other platforms. There were also projects further
+from the core that we worked on including gabble, hammertime and some of
+our own purpose built microservices.
+
 ### Booking History
 
-### Reviews
+Structure
+
+-   Intro
+
+    -   Why.. siloed chips bookings into a single source that was easy
+        to access and wasn't a third party piece of shit that's hard to
+        query in a distributed fashion.. already hanging on by a
+        lifeline
+
+    -   Take-over from Tom, barely started
+
+    -   How it felt to be given quite a critical service to build from
+        the ground up
+
+        -   Trustedness
+
+-   Explain detailed progress of the project
+
+    -   Figuring it out with some support from Mike Holloway when needed
+
+        -   Can mention how I found the remote calls?
+
+    -   Studying ecommerce events
+
+    -   Trying to ensure that the database design I'd been left with was
+        suitable for storing the necessary information
+
+        -   Difficult to plan as it was hard to envision early the exact
+            consumers of this service
+
+        -   Stuck with the original big json blob storage as breaking it
+            into columns would have been huge and would end up making a
+            mess, especially if the schema ever changes in future etc
+            etc
+
+        -   The blob was robust and expandable easily
+
+    -   Figuring out the best nodeJS approach to build code full of
+        asynchronous code
+
+        -   Hadn't worked too much with such an async focussed language
+            etc
+
+        -   Good learning experience
+
+        -   Ended up going with a promise chain since that seemed
+            cleaner than being 6 callbacks deep
+
+        -   If async await existed back then it would have been so much
+            easier but it didn't so tough
+
+    -   Essentially built a data pipeline, listening to the
+        server\_ecommerce events and deconstructing that, transforming
+        it and storing it into the database.
+
+    -   Exposing endpoints that would allow the data to be retrieved
+        (handled mostly by Adrian and sam tbh)
+
+    -   When Sam joined the pod and I showed him all of the booking
+        history stuff he was surprised by how far I'd got with it and
+        said he couldn't have done it himself
+
+        -   Due to the fact I needed wider HX experience rather than a 3
+            month focus on microservices
+
+        -   Not always the newest technologies that need to be
+            experience
+
+        -   It's important to see the old issues to completely
+            understand why we built the new architecture
+
+        -   
+
+### Reviews ?? Maybe not a full 'project' section seeing as it wasn't concluded, just good for the ricardo bit
 
 ### T2T -\> P2P?
 
