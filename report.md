@@ -92,7 +92,30 @@ Table of Contents {#table-of-contents .Fake-header}
 
 [4.2.2 API 14](#api)
 
-[4.2.3 Customer Experience 14](#customer-experience)
+[4.2.3 Customer Experience 15](#customer-experience)
+
+[4.2.4 Finishing off 16](#finishing-off)
+
+[5 Customer Experience 17](#customer-experience-1)
+
+[5.1 Background 17](#background)
+
+[5.1.1 People 17](#people)
+
+[5.2 Notable events? Challenges? Idk ...name
+17](#notable-events-challenges-idk-name)
+
+[5.2.1 Void of Tom Price 17](#void-of-tom-price)
+
+[5.3 What I did 18](#what-i-did)
+
+[5.3.1 Booking History 18](#booking-history)
+
+[5.3.2 Reviews ?? Maybe not a full 'project' section seeing as it wasn't
+concluded, just good for the ricardo bit
+20](#reviews-maybe-not-a-full-project-section-seeing-as-it-wasnt-concluded-just-good-for-the-ricardo-bit)
+
+[5.3.3 T2T -\> P2P? 20](#t2t---p2p)
 
 Introduction to my Year in Industry
 ===================================
@@ -815,6 +838,81 @@ receiving events, where we would be relying on the "server\_ecommerce"
 event being sent when a booking is made. We would need to listen for
 these events and extract data from them, which would be stored into the
 database.
+
+#### Challenges
+
+Although the overview of this service seemed to be quite simple there
+were still quite a few challenges that cropped up along the way. Some of
+these stemmed from my lack of experience but equally there were issues
+experience engineers struggled to explain.
+
+Initially my biggest challenge was simply getting to grips with NodeJS,
+the entire microservice implementation at HX and especially the
+asynchronous nature of this application. All of these are things I
+hadn't dealt with in great detail before and had to pick up for the
+first time during this project. All things considered, I would say this
+actually ended up going quite well. It only took me a few weeks to be
+running with this project and have a good grasp about the main concepts
+employed. The confidence gained here helped me to feel comfortable with
+being at the forefront of a big project so early on at HX. I'm thankful
+for the opportunity to have been trusted so early on.
+
+##### Duplicate Events
+
+There came a more serious challenge when we seemed to be receiving
+duplicate events from the data pipeline. This was detrimental to the
+service as it had the potential to pollute the data, creating
+inconsistencies that would be unfavourable when trying to create the
+single source of truth about bookings. So much so that it actually ended
+up being a focus for an entire month. I had to spend a lot of time
+investigating the exact cause of the duplication and struggled to come
+up with anything. I can remember looping in more experienced engineers,
+including those who created the data pipeline and the microservice
+architecture and none of them had an answer for me either.
+
+Eventually my suspicions lead to there being a deeper issue within
+CHIPS, moreover surrounding the webhooks that CHIPS sends to our systems
+when a booking is made. This would fall on the external Chauntry team to
+be fixed, but unfortunately, they were completely occupied with the
+ongoing thunderbird project. This meant that the problem wouldn't be
+fixed at its core for a long while, we had to work our way around this.
+
+My original proposed solution was to implement a cache for the service.
+This involved caching every booking that we received, as well as
+checking the cache before ever storing a booking. This *should* have
+allowed us to eliminate duplicate entries from ever being allowed to
+enter the database. I discussed this with various engineers around the
+business before starting it and everyone agreed that it was a sensible
+solution. However, once this had been implemented and tested it proved
+to be only partially effective. This puzzled me for a few days, as well
+as the engineers I spoke to about it. On paper and during local testing
+this change was undeniably a suitable solution. However, it just didn't
+behave correctly in production, we suspected this was to do with the
+fact the service ran across multiple instances in production causing a
+race condition. At this point I'd become frustrated with the project, I
+constantly kicked myself for not being able to provide a perfect
+solution.
+
+Finally, I concluded that nothing right now could solve the duplicate
+event issue on the ingested data. Therefore, I decided to fix the issue
+by re-structuring the database. It would now accept multiple entries for
+a single booking, but when requested we would **only** provide the most
+recent information. This didn't feel very clean, but it was the only
+true solution on the table in the timeframe, especially with the
+Chauntry team being completely occupied.
+
+##### Stakeholder Pressure
+
+During the difficulty with the duplicated events there was also pressure
+from above, our stakeholders were struggling to understand the value of
+booking history due to the time it was taking. I took this upon myself
+and spoke to all of the people I knew who were waiting for it to be
+ready. I got them all to send me the reasoning behind what they wanted
+and why, providing this to Mark and Han to help them convince the
+stakeholders. I received feedback from both of them that they really
+appreciated the initiative I showed, and it helped a lot with pursuing
+the project to completion. This lifted my spirits and helped me get back
+on track instead of being in a rut of frustration.
 
 Structure
 
