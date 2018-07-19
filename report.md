@@ -112,10 +112,9 @@ Table of Contents {#table-of-contents .Fake-header}
 [5.3.1 Booking History 18](#booking-history)
 
 [5.3.2 Reviews ?? Maybe not a full 'project' section seeing as it wasn't
-concluded, just good for the ricardo bit
-20](#reviews-maybe-not-a-full-project-section-seeing-as-it-wasnt-concluded-just-good-for-the-ricardo-bit)
+concluded, just good for the ricardo bit 21](#_Toc519795707)
 
-[5.3.3 T2T -\> P2P? 20](#t2t---p2p)
+[5.3.3 T2T -\> P2P? 21](#_Toc519795708)
 
 Introduction to my Year in Industry
 ===================================
@@ -914,6 +913,33 @@ appreciated the initiative I showed, and it helped a lot with pursuing
 the project to completion. This lifted my spirits and helped me get back
 on track instead of being in a rut of frustration.
 
+#### Thoughts and feelings
+
+This project came very early in my placement at HX and provided me with
+a good set of learning opportunities, especially surrounding the
+microservice architecture at HX. I believe that it really helped me
+build confidence early on and establish myself within the pod and the
+wider web team.
+
+I was quite lucky to start with microservices as they are self-contained
+and don't come with years of legacy bundled into them, making the
+initial understanding much easier. This sped up my early progress and
+enabled me to showcase my abilities to the pod, building their
+confidence in me owning this project. I don't think an entire
+experienced pod would put this in my hands at this stage had I not been
+able to prove my confidence.
+
+At the same time, this project wasn't without it's difficulties.
+Throughout all of the problems described I noticed that I picked myself
+apart too much. I can remember frequent drives home during the duplicate
+issues where I would kick myself for not solving it that day. This
+frustration wasn't beneficial to anybody and would only put my mental
+state in a rut. In future I should be more aware that this negativity
+doesn't actually help, instead focusing on things in a different more
+positive light. Especially considering this was a problem that
+experienced engineers couldn't figure out and agreed with my proposals
+on.
+
 Structure
 
 -   Intro
@@ -996,9 +1022,20 @@ Structure
 
         -   
 
-### Reviews ?? Maybe not a full 'project' section seeing as it wasn't concluded, just good for the ricardo bit
+### Reviews
 
-### T2T -\> P2P?
+Towards the end of my time in the pod I got involved with investigating
+issues surrounding reviews on the website. Our stakeholders wanted us to
+be able to only show reviews that were within the past two years, rather
+than since the products conception. Sounds simple enough, right?
+
+This ended up actually being a complicated issue. The reviews were
+collected via a survey sent to customers after their trip dates had
+passed, it included a basic rating of their experience with the product
+and HX as a whole. Which sounds fine until I came to find where the data
+ends up being stored. All of it is pumped into an archaic database which
+has a flawed data structure, making it non-trivial to query for
+two-years of data.
 
 {{{ Maybe do a journey through the pod? Timeline? }}}
 
