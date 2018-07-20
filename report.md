@@ -1024,20 +1024,55 @@ Structure
 
 ### Reviews
 
+Towards the end of my time in CEX I got involved with a project to make
+our reviews more transparent and clear. Mainly, our stakeholders wanted
+us to base our ratings and displayed reviews off of the last two years
+of data. Previously reviews were historical from the date of the
+product's conception, which meant that if it had been changed recently
+it would be hard for that to be reflected in reviews.
+
 Towards the end of my time in the pod I got involved with investigating
 issues surrounding reviews on the website. Our stakeholders wanted us to
-be able to only show reviews that were within the past two years, rather
-than since the products conception. Sounds simple enough, right?
+only show reviews that were within the past two years, rather than since
+the products conception. Sounds simple enough, right?
 
-This ended up actually being a complicated issue. The reviews were
-collected via a survey sent to customers after their trip dates had
-passed, it included a basic rating of their experience with the product
-and HX as a whole. Which sounds fine until I came to find where the data
-ends up being stored. All of it is pumped into an archaic database which
-has a flawed data structure, making it non-trivial to query for
-two-years of data.
+Unfortunately, this ended up being a complicated issue riddled with
+challenges caused by legacy tech. I spent a lot of time with Ricardo,
+who had experience with the original system, digging deeper into where
+reviews come from and how they're stored. The information was collected
+via surveys sent to customers after their trips, it included a basic
+rating of the product, rating of HX and any comments they might have.
+All of which was fine as a collection source, however the way the
+database that stored this had been designed was not fit for our purpose.
 
-{{{ Maybe do a journey through the pod? Timeline? }}}
+Rather than containing a persistent store of all reviews the database
+stored a calculated result which was deleted and replaced daily by a
+cron job. The fact that this was an overwriting operation and
+continuously erased previous data there was no easy way for us to just
+query for two years of data. I ended up working closely with Adrian on
+this and we tried to create a second table containing summaries for two
+years of data. This began to work sort of as expected, but it also
+exposed some deeper underlying issues with the way reviews were
+originally created.
+
+Due to these complications I ended up having to leave the pod without
+finishing the project. This was disappointing, it's not easy to walk
+away from a project and not have closure on it. I did manage to reduce
+the frustration of this by arranging a handover to Jordan who'd joined
+the pod two months prior. I have since seen him carry the project to
+completion, which laid the project to rest once and for all in my mind.
+
+Overall, I feel that this project actually went reasonably well. There
+were issues with the legacy tech and the archaic database design but, it
+eventually was solved with the help of my investigation and partial
+solution. I think one of the key results was also how it helped
+establish me across the wider team rather than just my pod. This was
+shown by the fact that I became the "go to guy" for a while on this
+subject, especially when Ricardo, who I originally sought help from,
+started sending people to me. It was also a final proof for my
+communication-based objectives at the time, since there were a lot of
+new faces involved seeking updates, explanations and discussions
+from/with me.
 
 Mention:
 
