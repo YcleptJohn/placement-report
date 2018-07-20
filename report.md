@@ -1031,6 +1031,120 @@ from/with me.
 
 -   
 
+Tech Foundations (Dev stream)
+=============================
+
+My second pod move felt long overdue by the time I eventually switched
+to Tech Foundations, I'd become stale where I was and was extremely
+excited for the change. Especially being invited closer to the back-end
+where I had always originally envisioned myself.
+
+During the week that I joined the pod was actually splitting up into
+three streams. The original Tech Foundation pod grew large and had
+multiple separate focuses, therefore it was split into Dev Foundations,
+UI Foundations and Data Foundations. The specific stream I've been
+focused in is Dev Foundations.
+
+Background
+----------
+
+The Dev foundations stream focuses on helping other engineers ship code
+quickly and with the best processes possible. This is achieved by
+providing easy access to infrastructure and purpose built toolsets,
+especially in the form of the microservice architecture.
+
+NOTES
+
+-   Background
+
+    -   Differences in the flow of the pod
+
+    -   No jira, all spreadsheet
+
+    -   Steve CS approach to agile which was much more barebones and
+        stuck closely to the original agile momentos rather than some of
+        the over-process surrounded pods in the company. He cut out the
+        bullshit meetings, just standups and demos -- Impromptu chats
+        and meetings were instead made where necessary to get together
+        and chat through things. These sometimes covered normal retro
+        topics or just planning the best way to do a new feature
+
+    -   Technicality
+
+        -   2 focused engineers
+
+        -   2 "site reliability engineers" who are inf-y-e
+
+    -   Built the microservice architecture from the ground up, all the
+        toolings that I'd got used to making use of in booking history,
+        now part of the team that creates and supports other engineers
+
+-   People -- section below could fit in here?
+
+-   My benefits
+
+    -   Had beneficial recent experience as a normal web team engineer
+
+        -   Came in with their perspective
+
+        -   Understood their peeves
+
+        -   Their viewpoints, what they are aiming to achieve
+
+        -   How they wish to achieve things
+
+        -   Their dream features
+
+    -   Maintained a relationship with many engineers so I still am a
+        first point of contact for a lot of this stuff -- unique
+        position in TF as not all of them are feel as approachable.
+        (have noticed this myself in the amount of engineers who always
+        chat me first, especially CEX, rosie, stobie, friends etc)
+
+-   What I did
+
+    -   Big projects
+
+        -   Access service -- rehoming services
+
+            -   Source of truth from scratch
+
+            -   Scripting to turn that json blob into database queries
+
+            -   Database structure design (screenshot could be nice)
+
+            -   -   Workplace post -- steve's title love
+
+        -   First project -- lighthouse service
+
+        -   Infrastructure RPC dashboards
+
+            -   Workplace post is a good piece to mention, lots of love
+
+            -   ALSO the presentation I hosted
+
+        -   Scripting shit -- toolbox audit, PII audit, big renovate
+
+            -   Really enjoyed this nature of the job, felt very fluid
+                and flexible -- just get the job done in the fastest way
+                possible. AUTOMATION
+
+    -   Small projects
+
+        -   Maintaining and looking after CI service
+
+        -   Dockyard-deploy tweaks
+
+        -   CRON jobs to kill old ci build containers
+
+        -   Small improvements requested from people
+
+            -   Favicons on all services
+
+            -   
+
+-   
+
 Loose bibliography
 
 <https://www.holidayextras.co.uk/about-us/company-history.html> - HX
