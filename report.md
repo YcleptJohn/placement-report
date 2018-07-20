@@ -102,8 +102,7 @@ Table of Contents {#table-of-contents .Fake-header}
 
 [5.1.1 People 17](#people)
 
-[5.2 Notable events? Challenges? Idk ...name
-17](#notable-events-challenges-idk-name)
+[5.2 Notable events? Challenges? Idk ...name 17](#notable-events)
 
 [5.2.1 Void of Tom Price 17](#void-of-tom-price)
 
@@ -752,19 +751,22 @@ probably should have due to re-structures, resignations and maternity
 leave. Therefore, I'm not going to detail every change to this and
 instead highlight only ones that made a pivotal difference in my year.
 
-Notable events? Challenges? Idk ...name
----------------------------------------
+Notable events
+--------------
+
+During my 7 months with the pod there are a few key events that shaped
+my experience, highlighting my strengths and weaknesses throughout the
+ups and downs.
 
 ### Void of Tom Price
 
-Speaking of the fluidity of persons within the pod, after only one day
-of officially joining the pod it was announced Tom Price would be
-moving. They needed his resources in a pop-up pod to fix a data
-violation that google would punish us for in SEO rankings. This shook
-some of the confidence I'd built as Tom was one of the people I'd worked
-closest with thus far. I was a bit worried about now being the only
-engineer within the pod that works from the office, especially trying to
-fill in where Tom's vast knowledge was.
+After only one day of officially joining the pod it was announced Tom
+Price would be moving. They needed his resources in a pop-up pod to fix
+a data violation that google would punish us for in SEO rankings. This
+shook some of the confidence I'd built as Tom was one of the people I'd
+worked closest with thus far. I was a bit worried about now being the
+only engineer within the pod that works from the office, especially
+trying to fill in where Tom's vast knowledge was.
 
 I knew I had one week left with Tom in the pod and had the easiest
 access to him in the office, therefore I turned his departure in an
@@ -777,6 +779,31 @@ my nerves a little and left me feeling comfortable as what I was calling
 the "Budget Tom Price". I was further re-assured during my following
 1-2-1 where Mark and Han had fed back to Luke the value they found in my
 investment.
+
+### Welcoming of Jordan Clague
+
+Jordan joined the pod just before Christmas and it fell down to me to
+spend time getting him up to speed. We spent all of the day together,
+with about two hours dedicated to talking through what the pod does, who
+is involved and what projects we have. Moving on to helping him setup
+codebases and getting him through his first ticket.
+
+Looking back, this actually provided a lot of value to me. It helped me
+see how much I had improved with my communication even in a mentoring
+scenario I hadn't really experienced before. I've also received good
+feedback from Jordan about this experience:
+
+> *"John was the pod member who walked me though my pod\'s previous (and
+> current) work when joining the pod and sat with me as I worked on my
+> first ticket and set up numerous systems. At the time, I wouldn\'t
+> have assumed John was an IP due to how confident / assured John was."
+> *
+>
+> ***- Jordan***
+
+This feedback amplified the overall experience and proved that my focus
+on improving my communication was paying off. I appreciated the
+opportunity to gain experience as a mentor.
 
 What I did
 ----------
@@ -940,88 +967,6 @@ positive light. Especially considering this was a problem that
 experienced engineers couldn't figure out and agreed with my proposals
 on.
 
-Structure
-
--   Intro
-
-    -   Why.. siloed chips bookings into a single source that was easy
-        to access and wasn't a third party piece of shit that's hard to
-        query in a distributed fashion.. already hanging on by a
-        lifeline
-
-    -   Take-over from Tom, barely started
-
-    -   How it felt to be given quite a critical service to build from
-        the ground up
-
-        -   Trustedness
-
--   Explain detailed progress of the project
-
-    -   DIFFICULTIES
-
-        -   Primary key being a timestamp + ref, store rows for
-            different events
-
-        -   DUPLICATE EVENTS
-
-    -   Dockyard introduction, microservices etc
-
-    -   Figuring it out with some support from Mike Holloway when needed
-
-        -   Can mention how I found the remote calls?
-
-    -   Studying ecommerce events
-
-    -   Trying to ensure that the database design I'd been left with was
-        suitable for storing the necessary information
-
-        -   Difficult to plan as it was hard to envision early the exact
-            consumers of this service
-
-        -   Stuck with the original big json blob storage as breaking it
-            into columns would have been huge and would end up making a
-            mess, especially if the schema ever changes in future etc
-            etc
-
-        -   The blob was robust and expandable easily
-
-    -   Figuring out the best nodeJS approach to build code full of
-        asynchronous code
-
-        -   Hadn't worked too much with such an async focussed language
-            etc
-
-        -   Good learning experience
-
-        -   Ended up going with a promise chain since that seemed
-            cleaner than being 6 callbacks deep
-
-        -   If async await existed back then it would have been so much
-            easier but it didn't so tough
-
-    -   Essentially built a data pipeline, listening to the
-        server\_ecommerce events and deconstructing that, transforming
-        it and storing it into the database.
-
-    -   Exposing endpoints that would allow the data to be retrieved
-        (handled mostly by Adrian and sam tbh)
-
-    -   When Sam joined the pod and I showed him all of the booking
-        history stuff he was surprised by how far I'd got with it and
-        said he couldn't have done it himself
-
-        -   Due to the fact I needed wider HX experience rather than a 3
-            month focus on microservices
-
-        -   Not always the newest technologies that need to be
-            experience
-
-        -   It's important to see the old issues to completely
-            understand why we built the new architecture
-
-        -   
-
 ### Reviews
 
 Towards the end of my time in CEX I got involved with a project to make
@@ -1074,83 +1019,17 @@ communication-based objectives at the time, since there were a lot of
 new faces involved seeking updates, explanations and discussions
 from/with me.
 
-Mention:
+{{{ Thoughts and feelings of the entire pod experience }}}
 
--   What they do, mission, process
+-   Loved the people, great team, if I was here forever I would want to
+    always stay with them
 
--   Who? Han Cork etc -- initial pod
+-   Spent too long there but....
 
--   Tom Price's disappearance, handover of work on the Friday -- his
-    email PRs
+-   Work wasn't always exciting and it could be annoying tweaks and
+    fixes
 
-    -   Pressure of being the only dev in the office
-
-    -   Han's support and messages to check up and see it wasn't
-        worrying me
-
--   People stuff (probably don't mention it all)
-
-    -   Sam Smart joining
-
-        -   Taught him a lot, good 360 feedback about the grasp I have
-            on microservices
-
-        -   "I couldn't have done any of this microservice stuff without
-            you" when helping on the booking history service
-
-    -   Tom Vance joining as a part time base camp
-
-    -   Han Cork going on pregnancy leave
-
-    -   Kiril resigining
-
-    -   Adrian moving to booking pod
-
-    -   Jordan Clague joining
-
-        -   His shadowing of me
-
-        -   360 feedback!!!
-
-    -   Mark Cridland moves to wales thing
-
-    -   Phil Murphy joins, ends up resigning
-
-    -   Jamie Matthews to new products
-
-    -   Myself, Mike and Becky become the only people still around from
-        when I joined the pod
-
--   Pod becoming dysfunctional over the sprint process, Jamie's stubborn
-    attitude
-
--   The general work, almost all work can be justified as CEX, bit of a
-    bottom of the filter, "the CC is our customer too" justification
-    bullshit
-
--   Building up confidence and establishing myself within the pod
-
-    -   The booking history case thing? Might be better here as an
-        establishing move but I don't want to take it away from the
-        projects section
-
--   The point when Sam spoke to Luke about us moving pods and Luke
-    essentially said that right now I'm too vital to CEX that I can't
-    leave
-
-    -   Annoying that I was being restricted like that as an IP
-
-    -   Also, a compliment that I was so pivotal at that moment
-
--   PROJECTES
-
-    -   Booking history
-
-    -   Reviews service
-
-        -   When Ricardo started pointing people to me
-
-        -   Frustrating and annoying underlying problems
+-   
 
 Loose bibliography
 
