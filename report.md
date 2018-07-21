@@ -130,6 +130,32 @@ Table of Contents {#table-of-contents .Fake-header}
 
 [6.4 Thoughts and feelings 26](#thoughts-and-feelings-1)
 
+[7 Projects 28](#projects)
+
+[7.1 Booking History 28](#booking-history-1)
+
+[7.2 Reviews 28](#reviews-1)
+
+[7.3 Microservice Re-homing 28](#microservice-re-homing)
+
+[7.3.1 Challenges 29](#challenges-1)
+
+[7.3.2 Thoughts and Feelings 30](#thoughts-and-feelings-2)
+
+[7.4 Dependency Graphing 30](#dependency-graphing)
+
+[8 Other notable events 30](#other-notable-events)
+
+[8.1 Chauntry Acquisition 30](#chauntry-acquisition)
+
+[8.2 Purple Parking Acquisition 30](#purple-parking-acquisition)
+
+[8.3 GDPR Enforcement 30](#gdpr-enforcement)
+
+[8.4 Contract extension 30](#contract-extension)
+
+[9 Conclusion 30](#conclusion)
+
 Introduction to my Year in Industry
 ===================================
 
@@ -1316,7 +1342,32 @@ this if it becomes an issue but it's functional as is for now.
 
 ### Thoughts and Feelings
 
-Overall...
+This project stands out as one of the more impactful things I got to do
+at HX. It completely changed the previous approach to microservice
+ownership, shifting the singular responsibility into dynamic
+responsibility across the web team, leaving pods open to pick up and own
+services fluidly.
+
+Due to the fact this was one of my earlier pieces of work in dev
+foundations it also established my place as a vital contributor.
+Building this trust and respect within the pod has proved useful ever
+since, being able to confidently speak my mind and know the pod will
+fully consider what I say. It's fair to say this could have been much
+harder without opportunities like this, especially being surrounded by
+engineers with vastly more experience than me in an extremely technical
+pod.
+
+I also managed to demonstrate my problem solving and decision-making
+skills throughout the investigative stages of the project. Especially
+when I took the initiative to host meetings to discuss the database
+problem.
+
+Overall, I feel this project was valuable to the business and even more
+worthwhile for my own development. I got to independently experience a
+complex issue all the way from investigation, design and final
+implementation. Carrying a project like this through from start to
+finish on my own so early in my career reassures my confidence and trust
+in myself.
 
 Dependency Graphing
 -------------------
