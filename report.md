@@ -563,8 +563,8 @@ with colleagues.
 Timeline
 ========
 
-![](media/image3.png){width="7.048611111111111in"
-height="3.964583333333333in"}This section will give a quick overview of
+![](media/image3.png){width="7.956944444444445in"
+height="3.3361111111111112in"}This section will give a quick overview of
 where I've spent my time during my journey at HX. Providing context for
 the next few sections of the report that will detail my experiences
 during onboarding, time with different pods and other notable events.
@@ -1574,7 +1574,7 @@ Contract Extension
 Around May 8^th^ I was taken aside for a five-minute chat with my
 manager, Luke, not really knowing what to expect. It turned out to be
 the good news that they wanted to offer me a contract extension until
-August 31^st^. This was wonderful and it excited me that I would have
+August 31^st^. This was wonderful, and it excited me that I would have
 the opportunity to continue working at HX throughout the summer. I
 signed and accepted his proposal that day and everything was confirmed
 by May 14^th^. I've managed to continue on track and keep gaining
@@ -1585,7 +1585,22 @@ extension is.
 Conclusion
 ==========
 
-It was pretty goodish
+-   My year obviously had ups and downs, bad day at hx isn't that bad
+
+    -   Started out intensely filled with knowledge being gained and
+        full of excitement
+
+    -   Settled into CEX with it's lovely people and got into a routine,
+
+    -   Grew staler, but still enjoyed the people
+
+        -   Just needed more learning opportunities
+
+        -   
+
+-   Got stale in HX but the final move was a good one
+
+-   
 
 Loose bibliography
 
