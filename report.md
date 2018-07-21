@@ -1439,25 +1439,40 @@ demonstrated by some feedback below:
 
 ### Thoughts and feelings
 
--   Infrastructure RPC dashboards
+I enjoyed the opportunity to take on a more visual-based project for a
+bit of a change. I absolutely adore my work in the back-end but it's a
+nice variation to have something that's visually measurable and still
+serves a technical purpose.
 
--   Recent expedites, with so many services (100+) it's hard to always
-    know where issues **stem** from
+I think the areas I improved the most throughout this work were all
+surrounding my business-oriented skills rather than actual technical
+abilities. This included my decision making, presentation (evidenced
+above) and written communication skills.
 
--   Evaluation of options, CLI implementation of graphviz, online
-    website api, eventually gave up to d3 demands, looked at vis.js --
-    still looks easier than d3 and just as good. Began to prep data
-    sources, initial version, feedback form pod, added the function
-    breakdown, presented, feedback on legend -- added legend and posted
-    to workplace
+The decision making comes from the early push backs on Steve's
+desperation for D3, which is something demonstrable from feedback he
+gave me on his departure:
 
--   Good feedback from stakeholders during demo -- Si wood got excited
-    and was talking about having it take a screenshot every week to see
-    our inf grow (needs seedy thing)
+> *"Noticing the complexity of the work was growing, John approached me
+> to explore and challenge the value, given the growing cost. Just one
+> example of when he impressed me in this area." *
+>
+> -- Steve CS
 
-    -   Workplace post is a good piece to mention, lots of love
+My written communication was evidenced in a well-received workplace post
+I made about the service after it was released, shown in the screenshots
+below.
 
-    -   ALSO the presentation I hosted
+![](media/image8.tiff){width="3.5416666666666665in" height="5.125in"}
+
+Simon Wood in the reply above is one of Dev Foundations' stakeholders so
+his response is particularly important.
+
+Overall, I feel that this project offered me a chance to be more
+creative whilst still having some technical complexity. It struck a good
+balance of front-end visuals and back-end data scraping and
+transformation. I really enjoyed combining these skillsets to provide a
+tool which people have already told me has shown its value.
 
 Other notable events
 ====================
