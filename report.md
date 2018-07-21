@@ -1477,11 +1477,44 @@ tool which people have already told me has shown its value.
 Other notable events
 ====================
 
+HX always aims to move at a fast pace embracing change, so I have seen
+my fair share of events over the past year. Including the ongoing
+erection of a third office on the Hythe campus. I've detailed some of
+the most impactful events below, as well as some personal events that
+didn't fit into my singular pod timelines.
+
 Chauntry Acquisition
 --------------------
 
+In a shoutout on the 9^th^ of November it was revealed that HX had
+acquired our long-standing partner Chauntry. As a company they offer
+parking reservation systems and have close ties to over 800 car parks
+worldwide. We've been working with them since 1992 as they supply us
+with CHIPS, our booking system which is at the core of all of our
+technology.
+
+I was initially unsure of the acquisition as our current CHIPS system
+feels very legacy and outdated, this move to me signalled that we would
+never be moving away from it. When I took a step back and thought about
+it I realised we probably would have never migrated anyway, at least now
+we'd be in an advantageous position to push for improvements to it.
+
 Purple Parking Acquisition
 --------------------------
+
+In a press piece on the 2^nd^ of November it was announced that HX was
+taking control of some of Purple Parking's assets and website, following
+failure to find a buyer for the entire business. This would allow HX to
+utilise purple parking's website to continue selling our own products,
+maintaining customers that previously had loyalty to Purple Parking. A
+pop-up pod was made for about a month to convert the Purple Parking
+website to use our backend, allowing us to collect and fulfil all new
+bookings being made.
+
+This acquisition seemed like a no-brainer deal for HX. With the
+implementation mentioned above we literally started selling our products
+via their website, utilising their brand and assets to gain additional
+business from Purple Parking's existing customer base. Who would say no?
 
 Maybe that expedite with Becky? Probably not -- too much content now...
 -----------------------------------------------------------------------
@@ -1489,8 +1522,51 @@ Maybe that expedite with Becky? Probably not -- too much content now...
 GDPR Enforcement
 ----------------
 
+A big legal event for the company was the incoming enforcement of GDPR
+as set out by EU regulations. GDPR stands for General Data Protection
+Regulation and laid out rules that give customers greater control over
+their data usage, including the right to be forgotten.
+
+HX had to work hard to be compliant with these regulations in time for
+the enforcement date on the 25^th^ May 2018. I wasn't directly involved
+with much of the process, besides a script I started working on to
+detect which services could be using customer data. However, there was a
+big business push to be compliant on time, especially by the
+data-products and data-platform teams.
+
 Conference Day Presentation
 ---------------------------
+
+HX hosts an internal conference day around every 6 months, inviting all
+of the web team to attend talks, presentations and roundtables presented
+by colleagues. Myself and Rosie Watson, a fellow IP, were asked to do a
+talk about being IPs which we agreed to as it seemed like good way to
+wrap-up our year.
+
+![](media/image9.jpeg){width="4.461715879265092in"
+height="3.346534339457568in"}Although we found the requested topic a bit
+boring as a starting point. We instead decided to relate our talk back
+to our favourite board game, Articulate, as well as playing a HX version
+in our talk. The game focuses on the ability to explain words to
+team-mates without using the actual word on the card. We felt this
+related well to what it's like to start as an IP, joining into a world
+of jargon where things must be deeply broken down for us. We felt this
+would relate to other members of the team and help us show what we found
+beneficial, so they could improve their articulation going forwards.
+
+Our talk went extremely well, and it boosted my confidence in my
+presentation and communication skills, two areas that I'd previously
+recognised as weaknesses. We received some lovely feedback that further
+confirmed this as shown below:
+
+> *"Great balance between informative and fun" -- Becky Cox*
+>
+> *"It's very courageous for IPs to stand up and do a talk in front of
+> other employees, well done, really enjoyed it." - Nathan Scott*
+
+In the end, I was very glad we took this opportunity as much as it made
+me nervous at first. Pushing through and delivering a great talk made it
+all worthwhile.
 
 Contract Extension
 ------------------
