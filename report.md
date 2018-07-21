@@ -1372,6 +1372,73 @@ in myself.
 Dependency Graphing
 -------------------
 
+Seeing as we have over 100 microservices deployed into our live
+environments it can be hard to keep track of, especially for the
+majority of services that communicate with each other via RPC. There had
+been quite a few expedites recently in which confusing
+cross-communication had obscured where the issue was coming from, and as
+such we needed to provide something to help engineers understand what's
+actually going on.
+
+To do this I took up a challenge of mapping out all communications that
+are occurring via RPC. Luckily, all services which use RPC do so through
+the node-toolbox, which we created, meaning I could be certain that the
+metrics would be stored for all of these requests. This made my life
+easier as the data was already prepared in a suitable format, I just had
+to work on pulling it out of Prometheus and displaying it for users.
+
+I spent a while investigating which graphing tools we could use
+including CLI tools, online APIs and actual modules. Steve was pushing
+for me to learn and use D3, but the learning curve seemed too steep for
+it to actually be worthwhile. I sought alternatives and found a
+dependency wheel tool that could generate a D3 dependency wheel for me.
+The result of this can be seen below:
+
+![](media/image6.tiff){width="5.447222222222222in"
+height="4.554166666666666in"}
+
+> (Each service could be hovered to obscure the other lines for clarity)
+
+At this point Steve chatted to me and he had envisioned more capability
+from the graph, rather than just showing exactly which services are
+communicating. He continued to push for a D3 graph, but I refuted that
+it was necessary, even questioning whether this was becoming more of a
+vanity project not worth the time investment. However, I was convinced
+that we could gain value from showing more information especially as a
+live graphic, I just didn't believe D3 was necessary.
+
+I sought alternatives and eventually settled on Vis.js after testing it
+to build a simple node graph. This proof-of-concept was proof enough
+that the Vis.js library would be suitable, so I moved on to preparing
+the data.
+
+The data was in a static format that wasn't necessarily built for live
+display which meant I had to be a little creative. I settled for two
+different Prometheus queries, one to pull back *ALL* of the RPC events
+and another to fetch only the ones that occurred in the last 10 minutes.
+I used the exhaustive list of events to build up the structure of the
+graph as a holistic view of our systems. I then used the 10-minute data
+as a layer on top of the graph to visualise recent traffic, including
+colouring lines based on traffic and success rate, and showing a
+breakdown of which RPC functions were being called. As shown below:
+
+![](media/image7.tiff){width="6.268055555555556in"
+height="3.6180555555555554in"}
+
+This shows how the final version of the graph looked with each node
+being a service, each line representing communication between services,
+and colours representing success rates and traffic volume.
+
+I was further asked to do a presentation of this for the backend-guild
+and also post about it on workplace. Both of which were well received as
+demonstrated by some feedback below:
+
+> *"Good presentation, showcasing the solution and explaining the
+> problems it solved. Clear and detailed demonstration of the features
+> of the system."* - Pedro Romano
+
+### Thoughts and feelings
+
 -   Infrastructure RPC dashboards
 
 -   Recent expedites, with so many services (100+) it's hard to always
