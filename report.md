@@ -50,70 +50,85 @@ Table of Contents {#table-of-contents .Fake-header}
 =================
 
 [1 Introduction to my Year in Industry
-5](#introduction-to-my-year-in-industry)
+6](#introduction-to-my-year-in-industry)
 
-[1.1 Why Holiday Extras? 5](#why-holiday-extras)
+[1.1 Why Holiday Extras? 6](#why-holiday-extras)
 
-[1.2 Journey to Holiday Extras 5](#journey-to-holiday-extras)
+[1.2 Journey to Holiday Extras 6](#journey-to-holiday-extras)
 
-[1.2.1 Initial Interviews 5](#initial-interviews)
+[1.2.1 Initial Interviews 6](#initial-interviews)
 
 [1.2.2 Application + Interview with HX
-6](#application-interview-with-hx)
+7](#application-interview-with-hx)
 
-[1.2.3 Offer from HX 6](#offer-from-hx)
+[1.2.3 Offer from HX 7](#offer-from-hx)
 
 [1.3 Holiday Extras: a brief overview
-6](#holiday-extras-a-brief-overview)
+7](#holiday-extras-a-brief-overview)
 
-[1.4 My Job Role 7](#my-job-role)
+[1.4 My Job Role 8](#my-job-role)
 
-[2 Working for Holiday Extras 8](#working-for-holiday-extras)
+[2 Working for Holiday Extras 9](#working-for-holiday-extras)
 
-[2.1 Web Team Structure 8](#web-team-structure)
+[2.1 Web Team Structure 9](#web-team-structure)
 
-[2.2 Pod Structure 8](#pod-structure)
+[2.2 Pod Structure 9](#pod-structure)
 
-[2.3 Agile Process 9](#agile-process)
+[2.3 Agile Process 10](#agile-process)
 
-[2.3.1 Sprint Structure 9](#sprint-structure)
+[2.3.1 Sprint Structure 10](#sprint-structure)
 
-[2.4 What's it actually like? 11](#whats-it-actually-like)
+[2.4 What's it actually like? 12](#whats-it-actually-like)
 
-[3 Timeline 12](#timeline)
+[3 Timeline 13](#timeline)
 
-[4 Onboarding 13](#onboarding)
+[4 Onboarding 14](#onboarding)
 
-[4.1 Weekly 1-2-1s 13](#weekly-1-2-1s)
+[4.1 Weekly 1-2-1s 14](#weekly-1-2-1s)
 
-[4.2 Pod Rotations 13](#pod-rotations)
+[4.2 Pod Rotations 14](#pod-rotations)
 
-[4.2.1 New Products 14](#new-products)
+[4.2.1 New Products 15](#new-products)
 
-[4.2.2 API 14](#api)
+[4.2.2 API 15](#api)
 
-[4.2.3 Customer Experience 15](#customer-experience)
+[4.2.3 Customer Experience 16](#customer-experience)
 
-[4.2.4 Finishing off 16](#finishing-off)
+[4.2.4 Finishing off 17](#finishing-off)
 
-[5 Customer Experience 17](#customer-experience-1)
+[5 Customer Experience 18](#customer-experience-1)
 
-[5.1 Background 17](#background)
+[5.1 Background 18](#background)
 
-[5.1.1 People 17](#people)
+[5.1.1 People 18](#people)
 
-[5.2 Notable events? Challenges? Idk ...name 17](#notable-events)
+[5.2 Notable events 18](#notable-events)
 
-[5.2.1 Void of Tom Price 17](#void-of-tom-price)
+[5.2.1 Void of Tom Price 18](#void-of-tom-price)
 
-[5.3 What I did 18](#what-i-did)
+[5.2.2 Welcoming of Jordan Clague 19](#welcoming-of-jordan-clague)
 
-[5.3.1 Booking History 18](#booking-history)
+[5.3 What I did 19](#what-i-did)
 
-[5.3.2 Reviews ?? Maybe not a full 'project' section seeing as it wasn't
-concluded, just good for the ricardo bit 21](#_Toc519795707)
+[5.3.1 Booking History 20](#booking-history)
 
-[5.3.3 T2T -\> P2P? 21](#_Toc519795708)
+[5.3.2 Reviews 22](#reviews)
+
+[6 Tech Foundations (Dev stream) 24](#tech-foundations-dev-stream)
+
+[6.1 Background 24](#background-1)
+
+[6.1.1 People 24](#people-1)
+
+[6.1.2 Process 25](#process)
+
+[6.2 What I did 25](#what-i-did-1)
+
+[6.3 Notable events 26](#notable-events-1)
+
+[6.3.1 Steve's sudden resignation 26](#steves-sudden-resignation)
+
+[6.4 Thoughts and feelings 26](#thoughts-and-feelings-1)
 
 Introduction to my Year in Industry
 ===================================
@@ -1155,30 +1170,87 @@ was only one event that actually stands out in dev foundations.
 
 ### Steve's sudden resignation
 
+Steve's resignation came in extremely short notice and was a shock to
+all but his closest friends. He spoke to us privately on the day of the
+announcement to explain some of his reasoning before almost disappearing
+within the same day, taking his last bits of annual leave before he
+went. I didn't see this coming even though I'd personally observed some
+of the areas that frustrated him, including the bastardised agile
+process that was too far from the original agile manifesto for his
+liking. He'd done an amazing job of applying a more barebones process to
+our pod, but the business wouldn't let this approach spread further.
+
+I was concerned initially about the pod without Steve but he truly had
+made us highly autonomous in a way that would allow us to continue
+without him. So far, we've clearly managed to prove that we're capable
+of this to our stakeholders as we still operate without a pod lead to
+this day.
+
+This entire experience was surprising since it came out of the blue, but
+I feel the fact I've managed to continue delivering and supporting my
+teammates is a testament to how the year has shaped me. It shows the
+level of confidence, self-organisation and drive I've developed to be
+able to continue thriving in an autonomous workflow independently. Steve
+even provided me feedback upon his departure that reassured me about the
+value I brought to the pod. This left me in a confident position to
+carry on without him.
+
 Thoughts and feelings
 ---------------------
 
+Overall, I feel that the dev foundations pod has given me exactly the
+technical challenge I was looking for. It's been an incredible
+experience to work alongside such talented engineers and gain insight
+into the deeper world of infrastructure. I've benefitted hugely in terms
+of knowledge but also the confidence it's given me, being able to hold
+my own even surrounded by some of HXs most experienced technical
+engineers. I have faith in myself, my work and the rest of my career in
+this area thanks to the opportunity.
+
+I've felt especially lucky to work with Mark and gain insight into his
+deeply technical world. He's willingly taken me under his wings to show
+me about containerisation, kubernetes and cloud architecture. All of
+which play a hugely important part in our systems and many of those in
+use in the modern world outside of HX. I'm happy to have had the
+opportunity to learn so much about modern infrastructure that's becoming
+used globally.
+
+{{{ Maybe needs expanding }}}
+
+Projects
+========
+
+Booking History
+---------------
+
+Reviews
+-------
+
+Service Re-homing
+-----------------
+
+Dependency Graphing
+-------------------
+
+Other notable events
+====================
+
+Chauntry Acquisition
+--------------------
+
+Purple Parking Acquisition
+--------------------------
+
+GDPR Enforcement
+----------------
+
+Contract extension
+------------------
+
+Conclusion
+==========
+
 NOTES
-
--   My benefits
-
-    -   Had beneficial recent experience as a normal web team engineer
-
-        -   Came in with their perspective
-
-        -   Understood their peeves
-
-        -   Their viewpoints, what they are aiming to achieve
-
-        -   How they wish to achieve things
-
-        -   Their dream features
-
-    -   Maintained a relationship with many engineers so I still am a
-        first point of contact for a lot of this stuff -- unique
-        position in TF as not all of them are feel as approachable.
-        (have noticed this myself in the amount of engineers who always
-        chat me first, especially CEX, rosie, stobie, friends etc)
 
 -   What I did
 
@@ -1207,22 +1279,6 @@ NOTES
             -   Really enjoyed this nature of the job, felt very fluid
                 and flexible -- just get the job done in the fastest way
                 possible. AUTOMATION
-
-    -   Small projects
-
-        -   Maintaining and looking after CI service
-
-        -   Dockyard-deploy tweaks
-
-        -   CRON jobs to kill old ci build containers
-
-        -   Small improvements requested from people
-
-            -   Favicons on all services
-
-            -   
-
--   
 
 Loose bibliography
 
