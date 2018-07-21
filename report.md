@@ -152,9 +152,9 @@ Table of Contents {#table-of-contents .Fake-header}
 
 [8.3 GDPR Enforcement 30](#gdpr-enforcement)
 
-[8.4 Contract extension 30](#contract-extension)
+[8.4 Contract extension 30](#_Toc519952957)
 
-[9 Conclusion 30](#conclusion)
+[9 Conclusion 30](#conference-day-presentation)
 
 Introduction to my Year in Industry
 ===================================
@@ -1374,6 +1374,20 @@ Dependency Graphing
 
 -   Infrastructure RPC dashboards
 
+-   Recent expedites, with so many services (100+) it's hard to always
+    know where issues **stem** from
+
+-   Evaluation of options, CLI implementation of graphviz, online
+    website api, eventually gave up to d3 demands, looked at vis.js --
+    still looks easier than d3 and just as good. Began to prep data
+    sources, initial version, feedback form pod, added the function
+    breakdown, presented, feedback on legend -- added legend and posted
+    to workplace
+
+-   Good feedback from stakeholders during demo -- Si wood got excited
+    and was talking about having it take a screenshot every week to see
+    our inf grow (needs seedy thing)
+
     -   Workplace post is a good piece to mention, lots of love
 
     -   ALSO the presentation I hosted
@@ -1387,10 +1401,16 @@ Chauntry Acquisition
 Purple Parking Acquisition
 --------------------------
 
+Maybe that expedite with Becky? Probably not -- too much content now...
+-----------------------------------------------------------------------
+
 GDPR Enforcement
 ----------------
 
-Contract extension
+Conference Day Presentation
+---------------------------
+
+Contract Extension
 ------------------
 
 Conclusion
