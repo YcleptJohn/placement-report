@@ -1271,24 +1271,52 @@ away, turning my proof-of-concept into a fully-fledged process. I
 appreciated that the pod had enough trust to leave this in my hands even
 though I'd only been with the pod for a few months.
 
+Eventually, I had the entire script built and working as an RPC endpoint
+in the access service. I spent time testing this before taking it to our
+demo and proudly showing the stakeholders what I'd achieved. It felt
+great to be able to tackle real problems for the pod and have a large
+impact.
+
+I was also tasked with making a workplace post about the project. I had
+this edited by Steve and he had nothing but praise for the writing, and
+the post seemed well received by the web team. This was a nice
+confirmation of my written communication and helped prove that I had
+improved in these areas. It also boosted my recognition across the web
+team as now everyone comes to me for all things access-service and
+service re-homing. It's nice to receive appreciation for work that I've
+achieved and knowing it's having the desired impact.
+
 ### Challenges
 
-Database rehoming is fucking hard
+Throughout the project the complications of database re-homing loomed
+over my head. In the initial design of microservices lead to there being
+a database instance per pod, which hosted a database per-service within
+it. The diagram below explains this structure a little further:
 
--   Access service -- rehoming services
+This shows that all databases are grouped into an overall database
+instance that is created per-team. Meaning that to move a database's
+ownership it has to be transferred from one instance to another, which
+is complicated and leaves practically unavoidable downtime during the
+move.
 
-    -   Source of truth from scratch
+I spent some time drafting ideas on a way to write a completely
+down-time free moving mechanism, but it was extremely complex. I
+arranged one or two meetings with the pod to discuss this around a
+whiteboard. In these sessions we eventually agreed that it was too much
+investment at this point. Instead settling with leaving the databases
+for how they are. There's no technical limitation that means the
+databases **have** to be moved, but with a multi-tenancy instance setup
+there can be negative effects. For example, if one of the services on
+the instance has an extremely busy database and the load is too much all
+co-tenant databases could be affected. This is why they were originally
+grouped by team, it would be the team's own fault if their other
+databases were affected. We'd now be leaving it up to luck which
+databases are co-tenants on each instance. One day we might come back to
+this if it becomes an issues but it's functional as is for now.
 
-    -   Scripting to turn that json blob into database queries
+### Thoughts and Feelings
 
-    -   Database structure design (screenshot could be nice)
-
-    -   Workplace post -- steve's title love
-
-    -   Talk more about the rehoming side of it probably
-
-    -   Talk about the challenges of database movement and trying to
-        solve that
+Overall...
 
 Dependency Graphing
 -------------------
