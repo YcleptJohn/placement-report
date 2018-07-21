@@ -1571,8 +1571,21 @@ all worthwhile.
 Contract Extension
 ------------------
 
+Around May 8^th^ I was taken aside for a five-minute chat with my
+manager, Luke, not really knowing what to expect. It turned out to be
+the good news that they wanted to offer me a contract extension until
+August 31^st^. This was wonderful and it excited me that I would have
+the opportunity to continue working at HX throughout the summer. I
+signed and accepted his proposal that day and everything was confirmed
+by May 14^th^. I've managed to continue on track and keep gaining
+experience from the extended time I've been given. I truly appreciate
+the recognition and acknowledgement of my skills that this contract
+extension is.
+
 Conclusion
 ==========
+
+It was pretty goodish
 
 Loose bibliography
 
