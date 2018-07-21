@@ -1466,7 +1466,7 @@ below.
 ![](media/image8.tiff){width="3.5416666666666665in" height="5.125in"}
 
 Simon Wood in the reply above is one of Dev Foundations' stakeholders so
-his response is particularly important.
+his response is particularly pleasing.
 
 Overall, I feel that this project offered me a chance to be more
 creative whilst still having some technical complexity. It struck a good
@@ -1497,36 +1497,6 @@ Contract Extension
 
 Conclusion
 ==========
-
-NOTES
-
--   What I did
-
-    -   Big projects
-
-        -   Access service -- rehoming services
-
-            -   Source of truth from scratch
-
-            -   Scripting to turn that json blob into database queries
-
-            -   Database structure design (screenshot could be nice)
-
-            -   -   Workplace post -- steve's title love
-
-        -   First project -- lighthouse service
-
-        -   Infrastructure RPC dashboards
-
-            -   Workplace post is a good piece to mention, lots of love
-
-            -   ALSO the presentation I hosted
-
-        -   Scripting shit -- toolbox audit, PII audit, big renovate
-
-            -   Really enjoyed this nature of the job, felt very fluid
-                and flexible -- just get the job done in the fastest way
-                possible. AUTOMATION
 
 Loose bibliography
 
