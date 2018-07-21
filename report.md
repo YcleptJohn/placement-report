@@ -1050,36 +1050,107 @@ Background
 
 The Dev foundations stream focuses on helping other engineers ship code
 quickly and with the best processes possible. This is achieved by
-providing easy access to infrastructure and purpose built toolsets,
+providing easy access to infrastructure and purpose-built toolsets,
 especially in the form of the microservice architecture.
 
+The microservice architecture and all of the tools surrounding it are
+actually the biggest single focus of the pod. Throughout my time in the
+pod almost everything we've been working on has revolved around
+maintaining, improving and expanding our offering to the team. This
+included our own in-house self-built CI service, dockyard-deploy
+scripts, dockyard-tools like dockyard-rpc and many others.
+
+### People
+
+This pod had an atypical structure compared to the rest of HX. We didn't
+have an individual Product Manager and Agile Coach, instead we had Steve
+who acted as a role somewhere in between. Our entire structure was:
+
+-   Steve Coppin-Smith ("Pod Lead")
+
+-   Oliver Rumbelow (Engineer)
+
+-   Mark Fermor (Site Reliability Engineer)
+
+-   Khusro Jaleel (Site Reliability Engineer)
+
+This list is quite a bit shorter than what I laid out as a 'normal' pod
+at HX earlier in this report. Not only did we have Steve as an overall
+pod lead, we lacked a tester and two members of the team had a unique
+SRE role.
+
+The SRE role has a deep focus on the actual infrastructure behind what
+we offer to the rest of the team. They are in charge of technical setup,
+maintenance and management of our staging and production environments,
+the processes of deployment to them and some of the steps in between. In
+all truth, they had a wide-ranging set of responsibilities due to how
+important the infrastructure was as part of our microservice offering.
+
+The Engineers in the pod (Myself and Oli) were focused on the areas
+which required larger portions of code written. This mainly covered
+tools and interfaces between the engineers and the infrastructure we
+were providing.
+
+I feel that I actually landed in a unique position within the pod. I was
+really the only engineer that had recently worked on the other side of
+the coin, consuming all of these tools rather than creating. As well as
+the fact I maintained a connection with engineers from the rest of the
+business. This meant that I was surrounded by people full of feedback on
+the tools we were providing, and I had a good grasp on features that
+they wanted offered. I found it extremely useful to be able to bring
+these viewpoints to the pod, applying it to the work I undertook.
+
+### Process
+
+The process within dev foundations was a complete contrast to what I had
+experienced in CEX and how the majority of the web team operates. We
+didn't use jira to keep track of tickets, our only big meetings were
+bi-weekly demos and there was less dictation from above. Every engineer
+in the pod functioned with a lot of autonomy, taking control of the
+entire lifecycle of tasks from identification, design, implementation,
+deployment and maintenance. As long as what we were doing provided value
+against our current quarterly OKRs we could decide entirely solo what to
+work on.
+
+Having come from a pod where stakeholders chose exactly what they wanted
+done each sprint this was a completely new experience. It initially took
+me some getting used to, it's hard to start self-identifying what needs
+to be improved without an initial grasp on some of this tech. Luckily,
+Steve seemed aware of this and during the early days he had Oli help me
+find things to do. Over time I settled in to the approach and actually
+got quite good at self-organising within the pod, keeping all possible
+tasks on a todo list in slack.
+
+What I did
+----------
+
+The tooling we offered to engineers was comprised of various different
+services, scripts and codebases, meaning that I managed to gain
+experience in a wide spanning set of projects. Especially encouraged by
+the self-driven nature of the work where I could find and improve any
+aspect of the process.
+
+Some of the codebases that I worked with most frequently were the
+ci-service, infrastructure-service and access-service. Although outside
+of larger projects I've managed to delve into many areas, including
+scripts written to automate annoying tasks. One example of this was a
+script I wrote to audit exactly which version of the node-toolbox was
+being used across all 100+ microservices. This helped us know who was
+far out of date and would come into issues as we needed to release
+critical updates.
+
+Outside of the smaller improvements and fixes made across all codebases
+I also had some key areas of focus. The two most notable examples are
+the access-service and dependency graphic projects that I worked on,
+both of which are detailed in my projects section.
+
+Notable events
+--------------
+
+Thoughts and feelings
+---------------------
+
 NOTES
-
--   Background
-
-    -   Differences in the flow of the pod
-
-    -   No jira, all spreadsheet
-
-    -   Steve CS approach to agile which was much more barebones and
-        stuck closely to the original agile momentos rather than some of
-        the over-process surrounded pods in the company. He cut out the
-        bullshit meetings, just standups and demos -- Impromptu chats
-        and meetings were instead made where necessary to get together
-        and chat through things. These sometimes covered normal retro
-        topics or just planning the best way to do a new feature
-
-    -   Technicality
-
-        -   2 focused engineers
-
-        -   2 "site reliability engineers" who are inf-y-e
-
-    -   Built the microservice architecture from the ground up, all the
-        toolings that I'd got used to making use of in booking history,
-        now part of the team that creates and supports other engineers
-
--   People -- section below could fit in here?
 
 -   My benefits
 
