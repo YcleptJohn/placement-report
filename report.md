@@ -1141,11 +1141,19 @@ critical updates.
 
 Outside of the smaller improvements and fixes made across all codebases
 I also had some key areas of focus. The two most notable examples are
-the access-service and dependency graphic projects that I worked on,
+the access-service and dependency graphing projects that I worked on,
 both of which are detailed in my projects section.
 
 Notable events
 --------------
+
+I felt my time within dev foundations was actually a lot less eventful
+than CEX, in terms of people or process changes. It contrasted hugely
+from CEX where It felt that every new sprint came with a new
+resignation, pod member leaving or completely new faces joining. There
+was only one event that actually stands out in dev foundations.
+
+### Steve's sudden resignation
 
 Thoughts and feelings
 ---------------------
