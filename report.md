@@ -1312,7 +1312,7 @@ co-tenant databases could be affected. This is why they were originally
 grouped by team, it would be the team's own fault if their other
 databases were affected. We'd now be leaving it up to luck which
 databases are co-tenants on each instance. One day we might come back to
-this if it becomes an issues but it's functional as is for now.
+this if it becomes an issue but it's functional as is for now.
 
 ### Thoughts and Feelings
 
