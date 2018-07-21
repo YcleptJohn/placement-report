@@ -839,6 +839,8 @@ retrieval to support other platforms. There were also projects further
 from the core that we worked on including gabble, hammertime and some of
 our own purpose built microservices.
 
+{{{ Contrast paragraph linking to projects section }}}
+
 ### Booking History
 
 One of my earliest projects was the new booking history service, this
@@ -1226,11 +1228,76 @@ Booking History
 Reviews
 -------
 
-Service Re-homing
------------------
+Microservice Re-homing
+----------------------
+
+Ever since the earliest design of microservices they've been imagined as
+belonging to a specific team, we call these owners. This ownership is
+significant for who maintains and takes responsibility for each service,
+whilst also correlating to significance in the architecture running
+them. This originally meant that from point of conception this owner was
+set in stone, due to the declarative infrastructure supporting them
+which wasn't easy to move around.
+
+However, with the businesses shift towards shorter-term mission-based
+pods which could come and go dynamically, there would be issues with the
+long-term ownership model. With this now becoming more necessary I took
+charge of investigating the possibility of re-homing services.
+
+I spent time plotting out all different dependent areas which stored and
+relied on information about who the owner was. I narrowed it down to
+this list:
+
+-   Grafana Dashboard
+
+-   Github Teams
+
+-   Package.json
+
+-   Sumologic collectors
+
+-   Database instances
+
+I then explored the APIs for each of these areas and managed to build a
+proof-of-concept script for almost all of them, showing that re-homing
+would be a definitely possibility. The only thing that seemed more
+difficult was re-allocating the databases, which I've detailed further
+in the challenges section.
+
+Having shown the pod my initial investigation into this they were happy
+with my evidence that re-homing would be possible, although it was never
+going to be easy. I stepped forward and started working on it right
+away, turning my proof-of-concept into a fully-fledged process. I
+appreciated that the pod had enough trust to leave this in my hands even
+though I'd only been with the pod for a few months.
+
+### Challenges
+
+Database rehoming is fucking hard
+
+-   Access service -- rehoming services
+
+    -   Source of truth from scratch
+
+    -   Scripting to turn that json blob into database queries
+
+    -   Database structure design (screenshot could be nice)
+
+    -   Workplace post -- steve's title love
+
+    -   Talk more about the rehoming side of it probably
+
+    -   Talk about the challenges of database movement and trying to
+        solve that
 
 Dependency Graphing
 -------------------
+
+-   Infrastructure RPC dashboards
+
+    -   Workplace post is a good piece to mention, lots of love
+
+    -   ALSO the presentation I hosted
 
 Other notable events
 ====================
