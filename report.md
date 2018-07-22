@@ -144,17 +144,25 @@ Table of Contents {#table-of-contents .Fake-header}
 
 [7.4 Dependency Graphing 30](#dependency-graphing)
 
-[8 Other notable events 30](#other-notable-events)
+[7.4.1 Thoughts and feelings 32](#thoughts-and-feelings-3)
 
-[8.1 Chauntry Acquisition 30](#chauntry-acquisition)
+[8 Other notable events 34](#other-notable-events)
 
-[8.2 Purple Parking Acquisition 30](#purple-parking-acquisition)
+[8.1 Chauntry Acquisition 34](#chauntry-acquisition)
 
-[8.3 GDPR Enforcement 30](#gdpr-enforcement)
+[8.2 Purple Parking Acquisition 34](#purple-parking-acquisition)
 
-[8.4 Contract extension 30](#_Toc519952957)
+[8.3 Maybe that expedite with Becky? Probably not -- too much content
+now...
+35](#maybe-that-expedite-with-becky-probably-not-too-much-content-now)
 
-[9 Conclusion 30](#conference-day-presentation)
+[8.4 GDPR Enforcement 35](#gdpr-enforcement)
+
+[8.5 Conference Day Presentation 35](#conference-day-presentation)
+
+[8.6 Contract Extension 36](#contract-extension)
+
+[9 Conclusion 37](#conclusion)
 
 Introduction to my Year in Industry
 ===================================
@@ -1592,43 +1600,61 @@ whilst surrounded by an inviting team of incredible talent.
 
 I came into this year as naive student with no previous work experience
 and no clue what to expect, but I came out as a well-rounded engineer
-having overcome challenges I never predicted. Part of my naivety was
+having overcome challenges I never imagined. Part of my naivety was
 starting my year with very few goals, mainly focusing on gaining
 experience in the industry and confirming that this was the career I
-wanted. However, thanks to the close relationship with my manager and
-the feedback loop at HX I managed to find more fulfilling goals early
-on. This included goals surrounding my self-reflection and
-communication, which I have focussed on hugely and seen noticeable
-improvements.
+wanted. However, thanks to the help and guidance from my manager I
+managed to find more fulfilling goals early on. This included goals
+surrounding my self-reflection and communication, which became core
+focuses of my time at HX.
 
-As a result of my year at HX my business, communication and technical
-skills have all improved tenfold. I'm thankful to have had the
-opportunity to work for such a self-development focused company, where
-constant feedback has helped me find weaknesses, identify new strengths
-and ultimately shaped my growth. If it wasn't for this environment I
-doubt I would have gained quite as much as I did during my placement
-year.
+As a result of this year my business, communication and technical skills
+have all improved tenfold. I'm thankful to have had the opportunity to
+work for such a self-development focused company, where constant
+feedback has helped me find weaknesses, identify new strengths and
+ultimately shaped my growth. If it wasn't for this environment I doubt I
+would have gained quite as much as I did during my placement year.
 
-I don't feel that I would have seen the improvements I have if it wasn't
-for the people at HX. Every single person in the team is willing to help
-teach and guide you through anything you'd need.
+My technical skills have been enhanced through the work that I've done
+and the learning opportunities I've taken. I've dabbled in so many
+technologies and codebases that I'd never experienced before and
+broadened my horizons vastly. My coding abilities on the front and back
+end have both substantially improved and I've been able to employ them
+in tandem, something I hadn't really tried before. It's helped me hugely
+to be able see these areas come together and work as a full stack
+developer. My work in Dev Foundations has also given me a wealth of
+infrastructural and deep architectural knowledge that I would have never
+had otherwise. I'm glad to be walking away with such a vast array of
+learnings that I can apply throughout my future.
 
--   My year obviously had ups and downs, bad day at hx isn't that bad
+Communication was one of my weaknesses coming into this year, but I feel
+confident in my abilities now. The year has truly pulled me out of my
+shell and encouraged me to be comfortable around colleagues in all
+contexts. I think that I've adapted well to face-to-face communication
+in the office, being more than happy to approach anyone for help when
+necessary. As well as learning how to best utilise my written
+communication for discussions and knowledge sharing. These improvements
+have already helped me to work more constructively, comfortably asking
+questions and challenging others when necessary. I believe these skills
+will continue to serve me in all aspects of life and push forward my
+potential in my career.
 
-    -   Started out intensely filled with knowledge being gained and
-        full of excitement
+One of the biggest things the year has taught me is the importance of
+self-reflection. When I first started this was a huge weakness but the
+focus my manager helped me place on it really saw it skyrocket. I went
+from struggling to explain my feelings in 1-2-1s to coming to them with
+a 4-page document, verbosely detailing the work I've done and how I've
+felt about all aspects of it. Perhaps this was even too much reflection,
+but it was a stark contrast to my earliest months at HX. I feel this
+skill has benefitted me in a personal way as well as professionally,
+giving me opportunities to look back and analyse how I can improve
+myself. This will continue to drive decisions about my career and what
+is best for my own development in the future.
 
-    -   Settled into CEX with it's lovely people and got into a routine,
-
-    -   Grew staler, but still enjoyed the people
-
-        -   Just needed more learning opportunities
-
-        -   
-
--   Got stale in CEX but the final move was a good one
-
--   
+Overall, my placement has been nothing short of amazing. The skills that
+I've developed will benefit me throughout my final year of university
+and far beyond into my career. I'm extremely glad I chose to participate
+in the programme and with such a phenomenal employer.
 
 Loose bibliography
 
