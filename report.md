@@ -1585,6 +1585,34 @@ extension is.
 Conclusion
 ==========
 
+Whilst there have absolutely been ups and downs throughout my year the
+experience as a whole has been fantastic. I've been given opportunities
+to work on a variety of technology stacks taking on challenging tasks,
+whilst surrounded by an inviting team of incredible talent.
+
+I came into this year as naive student with no previous work experience
+and no clue what to expect, but I came out as a well-rounded engineer
+having overcome challenges I never predicted. Part of my naivety was
+starting my year with very few goals, mainly focusing on gaining
+experience in the industry and confirming that this was the career I
+wanted. However, thanks to the close relationship with my manager and
+the feedback loop at HX I managed to find more fulfilling goals early
+on. This included goals surrounding my self-reflection and
+communication, which I have focussed on hugely and seen noticeable
+improvements.
+
+As a result of my year at HX my business, communication and technical
+skills have all improved tenfold. I'm thankful to have had the
+opportunity to work for such a self-development focused company, where
+constant feedback has helped me find weaknesses, identify new strengths
+and ultimately shaped my growth. If it wasn't for this environment I
+doubt I would have gained quite as much as I did during my placement
+year.
+
+I don't feel that I would have seen the improvements I have if it wasn't
+for the people at HX. Every single person in the team is willing to help
+teach and guide you through anything you'd need.
+
 -   My year obviously had ups and downs, bad day at hx isn't that bad
 
     -   Started out intensely filled with knowledge being gained and
@@ -1598,7 +1626,7 @@ Conclusion
 
         -   
 
--   Got stale in HX but the final move was a good one
+-   Got stale in CEX but the final move was a good one
 
 -   
 
