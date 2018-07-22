@@ -42,7 +42,7 @@ CT21 4JF
 
 Luke Hansell
 
-Dev Lead
+Developer Lead
 
 luke.hansell\@holidayextras.com
 
@@ -80,88 +80,87 @@ Table of Contents {#table-of-contents .Fake-header}
 
 [2.4 What's it actually like? 12](#whats-it-actually-like)
 
-[3 Timeline 13](#timeline)
+[2.5 Timeline 13](#timeline)
 
-[4 Onboarding 14](#onboarding)
+[3 Onboarding 14](#onboarding)
 
-[4.1 Weekly 1-2-1s 14](#weekly-1-2-1s)
+[3.1 Weekly 1-2-1s 14](#weekly-1-2-1s)
 
-[4.2 Pod Rotations 14](#pod-rotations)
+[3.2 Pod Rotations 14](#pod-rotations)
 
-[4.2.1 New Products 15](#new-products)
+[3.2.1 New Products 14](#new-products)
 
-[4.2.2 API 15](#api)
+[3.2.2 API 15](#api)
 
-[4.2.3 Customer Experience 16](#customer-experience)
+[3.2.3 Customer Experience 16](#customer-experience)
 
-[4.2.4 Finishing off 17](#finishing-off)
+[3.2.4 Finishing off 17](#finishing-off)
 
-[5 Customer Experience 18](#customer-experience-1)
+[4 Customer Experience 18](#customer-experience-1)
 
-[5.1 Background 18](#background)
+[4.1 Background 18](#background)
 
-[5.1.1 People 18](#people)
+[4.1.1 People 18](#people)
 
-[5.2 Notable events 18](#notable-events)
+[4.2 Notable events 18](#notable-events)
 
-[5.2.1 Void of Tom Price 18](#void-of-tom-price)
+[4.2.1 Void of Tom Price 18](#void-of-tom-price)
 
-[5.2.2 Welcoming of Jordan Clague 19](#welcoming-of-jordan-clague)
+[4.2.2 Welcoming of Jordan Clague 19](#welcoming-of-jordan-clague)
 
-[5.3 What I did 19](#what-i-did)
+[4.3 What I did 19](#what-i-did)
 
-[5.3.1 Booking History 20](#_Toc520019174)
+[4.4 Thoughts and feelings 20](#thoughts-and-feelings)
 
-[5.3.2 Reviews 22](#_Toc520019175)
+[5 Tech Foundations (Dev stream) 20](#tech-foundations-dev-stream)
 
-[6 Tech Foundations (Dev stream) 24](#tech-foundations-dev-stream)
+[5.1 Background 21](#background-1)
 
-[6.1 Background 24](#background-1)
+[5.1.1 People 21](#people-1)
 
-[6.1.1 People 24](#people-1)
+[5.1.2 Process 22](#process)
 
-[6.1.2 Process 25](#process)
+[5.2 What I did 22](#what-i-did-1)
 
-[6.2 What I did 25](#what-i-did-1)
+[5.3 Notable events 23](#notable-events-1)
 
-[6.3 Notable events 26](#notable-events-1)
+[5.3.1 Steve's sudden resignation 23](#steves-sudden-resignation)
 
-[6.3.1 Steve's sudden resignation 26](#steves-sudden-resignation)
+[5.4 Thoughts and feelings 23](#thoughts-and-feelings-1)
 
-[6.4 Thoughts and feelings 26](#thoughts-and-feelings-1)
+[6 Projects 25](#projects)
 
-[7 Projects 28](#projects)
+[6.1 Booking History 25](#booking-history)
 
-[7.1 Booking History 28](#booking-history)
+[6.1.1 Challenges 25](#challenges)
 
-[7.2 Reviews 28](#reviews)
+[6.1.2 Thoughts and feelings 27](#thoughts-and-feelings-2)
 
-[7.3 Microservice Re-homing 28](#microservice-re-homing)
+[6.2 Reviews 27](#reviews)
 
-[7.3.1 Challenges 29](#challenges-1)
+[6.3 Microservice Re-homing 28](#microservice-re-homing)
 
-[7.3.2 Thoughts and Feelings 30](#thoughts-and-feelings-3)
+[6.3.1 Challenges 29](#challenges-1)
 
-[7.4 Dependency Graphing 30](#dependency-graphing)
+[6.3.2 Thoughts and Feelings 30](#thoughts-and-feelings-3)
 
-[7.4.1 Thoughts and feelings 32](#thoughts-and-feelings-4)
+[6.4 Dependency Graphing 31](#dependency-graphing)
 
-[8 Other notable events 34](#other-notable-events)
+[6.4.1 Thoughts and feelings 33](#thoughts-and-feelings-4)
 
-[8.1 Chauntry Acquisition 34](#chauntry-acquisition)
+[7 Other notable events 35](#other-notable-events)
 
-[8.2 Purple Parking Acquisition 34](#purple-parking-acquisition)
+[7.1 Chauntry Acquisition 35](#chauntry-acquisition)
 
-[8.3 Maybe that expedite with Becky? Probably not -- too much content
-now... 35](#_Toc520019195)
+[7.2 Purple Parking Acquisition 35](#purple-parking-acquisition)
 
-[8.4 GDPR Enforcement 35](#gdpr-enforcement)
+[7.3 GDPR Enforcement 35](#gdpr-enforcement)
 
-[8.5 Conference Day Presentation 35](#conference-day-presentation)
+[7.4 Conference Day Presentation 36](#conference-day-presentation)
 
-[8.6 Contract Extension 36](#contract-extension)
+[7.5 Contract Extension 37](#contract-extension)
 
-[9 Conclusion 37](#conclusion)
+[8 Conclusion 38](#conclusion)
 
 Introduction to my Year in Industry
 ===================================
@@ -197,7 +196,8 @@ into a web-based role. I wasn't completely against the idea but work
 closer to the back-end had always interested me more. Due to this I
 initially passed up the opportunity and only came back to apply when
 applications re-opened. By that time, I had realised that the work
-environment, benefits, and opportunities were too good to ignore.
+environment, benefits, and learning opportunities were too good to
+ignore.
 
 Journey to Holiday Extras
 -------------------------
@@ -211,11 +211,11 @@ sent applications and even had an interview.
 
 The interview was with a company called SquaredUp who are a small
 start-up close to my home in London. Whilst it was useful to gain
-experience the process also knocked my confidence a little, they asked
-some fart-assy questions that put me on the spot more than expected.
-However, it also showed me that interviews are a two-way process, from
-those questions alone I knew that company was too 'hippy' to be a good
-fit for me.
+experience the process also knocked my confidence, they asked some
+unusual theoretical questions that put me on the spot more than
+expected. However, it showed me that interviews are a two-way process,
+from those questions alone I knew that company was too 'hip' to be a
+good fit for me.
 
 ### Application + Interview with HX
 
@@ -234,17 +234,17 @@ distracted in trying to make the best impression possible; engaging with
 the group, conversing about ideas, and turning them into a full
 solution. When it came time to present our work the calm atmosphere
 helped me present confidently and I went to lunch pleased with my
-performance so far.
+performance.
 
 This quiet confidence in my performance so far really helped me going
 into the individual interview. In a complete contrast to my experience
-with SquaredUp this seemed to go a lot smoother. I didn't feel that many
-questions really put me on the spot too much and I was able to be open
-about my initial reluctance to a web role. They had many re-assurances
-for me that there was enough modern technology in use to keep things
-interesting. This made me feel that they really understood where I was
-coming from and saw that my focus was on learning as much as possible. I
-appreciated what they had to offer in that regard.
+with SquaredUp this went really smoothly. The questions didn't put me on
+the spot as much and I was able to be open about my initial reluctance
+to a web role. They had re-assurances for me that there was enough
+modern technology in use to keep things interesting. This made me feel
+that they really understood where I was coming from and saw that my
+focus was on learning as much as possible. I appreciated what they had
+to offer in that regard.
 
 I eventually left the day feeling pleased with the impression I'd given
 as well as being sure that this type of environment was for me. I began
@@ -263,55 +263,47 @@ that it was the right fit for me.
 Holiday Extras: a brief overview
 --------------------------------
 
-Holiday Extras started its life as the Apple Booking Company (ABC) when
-it was founded by Gerry Pack in 1983. It came to fruition when Gerry
-noticed a gap in the Airport Hotels market, they had previously been
-targeted to business travellers and never towards leisure travellers.
-Initially this was achieved through a simple booking platform in
-partnership with travel consultants who latched on to the idea; the new
-market area provided lucrative and convenient business.
+Holiday Extras started out as the Apple Booking Company (ABC) when it
+was founded by Gerry Pack in 1983. It came to fruition when Gerry
+noticed a gap in the Airport Hotels market. They had previously been
+targeted to business travellers and never towards leisure travellers,
+which Gerry sought to change. Initially this was achieved through a
+simple booking platform in partnership with travel consultants who
+latched on to the idea; the new market area provided lucrative and
+convenient business.
 
 Throughout 35 years of growth and a rebranding as Holiday Extras, the
-company's offerings have expanded hugely, and they now specialise in a
-vast array of travel products. This includes airport parking, lounges,
-insurance, car hire, resort transfers and more. Now having around 800
-employees situated across offices in Kent, Germany and Bulgaria it's
-fair to say the company has grown with its success.
+company's offerings have expanded hugely, now specialising in a vast
+array of travel products. This includes airport parking, lounges,
+insurance, car hire, resort transfers and more. All of which is
+supported by over 800 employees situated across offices in Kent, Germany
+and Bulgaria.
 
 During those early years the company strived as a platform for travel
 agents to make bookings for their own clients, but April 2000 saw the
 launch of the HX website. Along with it came the ability for direct
-customers to make bookings. This was a large step at the time as most
-travel companies were only targeting one market or the other, not both.
-Nowadays over 90% of bookings come via the website with less and less
-reliance on the call centre for business.
-
-\#\#\# Should get something about awards in here somewhere? Might be in
-Section \#2
-
-\#\#\# Need to add a description of my objectives for the year or what I
-want to gain, expected outcomes etc (job confirmation, initially few but
-gained more about communication etc)
+customers to make bookings. This was a huge step at the time as most
+travel companies were only targeting one market or the other, never
+both. Nowadays over 90% of bookings come via the website with less and
+less reliance on the call centre for business.
 
 My Job Role
 -----------
 
-When joining my official job title was as an 'Engineer' which kept
-things open to interpretation. It was difficult to predict exactly what
-that might encompass initially. However, it soon became clear why it was
-left open with each team serving different purposes through different
-platforms. It was clear there would be many opportunities for me to
-learn across all of these different areas, platforms and codebases. I
-understood why 'Web Developer' didn't truly fit the bill of this job
-despite that being the main throughput.
+When joining my official job title was 'Engineer' which kept things open
+to interpretation. It was initially difficult to predict exactly what
+that might encompass. However, it soon became clear why it was left open
+with each team serving different purposes through different platforms.
+It was obvious there would be plenty of opportunities for me to learn
+across all of these different areas, systems and codebases.
 
 During my time with HX I managed to gain experience across a variety of
 systems and I ended up truly appreciating the fluidity of my role. Not
 only did I have the opportunity to work on the front-end of the site,
-but my manager actually planned my second team to be a challenging
-back-end focused role. This gave me a taste of both worlds and really
-helped to push my learning to a higher level, I'm thankful that my own
-development was such a focal point for the company.
+but my manager planned my second team to be a challenging back-end
+focused role. This gave me a taste of both worlds and really helped to
+push my learning to a higher level, I'm thankful that my own development
+was such a focal point for the company.
 
 Working for Holiday Extras
 ==========================
@@ -320,49 +312,37 @@ This section will detail the structure and process of HX as well as how
 I feel about my time spent interacting with it as a whole.
 
 Firstly, to pre-face, despite the fact HX has \~800 employees there are
-\~150 of us in the actual web team where I've spent all of my time.
-Therefore, the majority of what I speak about will be the structure and
-process of this web team as a subset of the entire team. This also
-affects how much I enjoyed my work at HX, the web team is held on a
-pedestal and treated the best out of the business. We're given fun
-events, encouraged to attend subsidised conferences and provided the
-flexibility do these things. Whilst some roles in the CC only have small
-windows of time to actually enjoy what makes us such a "fun start-up".
-So yes, *I* am the 1%.
+\~120 of us in the web team where I've spent all of my time. Therefore,
+the majority of what I speak about will be the structure and process of
+this web team as a subset of the entire team.
 
 Web Team Structure
 ------------------
 
 The web team is one of the biggest areas of focus within HX since there
 is a direct link to customers and a huge potential to drive growth and
-profit. It would be fair to say the work that's done within the web team
-has some of the biggest influence on HX's success.
+profit. It would be fair to say the work of the web team has some of the
+biggest influence on HX's success.
 
-The entire team is split up into smaller sub-teams known as pods, which
-were recently renamed to 'teams' but this hasn't caught on yet. Pods
+The entire team is split up into smaller sub-teams known as pods. Pods
 were originally focused around a single area of the business, taking on
 all work that relates to that area. For example, the euro pod would pick
 up work that would improve the experience for our European customers.
 This approach allows each pod to work independently in a self-contained
 manner, with cross-pod communication still available for larger
-multi-pod projects.
+projects.
 
-There's also the concept of 'pop-up pods' which would be created to
-achieve shorter term goals that either, didn't fit into a single pod or
-needed multi-disciplined engineers to achieve. A good example of this is
-the Personally Identifiable Information (PII) pod, which started when we
-had \<40 days to fix something which Google would detract our SEO
-rankings for.
+There's also the concept of 'pop-up pods' which were created to achieve
+short term goals, which either didn't fit into a single pod or needed
+multi-discipline engineers to achieve. An example of this is the PII pod
+which started when we had \~40 days to fix a data protection flaw that
+Google would punish us for.
 
 Within the last few months of my placement the company began making a
 shift towards 'mission-based' pods. The intention of this was that pods
 would spawn dynamically around missions that the company wanted to
 achieve. This makes the pods much more reactive and allows fluidity with
 the assignment of engineers to missions that they suit best.
-
-I personally have remained within a pod that isn't truly mission based
-so I've not experienced it first-hand but it sounds like a sensible
-approach.
 
 Pod Structure
 -------------
@@ -384,22 +364,16 @@ investment of certain pieces of work.
 
 The testers within a pod are responsible for testing the work
 implemented by the engineers, they will ensure it works as expected in a
-variety of environments and scenarios. This is especially important
-within HX's complex systems as there are often use cases that engineers
-might not have considered. Testers also typically offer a huge wealth of
-knowledge about the business and the complexity of all systems combined.
+variety of environments and scenarios. Their wealth of business
+knowledge and understanding of our complex systems is extremely useful,
+they will often test systems in situations engineers hadn't considered.
 
 **Agile Coach (AC)**
 
 The agile coach within a pod typically manages the workflow of the pod
-on a day-to-day basis. They will ensure that the agile process
-([detailed in 2.3](#Agile Process)) is followed and that everyone can
-achieve what they've set out without issue.
-
-The agile coach within a pod manages the workflow of a pod on a
-day-to-day basis. Ensuring that everyone in the team can work
-efficiently and effectively together without being affected by blockers
-on their work.
+on a day-to-day basis. They will ensure that the agile process (detailed
+in 2.3) is followed and that everyone can achieve what they've set out
+without issue.
 
 **Product Owner (PO)**
 
@@ -407,21 +381,22 @@ The product owners are responsible for managing relations with
 stakeholders, communicating and setting goals for the pod. This ensures
 the work being done suits the business and stakeholders' needs.
 
-Each of these roles play a vital part of each pod at HX and when
-combined they form a strong core structure for the pod to thrive off of.
+Each of these roles plays a vital part of each pod at HX and together
+they form a strong core, enabling the pod to function efficiently and
+effectively.
 
 Agile Process
 -------------
 
 Every pod within the web team uses an agile approach which aims to
 deliver work quickly in an incremental pattern. This has become common
-within technology where the flaws of older methodologies, like the
-waterfall model, have been highlighted by the adaptive and reactive
-nature of modern technology.
+practice as the flaws of older methodologies, like the waterfall model,
+have been highlighted by the adaptive and reactive nature of modern
+technology.
 
 ### Sprint Structure
 
-At HX this process manifests as bi-monthly sprints which aim to be a
+At HX this process manifests as fortnightly sprints which aim to be a
 self-enclosed two-week section of work.
 
 {{{{{ Sprint Diagram }}}}}
@@ -502,12 +477,7 @@ what didn't go so great. The agile coach will often prepare unique ways
 to run this meeting, but the goal is ultimately the same; to get
 everyone talking honestly and sharing their opinions. From the back of
 these meetings the pod should make adjustments in the future sprints to
-improve. I personally struggled with the retros in the Customer
-Experience Pod, every two weeks we'd have the same discussions, and
-nothing changed for months. They became dull and dreary and I had given
-up on the process actually making a difference. I haven't since been in
-a pod that has actually had retros, so I can't say I've seen a
-first-hand contrast in another team.
+improve.
 
 What's it actually like?
 ------------------------
@@ -568,13 +538,12 @@ moulded by office chatter and special social events helping me network
 with colleagues.
 
 Timeline
-========
+--------
 
 ![](media/image3.png){width="7.956944444444445in"
-height="3.3361111111111112in"}This section will give a quick overview of
-where I've spent my time during my journey at HX. Providing context for
-the next few sections of the report that will detail my experiences
-during onboarding, time with different pods and other notable events.
+height="3.3361111111111112in"}The timeline below shows an overview of
+which pods I spent my time in, as well as a few of the most notable
+events. All of which will be detailed in the sections following.
 
 Onboarding
 ==========
@@ -583,10 +552,6 @@ When jo­ining HX there is an initial three-month onboarding period in
 which a basic set of objectives must be achieved to ensure you're fit
 for the company. This period had a high focus on our individual learning
 as Industrial Placement Students (IPs).
-
-{{{ Talk about my introduction week, laptop setup, time spent shadowing
-Jamie+Becky, laptop setup, repo setup.. shock of how many projects I'd
-need etc }}}
 
 Workshops were hosted for us every Tuesday and Thursday which provided
 us with knowledge about Node, git, frameworks like React and specific
@@ -694,10 +659,6 @@ plenty on offer for me at HX despite some pods having a large web focus.
 
 ### Customer Experience
 
-{{{ Should I actually explain what CEX is here seeing as they're my next
-permanent pod section??? (explain and link to the section where I go
-deep) }}}
-
 My final rotation was into the customer experience (CEX) pod which felt
 like a bit of a strange choice in this process, seeing as they would be
 my first permanent pod anyway. I would have preferred the opportunity to
@@ -712,8 +673,14 @@ helped me kickstart my week with them and lead to me completing a few
 tickets with a reasonable level of independence. This boosted my
 confidence in my technical ability at this early stage, leaving me
 feeling more comfortable to work on my own even so early on. I'm glad HX
-offered the opportunity for this autonomy. {{{ Could quote the feedback
-tom gave me on this? }}}
+offered the opportunity for this autonomy. I even received feedback from
+Tom about this:
+
+> *"When he was on rotation we had some small tasks within render, I
+> started to explain to him how the system fits together but he had
+> already figured it out before I was finished speaking." *
+>
+> *-- Tom Price*
 
 The one ticket that stands out to me was a re-design of the CARE login
 page, this is used daily by the call centre (CC) staff and hadn't been
@@ -729,12 +696,9 @@ me and it ended up being fine. I feel that this ticket was extremely
 beneficial to me as it showed me the importance of the design stage, as
 well as communicating with the customers at the earliest opportunity. My
 final product could have been a lot worse had I not sought out
-![](media/image5.tiff){width="3.472205818022747in" height="2.0in"}their
-opinions before the actual implementation.
-
-{{{ Can't find an original gabble screenshot }}}
-
-\[\[\[CEX-1418\]\]\]
+![](media/image5.tiff){width="3.2423611111111112in"
+height="1.8305555555555555in"}![](media/image6.tiff){width="3.4715277777777778in"
+height="2.0in"}their opinions before the actual implementation.
 
 ### Finishing off
 
@@ -775,7 +739,7 @@ to self-serve rather than relying on the call centre for support.
 ### People
 
 The pod had a fairly typical structure and process according to the
-agile process I've already described ( {{{ link }}} ), originally
+agile process I've already described [above](#Agile Process), originally
 consisting of:
 
 -   Mark Cridland (Product Manager)
@@ -1428,7 +1392,7 @@ it to actually be worthwhile. I sought alternatives and found a
 dependency wheel tool that could generate a D3 dependency wheel for me.
 The result of this can be seen below:
 
-![](media/image6.tiff){width="5.447222222222222in"
+![](media/image7.tiff){width="5.447222222222222in"
 height="4.554166666666666in"}
 
 > (Each service could be hovered to obscure the other lines for clarity)
@@ -1456,7 +1420,7 @@ as a layer on top of the graph to visualise recent traffic, including
 colouring lines based on traffic and success rate, and showing a
 breakdown of which RPC functions were being called. As shown below:
 
-![](media/image7.tiff){width="6.268055555555556in"
+![](media/image8.tiff){width="6.268055555555556in"
 height="3.6180555555555554in"}
 
 This shows how the final version of the graph looked with each node
@@ -1497,7 +1461,7 @@ My written communication was evidenced in a well-received workplace post
 I made about the service after it was released, shown in the screenshots
 below.
 
-![](media/image8.tiff){width="3.5416666666666665in" height="5.125in"}
+![](media/image9.tiff){width="3.5416666666666665in" height="5.125in"}
 
 Simon Wood in the reply above is one of Dev Foundations' stakeholders so
 his response is particularly pleasing.
@@ -1574,7 +1538,7 @@ by colleagues. Myself and Rosie Watson, a fellow IP, were asked to do a
 talk about being IPs which we agreed to as it seemed like good way to
 wrap-up our year.
 
-![](media/image9.jpeg){width="4.461715879265092in"
+![](media/image10.jpeg){width="4.461715879265092in"
 height="3.346534339457568in"}Although we found the requested topic a bit
 boring as a starting point. We instead decided to relate our talk back
 to our favourite board game, Articulate, as well as playing a HX version
