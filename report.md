@@ -110,9 +110,9 @@ Table of Contents {#table-of-contents .Fake-header}
 
 [5.3 What I did 19](#what-i-did)
 
-[5.3.1 Booking History 20](#booking-history)
+[5.3.1 Booking History 20](#_Toc520019174)
 
-[5.3.2 Reviews 22](#reviews)
+[5.3.2 Reviews 22](#_Toc520019175)
 
 [6 Tech Foundations (Dev stream) 24](#tech-foundations-dev-stream)
 
@@ -132,19 +132,19 @@ Table of Contents {#table-of-contents .Fake-header}
 
 [7 Projects 28](#projects)
 
-[7.1 Booking History 28](#booking-history-1)
+[7.1 Booking History 28](#booking-history)
 
-[7.2 Reviews 28](#reviews-1)
+[7.2 Reviews 28](#reviews)
 
 [7.3 Microservice Re-homing 28](#microservice-re-homing)
 
 [7.3.1 Challenges 29](#challenges-1)
 
-[7.3.2 Thoughts and Feelings 30](#thoughts-and-feelings-2)
+[7.3.2 Thoughts and Feelings 30](#thoughts-and-feelings-3)
 
 [7.4 Dependency Graphing 30](#dependency-graphing)
 
-[7.4.1 Thoughts and feelings 32](#thoughts-and-feelings-3)
+[7.4.1 Thoughts and feelings 32](#thoughts-and-feelings-4)
 
 [8 Other notable events 34](#other-notable-events)
 
@@ -153,8 +153,7 @@ Table of Contents {#table-of-contents .Fake-header}
 [8.2 Purple Parking Acquisition 34](#purple-parking-acquisition)
 
 [8.3 Maybe that expedite with Becky? Probably not -- too much content
-now...
-35](#maybe-that-expedite-with-becky-probably-not-too-much-content-now)
+now... 35](#_Toc520019195)
 
 [8.4 GDPR Enforcement 35](#gdpr-enforcement)
 
@@ -873,214 +872,45 @@ retrieval to support other platforms. There were also projects further
 from the core that we worked on including gabble, hammertime and some of
 our own purpose built microservices.
 
-{{{ Contrast paragraph linking to projects section }}}
+I also managed to get involved with some quite long-term projects during
+my time in the pod. Including the Booking History Service which was a
+2-3 month project that started as early as my second CEX sprint. This
+project and others that I worked on are detailed in the
+[projects](#Projects) section of this report.
 
-### Booking History
+Thoughts and feelings
+---------------------
 
-One of my earliest projects was the new booking history service, this
-was handed over to me from Tom Price and ended up being my sole focus
-for my first two to three months in the pod.
+The time I spent with the CEX pod was extremely valuable. It shaped me a
+lot as an early engineer and helped highlight my initial strengths and
+weaknesses, which I managed to work on and significantly improve during
+my service. Especially my communication skills, the easy-going nature of
+my fellow pod members really helped me come out of my shell.
 
-The booking history service aimed to form a new centralised source of
-booking information. Before it's conception booking data was siloed in
-to a few different data stores across platforms, making it hard to
-retrieve a holistic set of data on bookings. The pre-existing method to
-look up bookings involved talking directly to CHIPS, the legacy booking
-platform at the centre of our operations. Besides limitations in the
-expandability here as CHIPS is maintained externally, it's also an
-unnecessary load added to an outdated platform that won't always handle
-it gracefully.
+The varied opportunities that this pod provided also gave me a lot of
+broad knowledge at an early stage which was extremely useful. Thanks to
+the mostly self-driven booking history project I managed to learn early
+on the microservice architecture at HX. Whilst the work for the CC and
+direct customers helped expand my front-end skills in a range of
+different systems.
 
-####  {#section-1 .ListParagraph}
+I've always said that CEX would have been a fantastic permanent pod if I
+was at HX as a full-time engineer. The work isn't always exciting but
+the people in the pod made it an absolute blast, with many a fun pod
+lunch had. However, due to the fact I was at HX on placement I believe I
+could have benefitted more form moving pods earlier. By the time I'd
+stayed in the pod for 5 or 6 months the majority of the work became
+trivial to complete and didn't teach me much. I would have appreciated a
+chance to experience another pod and learn even more.
 
-With this aim in mind the solution took the form of a microservice using
-our in-house dockyard architecture, which consisted of tools that aimed
-to make it simple for engineers to create, deploy and maintain smaller
-individual codebases. This contrasts hugely with some of HX's core
-projects, like HAPI, which were monolithic projects with little
-separation of responsibilities. The booking history service would
-actually become one of the earlier projects built on this architecture
-offering. It was exciting to be building on top of brand new technology
-to HX at the time.
-
-When Tom handed over to me the service had actually already been started
-by him, but he hadn't pushed too far into it. He talked me through it
-during the handover I arranged which enabled me to pick up exactly where
-it had been left.
-
-The overall design of the service included listening to events from our
-in-house purpose-built data pipeline and populate a MySQL database with
-the information provided. The pipeline provided a way of sending and
-receiving events, where we would be relying on the "server\_ecommerce"
-event being sent when a booking is made. We would need to listen for
-these events and extract data from them, which would be stored into the
-database.
-
-#### Challenges
-
-Although the overview of this service seemed to be quite simple there
-were still quite a few challenges that cropped up along the way. Some of
-these stemmed from my lack of experience but equally there were issues
-experience engineers struggled to explain.
-
-Initially my biggest challenge was simply getting to grips with NodeJS,
-the entire microservice implementation at HX and especially the
-asynchronous nature of this application. All of these are things I
-hadn't dealt with in great detail before and had to pick up for the
-first time during this project. All things considered, I would say this
-actually ended up going quite well. It only took me a few weeks to be
-running with this project and have a good grasp about the main concepts
-employed. The confidence gained here helped me to feel comfortable with
-being at the forefront of a big project so early on at HX. I'm thankful
-for the opportunity to have been trusted so early on.
-
-##### Duplicate Events
-
-There came a more serious challenge when we seemed to be receiving
-duplicate events from the data pipeline. This was detrimental to the
-service as it had the potential to pollute the data, creating
-inconsistencies that would be unfavourable when trying to create the
-single source of truth about bookings. So much so that it actually ended
-up being a focus for an entire month. I had to spend a lot of time
-investigating the exact cause of the duplication and struggled to come
-up with anything. I can remember looping in more experienced engineers,
-including those who created the data pipeline and the microservice
-architecture and none of them had an answer for me either.
-
-Eventually my suspicions lead to there being a deeper issue within
-CHIPS, moreover surrounding the webhooks that CHIPS sends to our systems
-when a booking is made. This would fall on the external Chauntry team to
-be fixed, but unfortunately, they were completely occupied with the
-ongoing thunderbird project. This meant that the problem wouldn't be
-fixed at its core for a long while, we had to work our way around this.
-
-My original proposed solution was to implement a cache for the service.
-This involved caching every booking that we received, as well as
-checking the cache before ever storing a booking. This *should* have
-allowed us to eliminate duplicate entries from ever being allowed to
-enter the database. I discussed this with various engineers around the
-business before starting it and everyone agreed that it was a sensible
-solution. However, once this had been implemented and tested it proved
-to be only partially effective. This puzzled me for a few days, as well
-as the engineers I spoke to about it. On paper and during local testing
-this change was undeniably a suitable solution. However, it just didn't
-behave correctly in production, we suspected this was to do with the
-fact the service ran across multiple instances in production causing a
-race condition. At this point I'd become frustrated with the project, I
-constantly kicked myself for not being able to provide a perfect
-solution.
-
-Finally, I concluded that nothing right now could solve the duplicate
-event issue on the ingested data. Therefore, I decided to fix the issue
-by re-structuring the database. It would now accept multiple entries for
-a single booking, but when requested we would **only** provide the most
-recent information. This didn't feel very clean, but it was the only
-true solution on the table in the timeframe, especially with the
-Chauntry team being completely occupied.
-
-##### Stakeholder Pressure
-
-During the difficulty with the duplicated events there was also pressure
-from above, our stakeholders were struggling to understand the value of
-booking history due to the time it was taking. I took this upon myself
-and spoke to all of the people I knew who were waiting for it to be
-ready. I got them all to send me the reasoning behind what they wanted
-and why, providing this to Mark and Han to help them convince the
-stakeholders. I received feedback from both of them that they really
-appreciated the initiative I showed, and it helped a lot with pursuing
-the project to completion. This lifted my spirits and helped me get back
-on track instead of being in a rut of frustration.
-
-#### Thoughts and feelings
-
-This project came very early in my placement at HX and provided me with
-a good set of learning opportunities, especially surrounding the
-microservice architecture at HX. I believe that it really helped me
-build confidence early on and establish myself within the pod and the
-wider web team.
-
-I was quite lucky to start with microservices as they are self-contained
-and don't come with years of legacy bundled into them, making the
-initial understanding much easier. This sped up my early progress and
-enabled me to showcase my abilities to the pod, building their
-confidence in me owning this project. I don't think an entire
-experienced pod would put this in my hands at this stage had I not been
-able to prove my confidence.
-
-At the same time, this project wasn't without it's difficulties.
-Throughout all of the problems described I noticed that I picked myself
-apart too much. I can remember frequent drives home during the duplicate
-issues where I would kick myself for not solving it that day. This
-frustration wasn't beneficial to anybody and would only put my mental
-state in a rut. In future I should be more aware that this negativity
-doesn't actually help, instead focusing on things in a different more
-positive light. Especially considering this was a problem that
-experienced engineers couldn't figure out and agreed with my proposals
-on.
-
-### Reviews
-
-Towards the end of my time in CEX I got involved with a project to make
-our reviews more transparent and clear. Mainly, our stakeholders wanted
-us to base our ratings and displayed reviews off of the last two years
-of data. Previously reviews were historical from the date of the
-product's conception, which meant that if it had been changed recently
-it would be hard for that to be reflected in reviews.
-
-Towards the end of my time in the pod I got involved with investigating
-issues surrounding reviews on the website. Our stakeholders wanted us to
-only show reviews that were within the past two years, rather than since
-the products conception. Sounds simple enough, right?
-
-Unfortunately, this ended up being a complicated issue riddled with
-challenges caused by legacy tech. I spent a lot of time with Ricardo,
-who had experience with the original system, digging deeper into where
-reviews come from and how they're stored. The information was collected
-via surveys sent to customers after their trips, it included a basic
-rating of the product, rating of HX and any comments they might have.
-All of which was fine as a collection source, however the way the
-database that stored this had been designed was not fit for our purpose.
-
-Rather than containing a persistent store of all reviews the database
-stored a calculated result which was deleted and replaced daily by a
-cron job. The fact that this was an overwriting operation and
-continuously erased previous data there was no easy way for us to just
-query for two years of data. I ended up working closely with Adrian on
-this and we tried to create a second table containing summaries for two
-years of data. This began to work sort of as expected, but it also
-exposed some deeper underlying issues with the way reviews were
-originally created.
-
-Due to these complications I ended up having to leave the pod without
-finishing the project. This was disappointing, it's not easy to walk
-away from a project and not have closure on it. I did manage to reduce
-the frustration of this by arranging a handover to Jordan who'd joined
-the pod two months prior. I have since seen him carry the project to
-completion, which laid the project to rest once and for all in my mind.
-
-Overall, I feel that this project actually went reasonably well. There
-were issues with the legacy tech and the archaic database design but, it
-eventually was solved with the help of my investigation and partial
-solution. I think one of the key results was also how it helped
-establish me across the wider team rather than just my pod. This was
-shown by the fact that I became the "go to guy" for a while on this
-subject, especially when Ricardo, who I originally sought help from,
-started sending people to me. It was also a final proof for my
-communication-based objectives at the time, since there were a lot of
-new faces involved seeking updates, explanations and discussions
-from/with me.
-
-{{{ Thoughts and feelings of the entire pod experience }}}
-
--   Loved the people, great team, if I was here forever I would want to
-    always stay with them
-
--   Spent too long there but....
-
--   Work wasn't always exciting and it could be annoying tweaks and
-    fixes
-
--   
+Overall, my time with CEX was a great experience. I feel that it is a
+fantastic pod to start in due to variety of work that is completed
+across many projects. It's a great way to develop a broad understanding
+of HX systems. Even though my work in the pod eventually felt stale the
+people I was surrounded with made it all worthwhile and kept it
+enjoyable. I'm thankful for how the team aspects contributed to my
+communication skills and the broad initial education it gave me, all of
+which have helped me going forwards.
 
 Tech Foundations (Dev stream)
 =============================
@@ -1256,11 +1086,207 @@ used globally.
 Projects
 ========
 
+Whilst quite a lot of my work was typical day-to-day based business as
+usual tickets I have also been involved a variety of projects. This
+section will detail some of the key projects that I felt shaped my year
+and made substantial contributions to my development.
+
 Booking History
 ---------------
 
+One of my earliest projects was the new booking history service, this
+was handed over to me from Tom Price and ended up being my sole focus
+for my first two to three months at HX.
+
+The booking history service aimed to form a new centralised source of
+booking information. Before it's conception booking data was siloed in
+to a few different data stores across platforms, making it hard to
+retrieve a holistic set of data on bookings. The pre-existing method to
+look up bookings involved talking directly to CHIPS, the legacy booking
+platform at the centre of our operations. Besides limitations in the
+expandability here as CHIPS is maintained externally, it's also an
+unnecessary load added to an outdated platform that won't always handle
+it gracefully.
+
+####  {#section-1 .ListParagraph}
+
+With this aim in mind the solution took the form of a microservice using
+our in-house dockyard architecture, which consisted of tools that aimed
+to make it simple for engineers to create, deploy and maintain smaller
+individual codebases. This contrasts hugely with some of HX's core
+projects, like HAPI, which were monolithic projects with little
+separation of responsibilities. The booking history service would
+actually become one of the earlier projects built on this architecture
+offering. It was exciting to be building on top of brand new technology
+to HX at the time.
+
+When Tom handed over to me the service had actually already been started
+by him, but he hadn't pushed too far into it. He talked me through it
+during the handover I arranged which enabled me to pick up exactly where
+it had been left.
+
+The overall design of the service included listening to events from our
+in-house purpose-built data pipeline and populate a MySQL database with
+the information provided. The pipeline provided a way of sending and
+receiving events, where we would be relying on the "server\_ecommerce"
+event being sent when a booking is made. We would need to listen for
+these events and extract data from them, which would be stored into the
+database.
+
+### Challenges
+
+Although the overview of this service seemed to be quite simple there
+were still quite a few challenges that cropped up along the way. Some of
+these stemmed from my lack of experience but equally there were issues
+experience engineers struggled to explain.
+
+Initially my biggest challenge was simply getting to grips with NodeJS,
+the entire microservice implementation at HX and especially the
+asynchronous nature of this application. All of these are things I
+hadn't dealt with in great detail before and had to pick up for the
+first time during this project. All things considered, I would say this
+actually ended up going quite well. It only took me a few weeks to be
+running with this project and have a good grasp about the main concepts
+employed. The confidence gained here helped me to feel comfortable with
+being at the forefront of a big project so early on at HX. I'm thankful
+for the opportunity to have been trusted so early on.
+
+#### Duplicate Events
+
+There came a more serious challenge when we seemed to be receiving
+duplicate events from the data pipeline. This was detrimental to the
+service as it had the potential to pollute the data, creating
+inconsistencies that would be unfavourable when trying to create the
+single source of truth about bookings. So much so that it actually ended
+up being a focus for an entire month. I had to spend a lot of time
+investigating the exact cause of the duplication and struggled to come
+up with anything. I can remember looping in more experienced engineers,
+including those who created the data pipeline and the microservice
+architecture and none of them had an answer for me either.
+
+Eventually my suspicions lead to there being a deeper issue within
+CHIPS, moreover surrounding the webhooks that CHIPS sends to our systems
+when a booking is made. This would fall on the external Chauntry team to
+be fixed, but unfortunately, they were completely occupied with the
+ongoing thunderbird project. This meant that the problem wouldn't be
+fixed at its core for a long while, we had to work our way around this.
+
+My original proposed solution was to implement a cache for the service.
+This involved caching every booking that we received, as well as
+checking the cache before ever storing a booking. This *should* have
+allowed us to eliminate duplicate entries from ever being allowed to
+enter the database. I discussed this with various engineers around the
+business before starting it and everyone agreed that it was a sensible
+solution. However, once this had been implemented and tested it proved
+to be only partially effective. This puzzled me for a few days, as well
+as the engineers I spoke to about it. On paper and during local testing
+this change was undeniably a suitable solution. However, it just didn't
+behave correctly in production, we suspected this was to do with the
+fact the service ran across multiple instances in production causing a
+race condition. At this point I'd become frustrated with the project, I
+constantly kicked myself for not being able to provide a perfect
+solution.
+
+Finally, I concluded that nothing right now could solve the duplicate
+event issue on the ingested data. Therefore, I decided to fix the issue
+by re-structuring the database. It would now accept multiple entries for
+a single booking, but when requested we would **only** provide the most
+recent information. This didn't feel very clean, but it was the only
+true solution on the table in the timeframe, especially with the
+Chauntry team being completely occupied.
+
+#### Stakeholder Pressure
+
+During the difficulty with the duplicated events there was also pressure
+from above, our stakeholders were struggling to understand the value of
+booking history due to the time it was taking. I took this upon myself
+and spoke to all of the people I knew who were waiting for it to be
+ready. I got them all to send me the reasoning behind what they wanted
+and why, providing this to Mark and Han to help them convince the
+stakeholders. I received feedback from both of them that they really
+appreciated the initiative I showed, and it helped a lot with pursuing
+the project to completion. This lifted my spirits and helped me get back
+on track instead of being in a rut of frustration.
+
+### Thoughts and feelings
+
+This project came very early in my placement at HX and provided me with
+a good set of learning opportunities, especially surrounding the
+microservice architecture at HX. I believe that it really helped me
+build confidence early on and establish myself within the pod and the
+wider web team.
+
+I was quite lucky to start with microservices as they are self-contained
+and don't come with years of legacy bundled into them, making the
+initial understanding much easier. This sped up my early progress and
+enabled me to showcase my abilities to the pod, building their
+confidence in me owning this project. I don't think an entire
+experienced pod would put this in my hands at this stage had I not been
+able to prove my confidence.
+
+At the same time, this project wasn't without it's difficulties.
+Throughout all of the problems described I noticed that I picked myself
+apart too much. I can remember frequent drives home during the duplicate
+issues where I would kick myself for not solving it that day. This
+frustration wasn't beneficial to anybody and would only put my mental
+state in a rut. In future I should be more aware that this negativity
+doesn't actually help, instead focusing on things in a different more
+positive light. Especially considering this was a problem that
+experienced engineers couldn't figure out and agreed with my proposals
+on.
+
 Reviews
 -------
+
+Towards the end of my time in CEX I got involved with a project to make
+our reviews more transparent and clear. Mainly, our stakeholders wanted
+us to base our ratings and displayed reviews off of the last two years
+of data. Previously reviews were historical from the date of the
+product's conception, which meant that if it had been changed recently
+it would be hard for that to be reflected in reviews.
+
+Towards the end of my time in the pod I got involved with investigating
+issues surrounding reviews on the website. Our stakeholders wanted us to
+only show reviews that were within the past two years, rather than since
+the products conception. Sounds simple enough, right?
+
+Unfortunately, this ended up being a complicated issue riddled with
+challenges caused by legacy tech. I spent a lot of time with Ricardo,
+who had experience with the original system, digging deeper into where
+reviews come from and how they're stored. The information was collected
+via surveys sent to customers after their trips, it included a basic
+rating of the product, rating of HX and any comments they might have.
+All of which was fine as a collection source, however the way the
+database that stored this had been designed was not fit for our purpose.
+
+Rather than containing a persistent store of all reviews the database
+stored a calculated result which was deleted and replaced daily by a
+cron job. The fact that this was an overwriting operation and
+continuously erased previous data there was no easy way for us to just
+query for two years of data. I ended up working closely with Adrian on
+this and we tried to create a second table containing summaries for two
+years of data. This began to work sort of as expected, but it also
+exposed some deeper underlying issues with the way reviews were
+originally created.
+
+Due to these complications I ended up having to leave the pod without
+finishing the project. This was disappointing, it's not easy to walk
+away from a project and not have closure on it. I did manage to reduce
+the frustration of this by arranging a handover to Jordan who'd joined
+the pod two months prior. I have since seen him carry the project to
+completion, which laid the project to rest once and for all in my mind.
+
+Overall, I feel that this project actually went reasonably well. There
+were issues with the legacy tech and the archaic database design but, it
+eventually was solved with the help of my investigation and partial
+solution. I think one of the key results was also how it helped
+establish me across the wider team rather than just my pod. This was
+shown by the fact that I became the "go to guy" for a while on this
+subject, especially when Ricardo, who I originally sought help from,
+started sending people to me. It was also a final proof for my
+communication-based objectives at the time, since there were a lot of
+new faces involved seeking updates, explanations and discussions
+from/with me.
 
 Microservice Re-homing
 ----------------------
@@ -1523,9 +1549,6 @@ This acquisition seemed like a no-brainer deal for HX. With the
 implementation mentioned above we literally started selling our products
 via their website, utilising their brand and assets to gain additional
 business from Purple Parking's existing customer base. Who would say no?
-
-Maybe that expedite with Becky? Probably not -- too much content now...
------------------------------------------------------------------------
 
 GDPR Enforcement
 ----------------
