@@ -78,7 +78,7 @@ Table of Contents {#table-of-contents .Fake-header}
 
 [2.3.1 Sprint Structure 10](#sprint-structure)
 
-[2.4 What's it actually like? 12](#whats-it-actually-like)
+[2.4 What's it actually like? 11](#whats-it-actually-like)
 
 [2.5 Timeline 13](#timeline)
 
@@ -94,7 +94,7 @@ Table of Contents {#table-of-contents .Fake-header}
 
 [3.2.3 Customer Experience 16](#customer-experience)
 
-[3.2.4 Finishing off 17](#finishing-off)
+[3.2.4 Finishing off 16](#finishing-off)
 
 [4 Customer Experience 18](#customer-experience-1)
 
@@ -102,13 +102,13 @@ Table of Contents {#table-of-contents .Fake-header}
 
 [4.1.1 People 18](#people)
 
-[4.2 Notable events 18](#notable-events)
+[4.2 What I did 18](#what-i-did)
 
-[4.2.1 Void of Tom Price 18](#void-of-tom-price)
+[4.3 Notable events 19](#notable-events)
 
-[4.2.2 Welcoming of Jordan Clague 19](#welcoming-of-jordan-clague)
+[4.3.1 Void of Tom Price 19](#void-of-tom-price)
 
-[4.3 What I did 19](#what-i-did)
+[4.3.2 Welcoming of Jordan Clague 19](#welcoming-of-jordan-clague)
 
 [4.4 Thoughts and feelings 20](#thoughts-and-feelings)
 
@@ -122,7 +122,7 @@ Table of Contents {#table-of-contents .Fake-header}
 
 [5.2 What I did 22](#what-i-did-1)
 
-[5.3 Notable events 23](#notable-events-1)
+[5.3 Notable events 22](#notable-events-1)
 
 [5.3.1 Steve's sudden resignation 23](#steves-sudden-resignation)
 
@@ -403,57 +403,36 @@ self-enclosed two-week section of work.
 
 #### Sprint Planning
 
-As demonstrated by the graph above the sprints have a clearly defined
-start and end. Most pods in the web team use JIRA to keep track of
-tickets and will store a backlog of all of the tasks they need to get
-to. This backlog is used when planning out exactly what should be done
-for the next two-week sprint. Tickets are 'pulled in' to a sprint based
-on the priority given by the PO, engineers and testers will work
-together to discuss what they think can realistically be accomplished.
+Most pods in the web team use JIRA to keep track of tickets and will
+store a backlog of all the tasks they need to eventually do. This
+backlog is used when planning out exactly what should be done for the
+next two-week sprint. Tickets are discussed and pulled in to the
+upcoming sprint according to the priority given the by the PO, whilst
+engineers and testers discuss what is realistically achievable.
 
-#### Development Stage
+#### Development, Testing and Deployment Stage
 
-Once a set of tickets have been agreed for the sprint there is then
-two-weeks of continuous workflow where every day the pod will meet to
-discuss progress. At this point the engineers will pick up tickets from
-the sprint backlog, working towards completing the requirements
-specified on the ticket.
+This stage of the cycle acts as a continuous workflow where every day
+the pod will meet to discuss progress. Development, testing and
+deployment could happen many times within a single sprint as this step
+repeats as increments of work get finished.
 
-#### Pull Request Review Stage
+Once an engineer feels their work is complete they'll put their work
+into a pull request. This is an opportunity for other members of the
+team to review the work and ensure its fit for purpose and the code
+looks of an acceptable quality. Any feedback given will need to be taken
+on board with appropriate changes made until the code is accepted.
 
-When a developer completes a piece of work he will open a pull request
-(PR) which can then be reviewed by at least one other developer. It will
-be checked to ensure the code has been written to a high standard and
-that it looks suitable without introducing avoidable technical debt. If
-the reviewer(s) deem it acceptable then the code will move on in the
-process to the testing phase. If not, then the original developer will
-usually discuss the feedback given and adapt the code as they see fit.
-This cycle continues until the code is deemed acceptable.
-
-#### Testing Stage
-
-During this phase the tester(s) of the pod will prove that the code
-works on their own machine in a range of scenarios. They will typically
-test it across different browsers and environments to prove thoroughly
-that it works as expected. This helps to cover areas that the engineer
-wouldn't have tested and even use cases that they may not have known
-about. If there are any problems at this stage it will be sent back to
-the engineer to be investigated and addressed. If the fix involves code,
-then the process jumps back up to the development stage and has to come
-back through review. Eventually when the requirements have been met and
-no issues are found during testing it will be deployed.
-
-#### Deployment Stage
-
-Due to the closeness of testing and deploying this stage will usually be
-handled by the tester. There are two main steps of deployment, one of
-which is to deploy to staging and another from staging to production.
-The staging environment exists as a sandbox, hidden from customers but
-providing a more realistic testing environment than a local machine.
-This is another reason that deployments are commonly handled by testers,
-because they can use the time in staging to give it one final test
-before it goes live. As soon as a production deployment has been
-finished the change will be visible to the customers.
+After a successful review a ticket will move on to be tested. The
+testers of the pod will ensure that the code works in a range of
+scenarios and across different environments, including mobile and
+desktop. If the code fails to meet requirements in one way or another it
+will be returned to the engineer to fix, in which case the entire pull
+request review process has to happen again. Once accepted the change
+will usually be deployed by the tester, who may also test it works in
+staging and shortly thereafter production. At this point the change will
+be visible to live customers on our website, which is why there is so
+much emphasis placed on the testing before deployment.
 
 #### Mid-Sprint Review
 
@@ -463,21 +442,25 @@ meeting is used to look back on the progress that has been made so far,
 evaluate any blockers, issues and whether the sprint is still
 achievable. In some cases, work will be removed from the sprint to align
 priorities that need to be completed, or extra tickets could be pulled
-in if the sprint is going well. The agile coach will play an important
-balancing game during these meetings to ensure the sprint stays in
-equilibrium.
+in if the sprint is going better than expected. The agile coach will
+play an important balancing game during these meetings to ensure the
+sprint stays in equilibrium.
 
-{{{ Post-sprint DEMO to stakeholders }}}
+#### Post-sprint Demo
+
+This meeting is hosted by the whole pod at the end of a sprint and is a
+presentation of progress to the stakeholders of the pod. It can be a
+valuable time to gather feedback from those who are directly in charge
+of what is being worked on.
 
 #### Post-sprint Retrospective (retro)
 
-At the end of the sprint there will be a retrospective session that will
-look back at the sprint as a whole, evaluate what went well as a pod and
-what didn't go so great. The agile coach will often prepare unique ways
-to run this meeting, but the goal is ultimately the same; to get
-everyone talking honestly and sharing their opinions. From the back of
-these meetings the pod should make adjustments in the future sprints to
-improve.
+The concluding meeting of each sprint is the retrospective session that
+evaluates the sprint as a whole, discussing what went well as a pod and
+what didn't. The agile coach will often prepare unique ways to run this
+meeting, but the goal is ultimately the same; to get everyone talking
+honestly and sharing their opinions. From the back of these meetings the
+pod should make adjustments in the future sprints to improve.
 
 What's it actually like?
 ------------------------
@@ -492,17 +475,16 @@ in the web team for help in such an easy and inviting environment really
 sped up my initial learnings. I feel thankful to have had that
 opportunity when I needed it most.
 
-Even more than the casual discussions around desks that keep the
-day-to-day entertaining there are plenty of fun events organised. As
-early as my first week with HX we were outside playing tennis and eating
+![](media/image3.tiff){width="5.263888888888889in"
+height="3.111111111111111in"}And if the office wasn't fun enough as is
+there are also plenty of events organised for the team. As early as my
+first week with HX we were outside playing tennis and eating
 strawberries with cream to celebrate Wimbledon.
 
-<http://take.ms/ESIEt>
-
-These events have continued throughout my time here including recently
-bush craft, human foosball and a rounders tournament. It's been really
-refreshing to attend the events just to get out of the continuous work
-mode and get to know colleagues better.
+These events have continued throughout my time here including recent
+bushcraft, human foosball and rounders events. It's been really
+refreshing to attend these just to get out of the constant work mode and
+get to know colleagues better.
 
 Besides the organised events there are often impromptu goings on and
 treats hosted for us. For example, we were given mince pies around
@@ -514,23 +496,21 @@ We also have the hosted 'shout outs' every Thursday afternoon where
 directors or even the CEO himself will update us on the business'
 progress, our success against the budget, any new starters, leavers and
 more. Another key feature is the calling out cards which are essentially
-nominations given out for notably displaying the HX values. I can
-remember being called out as part of the Customer Experience pod and
-appreciating the recognition and gratitude for my work. It definitely
-goes a long way to making hard work feel worthwhile when it's noticed
-and rewarded.
+nominations given by co-workers for notably displaying the HX values. I
+can remember being called out as part of the Customer Experience pod and
+appreciating the recognition and gratitude for my work. It helps make
+hard work feel worthwhile when it's noticed and appreciated.
 
-Another huge element of HX that makes it stand out as a unique culture
-is the Project Lounge (PL) Fridays. These occur on a fortnightly basis
-and offer an entire day just for personal development or working on a
-project to help push the business forward. It's great to be given this
-free reign and have the ability to make a difference through creative
-ideas. I benefitted hugely from these during the start of my placement
-since I could spend an entire day digging deep into HX's technology and
-frameworks. I've continued to enjoy PL time throughout the year and have
-found the time extremely beneficial to my own development.
+Another element of HX that makes it stand out is the Project Lounge (PL)
+Fridays. These occur fortnightly and offer an entire day just for
+personal development or working on a project. It's great to be given
+this free reign and have the ability to make a difference through
+creative ideas. I benefitted hugely from these during the start of my
+placement since I could spend an entire day digging into HX's technology
+and frameworks. I've continued to enjoy PL time throughout the year and
+have found the time beneficial to my own development.
 
-In summary, I've found the environment at HX has really aided my overall
+In summary, I've found the culture at HX has really aided my overall
 development throughout this year. My technical skills have been improved
 because of how comfortably I can approach people and gain insight
 easily. Whilst my personal skills have improved tenfold, especially
@@ -540,10 +520,10 @@ with colleagues.
 Timeline
 --------
 
-![](media/image3.png){width="7.956944444444445in"
+![](media/image4.png){width="7.956944444444445in"
 height="3.3361111111111112in"}The timeline below shows an overview of
 which pods I spent my time in, as well as a few of the most notable
-events. All of which will be detailed in the sections following.
+events. Most of which will be detailed in the rest of the report.
 
 Onboarding
 ==========
@@ -555,35 +535,32 @@ as Industrial Placement Students (IPs).
 
 Workshops were hosted for us every Tuesday and Thursday which provided
 us with knowledge about Node, git, frameworks like React and specific
-platforms at HX. Some of the earliest sessions were overly basic but
-brimming with HX context. Although I can remember them ramping up in
-difficulty, with a talk by Mark Fermor about containerisation with
-Docker being far too complex. Looking back, my start at HX would have
-been a lot slower had it not been for these classes at the beginning.
+platforms at HX. Some of the earliest sessions were quite basic but
+still gave insight into HX's context. I can also remember them ramping
+up in complexity, with a talk by Mark Fermor about containerisation
+being overly technical so early in the year. Looking back, my start at
+HX would have been a lot slower without these classes at the beginning.
 
 Weekly 1-2-1s
 -------------
 
-Throughout this period, I also had to meet with my manager on a weekly
-basis for what HX calls a 1-2-1. At first this made me a little nervous,
-coming from no work experience I'd never had a manager to report to
-about my progress. However, after my first 1-2-1 I realised there wasn't
-much to fear and that it was actually quite casual. They felt like more
-of a catch-up with gentle guidance around benefitting more from my
-onboarding time.
+Throughout onboarding, I had to meet with my manager on a weekly basis
+for what HX calls a 1-2-1. Initially this made me nervous, coming from
+no work experience I'd never had a manager to report to before. However,
+after my first 1-2-1 I realised there was nothing to fear as it was
+fairly casual. They felt like more of a catch-up with gentle guidance
+around benefitting more from my onboarding period.
 
 Looking back, I can recognise that these sessions helped me
 considerably. Before joining HX I struggled to reflect and envision ways
-I could improve myself as an individual. This is why I came into my year
-with simplistic objectives (((Describe my pre-year objectives during my
-intro and link back to section))) about gaining experience in the
-industry. It was the realisations that I came to in my reflective 1-2-1
-sessions that highlighted key areas where I could focus my efforts and
-improve. I can remember discussing my communicative weaknesses early on
-and being able to evidence improvements just weeks later. The reactive
-nature of these meetings proved extremely useful and having them every
-week enabled me to adapt quickly during this period. This set me leaps
-and bounds ahead in comparison to when I first joined.
+I could develop myself as an individual. This is why I came into my year
+with simplistic goals about just gaining experience in the industry. It
+was the realisations that I came to in my reflective 1-2-1 sessions that
+highlighted areas I could focus my efforts and improve. I remember
+discussing my communication weaknesses early on and being able to
+evidence improvements just weeks later. The short cycle between these
+meetings proved extremely useful as it enabled me to evaluate progress
+and improve quickly.
 
 Pod Rotations
 -------------
@@ -592,36 +569,35 @@ Following my first introductory week I spent three weeks rotating into
 different pods, gaining insight into what they each did and how they
 worked. This also offered a good opportunity to get to meet other
 members of the team, building up a repertoire of familiar faces. As part
-of this experience our manager had us present to himself and the other
-IPs at the end of each rotation. This gave us an opportunity to share in
-each other's learnings as well as practice our presentation skills.
+of this experience our manager has us present our findings to himself
+and the other IPs at the end of each rotation. This helped use to share
+in each other's learning as well as practice our presentation skills.
 
 ### New Products 
 
-For my first rotation I spent a week with the new products pod. They
-focus on creating new ventures for the company outside of the
-traditional core products. This involves a full flow from
-conceptualisation, creation, market launch and maintenance during the
-initial growth. Some of their more successful products include rental
-car hire, resort transfers and FastTrack passes, even if those passes
-were sold at cost price for the first 6 weeks.
+For my first rotation I spent a week with the new products pod. As the
+name suggests, they focus on creating new ventures outside of the
+traditional core products. This involves all steps from
+conceptualisation, creation, market launch and maintenance. Some of
+their successful products include rental car hire, resort transfers and
+FastTrack passes, even if those passes were sold at cost price for the
+first 6 weeks.
 
 During my time with new products I managed to get my hands stuck in and
 helped work on some tickets whilst also being exposed to more of the
-sprint process. Just within my first two days they had their end of
-sprint demo to their stakeholders, followed the next day by the planning
-of their upcoming sprint. At first it felt strange to be attending their
-serious meetings, but they were very accommodating and didn't expect
-much from me, it was more to give me the experience and see what they
-were like. I appreciate the exposure that I gained from this when I look
-back on it.
+sprint process. Just within my first two days they had an end of sprint
+demo to their stakeholders, followed the next day by the planning of the
+upcoming sprint. At first, it felt strange to be attending these
+meetings, but they were very accommodating and didn't expect much from
+me, it was more to give me the experience and see what they were like. I
+appreciate the exposure that I gained from this when I look back on it.
 
 ### API 
 
 Having gotten to grips with the work I was given in the new products pod
 and beginning to understand the sprint process I was excited coming into
 my week with the API pod, especially seeing as it had the potential to
-be more technical than I'd seen so far.
+be more technical than what I'd seen so far.
 
 During the week that I spent with the API pod they were fairly far into
 a large project called Thunderbird. This project aimed to merge together
@@ -630,51 +606,45 @@ single central platform, rather than having a difficult to expand
 system-per-country. The unified result of this project would make it
 much easier to globalise HX's business.
 
-To achieve this, we would spend time every day at 2pm comparing diffs
-between responses from the live systems with the experimental unified
-system. Over time this would highlight every single difference there is
-until the responses are always the same. I enjoyed getting involved with
-this work since it was a big get together as a team, all working to
-investigate the differences and seeing what needed changing and where.
-This helped me expand on my group communication at the stages where it
-was becoming clearer as one of my weakest areas.
+To achieve this, we would spend time every day at 2pm comparing 'diffs'
+between responses from live systems and the experimental unified system.
+Over time this would highlight every difference there is until the
+responses are always the same. I enjoyed being involved with this work
+as it was a team exercise, with everyone trying to investigate and
+figure out what needed tweaking. This helped me improve my group
+communication which I'd already started to identify as a weaker area.
 
-Aside from this I also managed to get my hands dirty and picked up some
-quite technical work within the pod. They already had figured out the
-diff process for the responses from both systems and asked me to expand
-this for NOMREP files. I had no idea what the NOMREP files were at
-first, but George Bates helped get me up to speed explaining that they
-were essentially transactional logs in an ugly tab-separated format. By
-the end of the week I had successfully implemented a diff process for
-these files which produced readable output in the browser with colour
+![](media/image5.png){width="2.5708661417322833in"
+height="2.188976377952756in"}I also managed to get my hands on some
+quite technical work. The pod already had a system for generating diffs
+for the responses from each system and asked me to expand this for
+NOMREP files. Having no idea what that meant George Bates explained to
+me that these files were essentially transactional logs in tab-separated
+format. By the end the week I successfully implemented a diff process
+which produced readable output in the browser with coloured
 highlighting, shown below.
 
-![](media/image4.png){width="2.5708661417322833in"
-height="2.188976377952756in"}
-
-I was really glad to have been able to get stuck into this challenging
-ticket with the pod due to my concern about whether the placement would
-be technical enough for me. It had me re-assured that there was still
-plenty on offer for me at HX despite some pods having a large web focus.
+I was pleased to get my hands on a challenging ticket with the pod due
+to my concern about whether the placement would be technical enough. It
+had me re-assured that there would still be plenty of complexity on
+offer.
 
 ### Customer Experience
 
 My final rotation was into the customer experience (CEX) pod which felt
-like a bit of a strange choice in this process, seeing as they would be
-my first permanent pod anyway. I would have preferred the opportunity to
-be immersed into another pod's work to broaden my horizons further.
-Despite this I still managed to enjoy the week getting to know my final
-pod and gaining a head start into working with them.
+like a strange choice in this process, seeing as they would be my first
+permanent pod. I would have preferred the opportunity to be immersed
+into another pod's work to broaden my horizons further. Despite this I
+still managed to enjoy the week getting to know my future colleagues and
+gaining a head start into working with them.
 
-I spent the majority of this rotation pairing up with Tom Price who as
-an ex-IP was quick to offer me assistance, running me through CEX's
-projects as a whole and pairing with me on my first ticket. This really
-helped me kickstart my week with them and lead to me completing a few
-tickets with a reasonable level of independence. This boosted my
-confidence in my technical ability at this early stage, leaving me
-feeling more comfortable to work on my own even so early on. I'm glad HX
-offered the opportunity for this autonomy. I even received feedback from
-Tom about this:
+I spent the majority of my time paired up with Tom Price who as an ex-IP
+was quick to offer me assistance, running me through CEX's projects as a
+whole and helping with my first ticket. This helped kickstart my week
+and lead me to complete a few tickets with a reasonable level of
+independence. All of which boosted my confidence in my technical ability
+at this early stage. I even received direct feedback from Tom about
+this:
 
 > *"When he was on rotation we had some small tasks within render, I
 > started to explain to him how the system fits together but he had
@@ -682,35 +652,27 @@ Tom about this:
 >
 > *-- Tom Price*
 
-The one ticket that stands out to me was a re-design of the CARE login
-page, this is used daily by the call centre (CC) staff and hadn't been
-changed for a long time. Tom regretfully admitted to me that the
-original was actually something he had made in a rush before. The reason
-this ticket stands out is that it was done during one of CEX's CC sit-in
-days, where we would work from desks within the CC, so they could
-approach us to raise issues as one of the pod's "customers". This
-allowed me to spend time on a few designs of a new login page and
-actually go and collect opinions from the CC. Initially it was quite
-intimidating to approach people in the CC but Han had offered to support
-me and it ended up being fine. I feel that this ticket was extremely
-beneficial to me as it showed me the importance of the design stage, as
-well as communicating with the customers at the earliest opportunity. My
-final product could have been a lot worse had I not sought out
-![](media/image5.tiff){width="3.2423611111111112in"
-height="1.8305555555555555in"}![](media/image6.tiff){width="3.4715277777777778in"
-height="2.0in"}their opinions before the actual implementation.
+One of the tickets was the re-design of the CARE login page, which is
+used daily by the Call Centre (CC) staff and hadn't been changed for a
+while. This ticket stands out to me because I worked on it during one of
+CEX's CC sit-in days, where we would work from desks within the CC. Due
+to this I was able to prepare a few designs and actually go and collect
+opinions from the CC staff about which one they preferred. Initially the
+surveying was quite intimidating, but Han offered to support me, and it
+ended up going quite well. I feel that this ticket was extremely
+beneficial to me as it showed the importance of the design stage, as
+well as communicating with the consumer at the earliest opportunity.
 
 ### Finishing off
 
 As the onboarding period drew to a close it was time to prepare for my
 review with my manager, aiming to prove that I had achieved the
-objectives set out for the three months. A lot of this was done based on
-feedback collected through the 360 system, which is used to collect
-opinions from up to ten colleagues. I luckily received a lot of good
-feedback from the people I'd worked with closely and those who'd seen me
-during rotations. On top of this, I discussed the huge improvements in
-my communication over a short course of time, which Luke agreed with
-also.
+necessary objectives. Most of this was done based on feedback collected
+through the 360 system, which is used to gather opinions from
+colleagues. I luckily received a lot of great feedback from the people
+I'd worked with closely and those who'd seen me during rotations. On top
+of this, I discussed the improvements in my communication over a short
+course of time, which Luke agreed with also.
 
 After successfully passing onboarding we were welcomed to the team in
 the week's shoutout where we were each given a HX hoodie and bottle of
@@ -722,24 +684,24 @@ Customer Experience
 
 Having already spent a week with CEX during my onboarding rotations my
 actual joining of this pod didn't feel hugely ceremonious. Although I
-was still glad to make a start on settling into my long-term pod, saying
-goodbye to the learning intensive onboarding period.
+was still glad to start settling into my long-term pod, saying goodbye
+to the learning intensive onboarding period.
 
 Background
 ----------
 
 The customer experience pod (CEX) are focussed around fixing
 customer-raised issues and enhancing their interactions with us, as well
-as supporting operations in the call centre to improve how well we can
-serve customers. In a realistic world, the vagueness of what can improve
-a customer's experience leaves some odd work filtering down to the pod.
-The primary focus during my time in the pod was to encourage customers
-to self-serve rather than relying on the call centre for support.
+as supporting operations in the call centre. In a realistic world, the
+vagueness of what can improve a customer's experience leaves some odd
+work filtering down to the pod. A main focus during my time was to
+encourage customers to self-serve rather than relying on the call centre
+for support.
 
 ### People
 
 The pod had a fairly typical structure and process according to the
-agile process I've already described [above](#Agile Process), originally
+agile process I've already described earlier (2.2), originally
 consisting of:
 
 -   Mark Cridland (Product Manager)
@@ -759,63 +721,9 @@ consisting of:
 -   Tom Price (Engineer -- UK)
 
 The people within the pod ended up changing far more frequently than it
-probably should have due to re-structures, resignations and maternity
-leave. Therefore, I'm not going to detail every change to this and
-instead highlight only ones that made a pivotal difference in my year.
-
-Notable events
---------------
-
-During my 7 months with the pod there are a few key events that shaped
-my experience, highlighting my strengths and weaknesses throughout the
-ups and downs.
-
-### Void of Tom Price
-
-After only one day of officially joining the pod it was announced Tom
-Price would be moving. They needed his resources in a pop-up pod to fix
-a data violation that google would punish us for in SEO rankings. This
-shook some of the confidence I'd built as Tom was one of the people I'd
-worked closest with thus far. I was a bit worried about now being the
-only engineer within the pod that works from the office, especially
-trying to fill in where Tom's vast knowledge was.
-
-I knew I had one week left with Tom in the pod and had the easiest
-access to him in the office, therefore I turned his departure in an
-opportunity to cement myself within the pod. I spent the rest of the
-week working with him and had arranged a full handover on the Friday,
-where he ran me through all of the stuff he was in the middle of
-including handing over PRs directly to me. I tried to gather as much
-knowledge as possible to carry forth for the pod's benefit. This settled
-my nerves a little and left me feeling comfortable as what I was calling
-the "Budget Tom Price". I was further re-assured during my following
-1-2-1 where Mark and Han had fed back to Luke the value they found in my
-investment.
-
-### Welcoming of Jordan Clague
-
-Jordan joined the pod just before Christmas and it fell down to me to
-spend time getting him up to speed. We spent all of the day together,
-with about two hours dedicated to talking through what the pod does, who
-is involved and what projects we have. Moving on to helping him setup
-codebases and getting him through his first ticket.
-
-Looking back, this actually provided a lot of value to me. It helped me
-see how much I had improved with my communication even in a mentoring
-scenario I hadn't really experienced before. I've also received good
-feedback from Jordan about this experience:
-
-> *"John was the pod member who walked me though my pod\'s previous (and
-> current) work when joining the pod and sat with me as I worked on my
-> first ticket and set up numerous systems. At the time, I wouldn\'t
-> have assumed John was an IP due to how confident / assured John was."
-> *
->
-> ***- Jordan***
-
-This feedback amplified the overall experience and proved that my focus
-on improving my communication was paying off. I appreciated the
-opportunity to gain experience as a mentor.
+should have due to re-structures, resignations and maternity leave.
+Therefore, I'm not going to detail every change to this and instead only
+mention some that made a pivotal difference in my year.
 
 What I did
 ----------
@@ -823,8 +731,8 @@ What I did
 During my time in the pod I managed to pick up quite varied work as was
 the nature of CEX's tickets. I found this useful as a new starter since
 it gave me a good breadth of knowledge about areas across the business.
-Having said that, I also managed to find opportunities to cover some
-areas more thoroughly through projects that I took the lead on.
+Having said that, I still managed to find opportunities gain deep
+knowledge in certain areas through projects that I took the lead on.
 
 The broader areas of my work in the pod involved picking up tickets on
 Render, which was a front-end platform we were the owners of. This means
@@ -836,24 +744,77 @@ retrieval to support other platforms. There were also projects further
 from the core that we worked on including gabble, hammertime and some of
 our own purpose built microservices.
 
-I also managed to get involved with some quite long-term projects during
-my time in the pod. Including the Booking History Service which was a
-2-3 month project that started as early as my second CEX sprint. This
-project and others that I worked on are detailed in the
-[projects](#Projects) section of this report.
+I also managed to get involved with some larger projects during my time
+in the pod. Including the Booking History Service which was a 2-3 month
+project that started as early as my second sprint. This project and
+others that I worked on are detailed in the [Projects](#Projects)
+section of this report.
+
+Notable events
+--------------
+
+During my time with the pod there were a few key events that shaped my
+experience, highlighting my strengths and weaknesses throughout the ups
+and downs.
+
+### Void of Tom Price
+
+After only one day of officially joining the pod it was announced Tom
+Price would be moving as they needed his resources in the PII pop-up
+pod. This shook some of the confidence I'd built as Tom was one of the
+people I'd worked closest with so far. I was worried about now being the
+only non-remote engineer within the pod, especially trying to fill in
+where Tom's vast knowledge was.
+
+I knew I had one week left with Tom around and had the easiest access to
+him in the office, therefore I turned his departure into an opportunity
+to cement myself within the pod. I spent the rest of the week working
+with him and arranged a full handover on the Friday, where he ran me
+through all of the work he was in the middle of including handing over
+PRs directly to me. I tried to gather as much knowledge as possible to
+carry forth for the pod's benefit. This settled my nerves a little and
+left me feeling comfortable as what I was calling the "Budget Tom
+Price". I was further re-assured during my next 1-2-1 where Mark and Han
+had fed back to Luke the value they saw in my initiative and investment
+here.
+
+### Welcoming of Jordan Clague
+
+Jordan joined the pod just before Christmas and I took charge of
+spending time getting him up to speed. We spent all of the day together,
+with about two hours dedicated to talking through what the pod does, who
+is involved and what projects we have. Moving on to helping him setup
+codebases and getting him through his first ticket.
+
+Looking back, this provided a lot of value to me. It helped me see how
+much I had improved with my communication in a mentoring scenario that I
+hadn't really experienced before. I've also received good feedback from
+Jordan about this:
+
+> *"John was the pod member who walked me through my pod\'s previous
+> (and current) work when joining the pod and sat with me as I worked on
+> my first ticket and set up numerous systems. At the time, I wouldn\'t
+> have assumed John was an IP due to how confident / assured John was."
+> *
+>
+> *- Jordan*
+
+This feedback amplified the experience and proved that my focus on
+improving my communication was paying off. I appreciated the opportunity
+to gain experience as a mentor.
 
 Thoughts and feelings
 ---------------------
 
-The time I spent with the CEX pod was extremely valuable. It shaped me a
-lot as an early engineer and helped highlight my initial strengths and
+The time I spent with CEX was extremely valuable. It shaped me a lot as
+an early engineer and helped highlight my initial strengths and
 weaknesses, which I managed to work on and significantly improve during
 my service. Especially my communication skills, the easy-going nature of
 my fellow pod members really helped me come out of my shell.
 
 The varied opportunities that this pod provided also gave me a lot of
 broad knowledge at an early stage which was extremely useful. Thanks to
-the mostly self-driven booking history project I managed to learn early
+the mostly self-driven booking history project I managed to learn a lot
 on the microservice architecture at HX. Whilst the work for the CC and
 direct customers helped expand my front-end skills in a range of
 different systems.
@@ -862,48 +823,47 @@ I've always said that CEX would have been a fantastic permanent pod if I
 was at HX as a full-time engineer. The work isn't always exciting but
 the people in the pod made it an absolute blast, with many a fun pod
 lunch had. However, due to the fact I was at HX on placement I believe I
-could have benefitted more form moving pods earlier. By the time I'd
+could have benefitted more from moving pods earlier. By the time I'd
 stayed in the pod for 5 or 6 months the majority of the work became
 trivial to complete and didn't teach me much. I would have appreciated a
 chance to experience another pod and learn even more.
 
 Overall, my time with CEX was a great experience. I feel that it is a
-fantastic pod to start in due to variety of work that is completed
+fantastic pod to start with due to the variety of work that is completed
 across many projects. It's a great way to develop a broad understanding
 of HX systems. Even though my work in the pod eventually felt stale the
 people I was surrounded with made it all worthwhile and kept it
 enjoyable. I'm thankful for how the team aspects contributed to my
-communication skills and the broad initial education it gave me, all of
+communication skills and the broad initial education CEX gave me, all of
 which have helped me going forwards.
 
 Tech Foundations (Dev stream)
 =============================
 
-My second pod move felt long overdue by the time I eventually switched
-to Tech Foundations, I'd become stale where I was and was extremely
-excited for the change. Especially being invited closer to the back-end
-where I had always originally envisioned myself.
+My move to Tech Foundations felt long overdue, I'd become stale in CEX
+and was extremely excited for the change. Especially being invited
+closer to the back-end where I always envisioned myself.
 
-During the week that I joined the pod was actually splitting up into
-three streams. The original Tech Foundation pod grew large and had
-multiple separate focuses, therefore it was split into Dev Foundations,
-UI Foundations and Data Foundations. The specific stream I've been
-focused in is Dev Foundations.
+During the week that I joined the pod was being split into three
+streams. The original Tech Foundation pod grew large and had multiple
+separate focuses, therefore it was split into Dev Foundations, UI
+Foundations and Data Foundations. The specific stream I've been focused
+in is Dev Foundations.
 
 Background
 ----------
 
 The Dev foundations stream focuses on helping other engineers ship code
 quickly and with the best processes possible. This is achieved by
-providing easy access to infrastructure and purpose-built toolsets,
+providing easy access to infrastructure and purpose-built tool sets,
 especially in the form of the microservice architecture.
 
 The microservice architecture and all of the tools surrounding it are
-actually the biggest single focus of the pod. Throughout my time in the
-pod almost everything we've been working on has revolved around
-maintaining, improving and expanding our offering to the team. This
-included our own in-house self-built CI service, dockyard-deploy
-scripts, dockyard-tools like dockyard-rpc and many others.
+actually the biggest single focus of the pod. Throughout my time with DF
+almost everything we've been working on has revolved around maintaining,
+improving and expanding our offering to the team. This included our own
+in-house self-built CI service, dockyard-deploy scripts, dockyard-tools
+like dockyard-rpc and many others.
 
 ### People
 
@@ -924,8 +884,8 @@ at HX earlier in this report. Not only did we have Steve as an overall
 pod lead, we lacked a tester and two members of the team had a unique
 SRE role.
 
-The SRE role has a deep focus on the actual infrastructure behind what
-we offer to the rest of the team. They are in charge of technical setup,
+The SRE role has a deep focus on the infrastructure behind what we offer
+to the rest of the team. They are in charge of technical setup,
 maintenance and management of our staging and production environments,
 the processes of deployment to them and some of the steps in between. In
 all truth, they had a wide-ranging set of responsibilities due to how
@@ -939,32 +899,33 @@ were providing.
 I feel that I actually landed in a unique position within the pod. I was
 really the only engineer that had recently worked on the other side of
 the coin, consuming all of these tools rather than creating. As well as
-the fact I maintained a connection with engineers from the rest of the
-business. This meant that I was surrounded by people full of feedback on
-the tools we were providing, and I had a good grasp on features that
-they wanted offered. I found it extremely useful to be able to bring
-these viewpoints to the pod, applying it to the work I undertook.
+the fact I maintained a social connection with engineers from the rest
+of the business. This meant that I was surrounded by people full of
+feedback on the tools we were providing, and I had a good grasp on
+features that they wanted offered. I found it extremely useful to be
+able to bring these viewpoints to the pod, applying it to the work I
+undertook.
 
 ### Process
 
 The process within dev foundations was a complete contrast to what I had
 experienced in CEX and how the majority of the web team operates. We
-didn't use jira to keep track of tickets, our only big meetings were
+didn't use Jira to keep track of tickets, our only big meetings were
 bi-weekly demos and there was less dictation from above. Every engineer
 in the pod functioned with a lot of autonomy, taking control of the
 entire lifecycle of tasks from identification, design, implementation,
 deployment and maintenance. As long as what we were doing provided value
-against our current quarterly OKRs we could decide entirely solo what to
-work on.
+against our current quarterly OKRs we could decide almost entirely solo
+what to work on.
 
 Having come from a pod where stakeholders chose exactly what they wanted
 done each sprint this was a completely new experience. It initially took
-me some getting used to, it's hard to start self-identifying what needs
-to be improved without an initial grasp on some of this tech. Luckily,
-Steve seemed aware of this and during the early days he had Oli help me
-find things to do. Over time I settled in to the approach and actually
-got quite good at self-organising within the pod, keeping all possible
-tasks on a todo list in slack.
+some getting used to, it's hard to start self-identifying what needs to
+be improved without an initial grasp on some of this tech. Luckily,
+Steve was aware of this and during the early days he had Oli help me
+find things to do. Over time I settled in to the approach and became
+great at self-organising within the pod, keeping all possible tasks on a
+to-do list in slack.
 
 What I did
 ----------
@@ -993,7 +954,7 @@ Notable events
 --------------
 
 I felt my time within dev foundations was actually a lot less eventful
-than CEX, in terms of people or process changes. It contrasted hugely
+than CEX in terms of people or process changes. It contrasted hugely
 from CEX where It felt that every new sprint came with a new
 resignation, pod member leaving or completely new faces joining. There
 was only one event that actually stands out in dev foundations.
@@ -1003,49 +964,42 @@ was only one event that actually stands out in dev foundations.
 Steve's resignation came in extremely short notice and was a shock to
 all but his closest friends. He spoke to us privately on the day of the
 announcement to explain some of his reasoning before almost disappearing
-within the same day, taking his last bits of annual leave before he
-went. I didn't see this coming even though I'd personally observed some
-of the areas that frustrated him, including the bastardised agile
-process that was too far from the original agile manifesto for his
-liking. He'd done an amazing job of applying a more barebones process to
-our pod, but the business wouldn't let this approach spread further.
+within the same day. I didn't see this coming even though I'd personally
+observed some of the areas that frustrated him, including the
+bastardised agile process that was too far from the original agile
+manifesto for his liking. He'd done an amazing job of applying a more
+barebones process to our pod, but the business wouldn't let this
+approach be adopted further which frustrated him.
 
-I was concerned initially about the pod without Steve but he truly had
-made us highly autonomous in a way that would allow us to continue
-without him. So far, we've clearly managed to prove that we're capable
-of this to our stakeholders as we still operate without a pod lead to
-this day.
+I was initially concerned about the pod without Steve, but he had made
+us highly autonomous in a way that would allow us to continue without
+him. So far, we've clearly managed to prove that we're capable of this
+to our stakeholders as we still operate without a pod lead to this day.
 
-This entire experience was surprising since it came out of the blue, but
-I feel the fact I've managed to continue delivering and supporting my
-teammates is a testament to how the year has shaped me. It shows the
-level of confidence, self-organisation and drive I've developed to be
-able to continue thriving in an autonomous workflow independently. Steve
-even provided me feedback upon his departure that reassured me about the
-value I brought to the pod. This left me in a confident position to
-carry on without him.
+Throughout this experience I've still managed to continue delivering and
+supporting my teammates, which is a testament to how the year has shaped
+me so far. It shows the level of confidence, self-organisation and drive
+I've developed to be able to continue to thrive in such an autonomous
+workflow.
 
 Thoughts and feelings
 ---------------------
 
-Overall, I feel that the dev foundations pod has given me exactly the
-technical challenge I was looking for. It's been an incredible
-experience to work alongside such talented engineers and gain insight
-into the deeper world of infrastructure. I've benefitted hugely in terms
-of knowledge but also the confidence it's given me, being able to hold
-my own even surrounded by some of HXs most experienced technical
-engineers. I have faith in myself, my work and the rest of my career in
-this area thanks to the opportunity.
+Overall, I feel that DF has given me exactly the technical challenge I
+was looking for. It's been an incredible experience to work alongside
+such talented engineers and gain insight into the deeper world of
+infrastructure. I've benefitted hugely in terms of knowledge but also
+the confidence it's given me, being able to hold my own even surrounded
+by some of HX's most experienced engineers. I have faith in myself, my
+work and the rest of my career in this area thanks to the opportunity.
 
 I've felt especially lucky to work with Mark and gain insight into his
 deeply technical world. He's willingly taken me under his wings to show
 me about containerisation, kubernetes and cloud architecture. All of
 which play a hugely important part in our systems and many of those in
 use in the modern world outside of HX. I'm happy to have had the
-opportunity to learn so much about modern infrastructure that's becoming
+opportunity to learn so much about modern infrastructure that's being
 used globally.
-
-{{{ Maybe needs expanding }}}
 
 Projects
 ========
@@ -1060,38 +1014,33 @@ Booking History
 
 One of my earliest projects was the new booking history service, this
 was handed over to me from Tom Price and ended up being my sole focus
-for my first two to three months at HX.
+for my first few months at HX.
 
-The booking history service aimed to form a new centralised source of
+The booking history service aimed to form a centralised source of
 booking information. Before it's conception booking data was siloed in
 to a few different data stores across platforms, making it hard to
-retrieve a holistic set of data on bookings. The pre-existing method to
-look up bookings involved talking directly to CHIPS, the legacy booking
+retrieve a holistic set of booking data. The pre-existing method to look
+up bookings involved talking directly to CHIPS, the legacy booking
 platform at the centre of our operations. Besides limitations in the
-expandability here as CHIPS is maintained externally, it's also an
+expandability here, as CHIPS is maintained externally, it's also an
 unnecessary load added to an outdated platform that won't always handle
 it gracefully.
 
 ####  {#section-1 .ListParagraph}
 
 With this aim in mind the solution took the form of a microservice using
-our in-house dockyard architecture, which consisted of tools that aimed
-to make it simple for engineers to create, deploy and maintain smaller
-individual codebases. This contrasts hugely with some of HX's core
+our in-house architecture, which consisted of tools that aimed to make
+it simple for engineers to create, deploy and maintain smaller
+individual projects. This contrasts hugely with some of HX's core
 projects, like HAPI, which were monolithic projects with little
-separation of responsibilities. The booking history service would
-actually become one of the earlier projects built on this architecture
-offering. It was exciting to be building on top of brand new technology
-to HX at the time.
-
-When Tom handed over to me the service had actually already been started
-by him, but he hadn't pushed too far into it. He talked me through it
-during the handover I arranged which enabled me to pick up exactly where
-it had been left.
+separation of responsibilities. The booking history service would become
+one of the early adopters of our microservice architecture. It was
+exciting to be building on top of technology that was brand new to HX at
+the time.
 
 The overall design of the service included listening to events from our
-in-house purpose-built data pipeline and populate a MySQL database with
-the information provided. The pipeline provided a way of sending and
+in-house data pipeline and populate a MySQL database with the
+information provided. The pipeline provided a way of sending and
 receiving events, where we would be relying on the "server\_ecommerce"
 event being sent when a booking is made. We would need to listen for
 these events and extract data from them, which would be stored into the
@@ -1099,21 +1048,20 @@ database.
 
 ### Challenges
 
-Although the overview of this service seemed to be quite simple there
-were still quite a few challenges that cropped up along the way. Some of
-these stemmed from my lack of experience but equally there were issues
-experience engineers struggled to explain.
+Whilst the design of this service made it seem simple there ended up
+being quite a few challenges along the way. Some of which stemmed from
+my lack of experience but equally there were issues that some
+experienced engineers struggled to explain.
 
-Initially my biggest challenge was simply getting to grips with NodeJS,
-the entire microservice implementation at HX and especially the
-asynchronous nature of this application. All of these are things I
-hadn't dealt with in great detail before and had to pick up for the
-first time during this project. All things considered, I would say this
-actually ended up going quite well. It only took me a few weeks to be
-running with this project and have a good grasp about the main concepts
-employed. The confidence gained here helped me to feel comfortable with
-being at the forefront of a big project so early on at HX. I'm thankful
-for the opportunity to have been trusted so early on.
+Initially my biggest challenges were getting to grips with NodeJS, the
+unique microservice implementation at HX and especially the asynchronous
+nature of this application. All of which are things I hadn't dealt with
+at great length before. All things considered, I would say this ended up
+going quite well. It only took me a few weeks to be running with this
+project and have a good grasp about the main concepts employed. The
+confidence gained here helped me to feel comfortable with being at the
+forefront of a big project so early on at HX. I'm thankful for the
+opportunity to have been trusted so early on.
 
 #### Duplicate Events
 
@@ -1153,10 +1101,10 @@ solution.
 
 Finally, I concluded that nothing right now could solve the duplicate
 event issue on the ingested data. Therefore, I decided to fix the issue
-by re-structuring the database. It would now accept multiple entries for
+by restructuring the database. It would now accept multiple entries for
 a single booking, but when requested we would **only** provide the most
 recent information. This didn't feel very clean, but it was the only
-true solution on the table in the timeframe, especially with the
+true solution on the table in the time frame, especially with the
 Chauntry team being completely occupied.
 
 #### Stakeholder Pressure
@@ -1392,7 +1340,7 @@ it to actually be worthwhile. I sought alternatives and found a
 dependency wheel tool that could generate a D3 dependency wheel for me.
 The result of this can be seen below:
 
-![](media/image7.tiff){width="5.447222222222222in"
+![](media/image6.tiff){width="5.447222222222222in"
 height="4.554166666666666in"}
 
 > (Each service could be hovered to obscure the other lines for clarity)
@@ -1420,7 +1368,7 @@ as a layer on top of the graph to visualise recent traffic, including
 colouring lines based on traffic and success rate, and showing a
 breakdown of which RPC functions were being called. As shown below:
 
-![](media/image8.tiff){width="6.268055555555556in"
+![](media/image7.tiff){width="6.268055555555556in"
 height="3.6180555555555554in"}
 
 This shows how the final version of the graph looked with each node
@@ -1461,7 +1409,7 @@ My written communication was evidenced in a well-received workplace post
 I made about the service after it was released, shown in the screenshots
 below.
 
-![](media/image9.tiff){width="3.5416666666666665in" height="5.125in"}
+![](media/image8.tiff){width="3.5416666666666665in" height="5.125in"}
 
 Simon Wood in the reply above is one of Dev Foundations' stakeholders so
 his response is particularly pleasing.
@@ -1469,7 +1417,7 @@ his response is particularly pleasing.
 Overall, I feel that this project offered me a chance to be more
 creative whilst still having some technical complexity. It struck a good
 balance of front-end visuals and back-end data scraping and
-transformation. I really enjoyed combining these skillsets to provide a
+transformation. I really enjoyed combining these skill sets to provide a
 tool which people have already told me has shown its value.
 
 Other notable events
@@ -1503,7 +1451,7 @@ Purple Parking Acquisition
 In a press piece on the 2^nd^ of November it was announced that HX was
 taking control of some of Purple Parking's assets and website, following
 failure to find a buyer for the entire business. This would allow HX to
-utilise purple parking's website to continue selling our own products,
+utilise Purple Parking's website to continue selling our own products,
 maintaining customers that previously had loyalty to Purple Parking. A
 pop-up pod was made for about a month to convert the Purple Parking
 website to use our backend, allowing us to collect and fulfil all new
@@ -1538,7 +1486,7 @@ by colleagues. Myself and Rosie Watson, a fellow IP, were asked to do a
 talk about being IPs which we agreed to as it seemed like good way to
 wrap-up our year.
 
-![](media/image10.jpeg){width="4.461715879265092in"
+![](media/image9.jpeg){width="4.461715879265092in"
 height="3.346534339457568in"}Although we found the requested topic a bit
 boring as a starting point. We instead decided to relate our talk back
 to our favourite board game, Articulate, as well as playing a HX version
@@ -1647,3 +1595,8 @@ Loose bibliography
 
 <https://www.holidayextras.co.uk/about-us/company-history.html> - HX
 info
+
+<https://www.chauntry.com/> - Chauntry 800 provided thingys
+
+<http://press-office.holidayextras.co.uk/2017/11/travel-specialist-holiday-extras-acquires-purple-parking-brand-website/>
+- Purple Parking Acquisition
