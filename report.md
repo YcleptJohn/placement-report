@@ -140,13 +140,13 @@ Table of Contents {#table-of-contents .Fake-header}
 
 [6.3 Microservice Re-homing 28](#microservice-re-homing)
 
-[6.3.1 Challenges 29](#challenges-1)
+[6.3.1 Challenges 29](#challenges-2)
 
-[6.3.2 Thoughts and Feelings 30](#thoughts-and-feelings-3)
+[6.3.2 Thoughts and Feelings 30](#thoughts-and-feelings-4)
 
 [6.4 Dependency Graphing 31](#dependency-graphing)
 
-[6.4.1 Thoughts and feelings 33](#thoughts-and-feelings-4)
+[6.4.1 Thoughts and feelings 33](#thoughts-and-feelings-5)
 
 [7 Other notable events 35](#other-notable-events)
 
@@ -1065,60 +1065,54 @@ opportunity to have been trusted so early on.
 
 #### Duplicate Events
 
-There came a more serious challenge when we seemed to be receiving
+There came more serious challenges when we seemed to be receiving
 duplicate events from the data pipeline. This was detrimental to the
-service as it had the potential to pollute the data, creating
-inconsistencies that would be unfavourable when trying to create the
-single source of truth about bookings. So much so that it actually ended
-up being a focus for an entire month. I had to spend a lot of time
-investigating the exact cause of the duplication and struggled to come
-up with anything. I can remember looping in more experienced engineers,
-including those who created the data pipeline and the microservice
-architecture and none of them had an answer for me either.
+service as it polluted the data and created inconsistencies in booking
+information. I had to focus solely on this problem for a few weeks as it
+was incredibly difficult to find the exact cause of the duplication. I
+even talked to experienced engineers, including those who built the data
+pipeline and microservice architecture, and none of them had an answer
+either.
 
-Eventually my suspicions lead to there being a deeper issue within
-CHIPS, moreover surrounding the webhooks that CHIPS sends to our systems
-when a booking is made. This would fall on the external Chauntry team to
-be fixed, but unfortunately, they were completely occupied with the
-ongoing thunderbird project. This meant that the problem wouldn't be
-fixed at its core for a long while, we had to work our way around this.
+Eventually I suspected that there was a deeper issue within CHIPS,
+moreover the webhook that CHIPS sends to HAPI when a booking is made.
+This would fall on the external Chauntry team to fix but unfortunately,
+they were completely occupied with the ongoing Thunderbird project. This
+meant that the problem wouldn't be fixed at its source and we had to
+work around it.
 
-My original proposed solution was to implement a cache for the service.
-This involved caching every booking that we received, as well as
-checking the cache before ever storing a booking. This *should* have
-allowed us to eliminate duplicate entries from ever being allowed to
-enter the database. I discussed this with various engineers around the
-business before starting it and everyone agreed that it was a sensible
-solution. However, once this had been implemented and tested it proved
-to be only partially effective. This puzzled me for a few days, as well
-as the engineers I spoke to about it. On paper and during local testing
-this change was undeniably a suitable solution. However, it just didn't
-behave correctly in production, we suspected this was to do with the
-fact the service ran across multiple instances in production causing a
-race condition. At this point I'd become frustrated with the project, I
-constantly kicked myself for not being able to provide a perfect
-solution.
+My originally proposed solution was to implement a cache for the
+service. This would cache every booking that we received, as well as
+checking the cache before ever storing a booking. On paper this *should*
+have eliminated the problem, and I even spoke to senior engineers before
+implementation and they all agreed. However, once this had been
+implemented and deployed it proved only partially effective. I was
+puzzled for a few days as were the engineers I spoke to. We suspected
+there was a race condition occurring between the two instances in
+production but struggled to work out why. I kicked myself in frustration
+for a few days at this point, it annoyed me that I couldn't solve this
+quickly.
 
-Finally, I concluded that nothing right now could solve the duplicate
+Finally, I concluded that nothing short-term could solve the duplicate
 event issue on the ingested data. Therefore, I decided to fix the issue
 by restructuring the database. It would now accept multiple entries for
-a single booking, but when requested we would **only** provide the most
-recent information. This didn't feel very clean, but it was the only
-true solution on the table in the time frame, especially with the
-Chauntry team being completely occupied.
+a single booking, but when requested would **only** provide the most
+recent entry. This didn't feel very clean, but it was the only true
+solution on the table in the time frame, especially with the Chauntry
+team being completely occupied.
 
 #### Stakeholder Pressure
 
 During the difficulty with the duplicated events there was also pressure
 from above, our stakeholders were struggling to understand the value of
-booking history due to the time it was taking. I took this upon myself
-and spoke to all of the people I knew who were waiting for it to be
-ready. I got them all to send me the reasoning behind what they wanted
-and why, providing this to Mark and Han to help them convince the
-stakeholders. I received feedback from both of them that they really
-appreciated the initiative I showed, and it helped a lot with pursuing
-the project to completion. This lifted my spirits and helped me get back
-on track instead of being in a rut of frustration.
+booking history especially with the time it was taking. I took it upon
+myself and spoke to all of the people I knew who were waiting for it to
+be ready. I collected a list of benefits and reasons for keeping the
+service and provided this to Mark to help convince the stakeholders. I
+received feedback from Mark and Han that they appreciated the initiative
+I showed as it helped them push for us to pursue the project to
+completion. This lifted my spirits and helped me get back on track
+instead of being in a rut of frustration.
 
 ### Thoughts and feelings
 
@@ -1130,37 +1124,30 @@ wider web team.
 
 I was quite lucky to start with microservices as they are self-contained
 and don't come with years of legacy bundled into them, making the
-initial understanding much easier. This sped up my early progress and
-enabled me to showcase my abilities to the pod, building their
-confidence in me owning this project. I don't think an entire
-experienced pod would put this in my hands at this stage had I not been
-able to prove my confidence.
+initial understanding easier. This sped up my early progress and enabled
+me to showcase my abilities to the pod, building their confidence in me
+owning this project.
 
-At the same time, this project wasn't without it's difficulties.
-Throughout all of the problems described I noticed that I picked myself
-apart too much. I can remember frequent drives home during the duplicate
-issues where I would kick myself for not solving it that day. This
-frustration wasn't beneficial to anybody and would only put my mental
-state in a rut. In future I should be more aware that this negativity
-doesn't actually help, instead focusing on things in a different more
-positive light. Especially considering this was a problem that
-experienced engineers couldn't figure out and agreed with my proposals
-on.
+At the same time this project wasn't without its difficulties.
+Throughout all of the problems described above I would get frustrated
+and go home kicking myself for not solving the issues faster. Looking
+back, this was not beneficial to anybody and it made me more aware that
+I need to maintain a positive outlook, even in times of struggle.
+Especially considering that even experienced engineers were struggling
+to figure out the problem too. Since my learnings here I've managed to
+keep my spirits high throughout challenges and focused on their
+solutions.
 
 Reviews
 -------
 
-Towards the end of my time in CEX I got involved with a project to make
-our reviews more transparent and clear. Mainly, our stakeholders wanted
-us to base our ratings and displayed reviews off of the last two years
-of data. Previously reviews were historical from the date of the
-product's conception, which meant that if it had been changed recently
-it would be hard for that to be reflected in reviews.
-
 Towards the end of my time in the pod I got involved with investigating
 issues surrounding reviews on the website. Our stakeholders wanted us to
-only show reviews that were within the past two years, rather than since
-the products conception. Sounds simple enough, right?
+only show reviews and ratings that were within the past two years,
+rather than since each products conception. Sounds simple enough, right?
+
+Challenges
+----------
 
 Unfortunately, this ended up being a complicated issue riddled with
 challenges caused by legacy tech. I spent a lot of time with Ricardo,
@@ -1168,32 +1155,34 @@ who had experience with the original system, digging deeper into where
 reviews come from and how they're stored. The information was collected
 via surveys sent to customers after their trips, it included a basic
 rating of the product, rating of HX and any comments they might have.
-All of which was fine as a collection source, however the way the
-database that stored this had been designed was not fit for our purpose.
+All of which seemed fine as a source, however the database that stored
+them had been designed poorly and was not fit for our purpose.
 
 Rather than containing a persistent store of all reviews the database
 stored a calculated result which was deleted and replaced daily by a
-cron job. The fact that this was an overwriting operation and
-continuously erased previous data there was no easy way for us to just
-query for two years of data. I ended up working closely with Adrian on
-this and we tried to create a second table containing summaries for two
-years of data. This began to work sort of as expected, but it also
-exposed some deeper underlying issues with the way reviews were
-originally created.
+cron job. Since the previous data was consistently erased when
+re-calculated it would be impossible to retrieve two years of data from
+this table. I worked closely with Adrian to solve this and we tried to
+create a second table which would re-calculate daily for the past two
+years of data. This seemed to work initially but it soon began to fail
+and highlighted deeper issues with the original review system.
 
-Due to these complications I ended up having to leave the pod without
-finishing the project. This was disappointing, it's not easy to walk
-away from a project and not have closure on it. I did manage to reduce
-the frustration of this by arranging a handover to Jordan who'd joined
+Due to these further complications I ended up having to leave the pod
+without finishing the project. This was disappointing as it's not easy
+to walk away from a project and not have closure on it. I did manage to
+reduce this frustration by arranging a handover to Jordan who'd joined
 the pod two months prior. I have since seen him carry the project to
 completion, which laid the project to rest once and for all in my mind.
 
-Overall, I feel that this project actually went reasonably well. There
-were issues with the legacy tech and the archaic database design but, it
-eventually was solved with the help of my investigation and partial
-solution. I think one of the key results was also how it helped
-establish me across the wider team rather than just my pod. This was
-shown by the fact that I became the "go to guy" for a while on this
+Thoughts and Feelings
+---------------------
+
+Overall, I feel that this project actually went as good as it could
+have. There were issues with the legacy tech and the archaic database
+design but, it eventually was solved with the help of my investigation
+and partial solution. I think one of the key results was also how it
+helped establish me across the wider team rather than just my pod. This
+was shown by the fact that I became the "go to guy" for a while on this
 subject, especially when Ricardo, who I originally sought help from,
 started sending people to me. It was also a final proof for my
 communication-based objectives at the time, since there were a lot of
@@ -1232,16 +1221,16 @@ this list:
 
 I then explored the APIs for each of these areas and managed to build a
 proof-of-concept script for almost all of them, showing that re-homing
-would be a definitely possibility. The only thing that seemed more
+would be a definite possibility. The only thing that seemed more
 difficult was re-allocating the databases, which I've detailed further
 in the challenges section.
 
 Having shown the pod my initial investigation into this they were happy
-with my evidence that re-homing would be possible, although it was never
-going to be easy. I stepped forward and started working on it right
-away, turning my proof-of-concept into a fully-fledged process. I
+with my evidence that re-homing would be plausible, although it was
+never going to be easy. I stepped forward and started working on it
+right away, turning my proof-of-concept into a fully-fledged process. I
 appreciated that the pod had enough trust to leave this in my hands even
-though I'd only been with the pod for a few months.
+though I'd only been with them for a few months.
 
 Eventually, I had the entire script built and working as an RPC endpoint
 in the access service. I spent time testing this before taking it to our
@@ -1253,7 +1242,7 @@ I was also tasked with making a workplace post about the project. I had
 this edited by Steve and he had nothing but praise for the writing, and
 the post seemed well received by the web team. This was a nice
 confirmation of my written communication and helped prove that I had
-improved in these areas. It also boosted my recognition across the web
+progressed in this area. It also boosted my recognition across the web
 team as now everyone comes to me for all things access-service and
 service re-homing. It's nice to receive appreciation for work that I've
 achieved and knowing it's having the desired impact.
@@ -1261,8 +1250,8 @@ achieved and knowing it's having the desired impact.
 ### Challenges
 
 Throughout the project the complications of database re-homing loomed
-over my head. In the initial design of microservices lead to there being
-a database instance per pod, which hosted a database per-service within
+over my head. The initial design of microservices lead to there being a
+database instance per pod, which hosted a database per-service within
 it. The diagram below explains this structure a little further:
 
 This shows that all databases are grouped into an overall database
@@ -1300,7 +1289,7 @@ Building this trust and respect within the pod has proved useful ever
 since, being able to confidently speak my mind and know the pod will
 fully consider what I say. It's fair to say this could have been much
 harder without opportunities like this, especially being surrounded by
-engineers with vastly more experience than me in an extremely technical
+engineers with vastly more experience than me in an deeply technical
 pod.
 
 I also managed to demonstrate my problem solving and decision-making
@@ -1348,13 +1337,13 @@ height="4.554166666666666in"}
 At this point Steve chatted to me and he had envisioned more capability
 from the graph, rather than just showing exactly which services are
 communicating. He continued to push for a D3 graph, but I refuted that
-it was necessary, even questioning whether this was becoming more of a
+it was unnecessary, even questioning whether this was becoming more of a
 vanity project not worth the time investment. However, I was convinced
 that we could gain value from showing more information especially as a
-live graphic, I just didn't believe D3 was necessary.
+live graphic, I just didn't believe D3 was needed to do so.
 
 I sought alternatives and eventually settled on Vis.js after testing it
-to build a simple node graph. This proof-of-concept was proof enough
+to build a simple node graph. This proof-of-concept was evidence enough
 that the Vis.js library would be suitable, so I moved on to preparing
 the data.
 
@@ -1397,7 +1386,7 @@ above) and written communication skills.
 
 The decision making comes from the early push backs on Steve's
 desperation for D3, which is something demonstrable from feedback he
-gave me on his departure:
+gave me upon his departure:
 
 > *"Noticing the complexity of the work was growing, John approached me
 > to explore and challenge the value, given the growing cost. Just one
@@ -1406,7 +1395,7 @@ gave me on his departure:
 > -- Steve CS
 
 My written communication was evidenced in a well-received workplace post
-I made about the service after it was released, shown in the screenshots
+I made about the service after it was released, shown in the screenshot
 below.
 
 ![](media/image8.tiff){width="3.5416666666666665in" height="5.125in"}
@@ -1458,16 +1447,16 @@ website to use our backend, allowing us to collect and fulfil all new
 bookings being made.
 
 This acquisition seemed like a no-brainer deal for HX. With the
-implementation mentioned above we literally started selling our products
-via their website, utilising their brand and assets to gain additional
-business from Purple Parking's existing customer base. Who would say no?
+implementation mentioned above we started selling our products via their
+website, utilising their brand and assets to gain additional business.
+Who would say no?
 
 GDPR Enforcement
 ----------------
 
 A big legal event for the company was the incoming enforcement of GDPR
 as set out by EU regulations. GDPR stands for General Data Protection
-Regulation and laid out rules that give customers greater control over
+Regulation and lays out rules that give customers greater control over
 their data usage, including the right to be forgotten.
 
 HX had to work hard to be compliant with these regulations in time for
@@ -1475,7 +1464,9 @@ the enforcement date on the 25^th^ May 2018. I wasn't directly involved
 with much of the process, besides a script I started working on to
 detect which services could be using customer data. However, there was a
 big business push to be compliant on time, especially by the
-data-products and data-platform teams.
+data-products and data-platform teams. If we failed to reach compliance
+we would have been susceptible to large fines which wouldn't be great
+for HX as a business.
 
 Conference Day Presentation
 ---------------------------
@@ -1490,7 +1481,7 @@ wrap-up our year.
 height="3.346534339457568in"}Although we found the requested topic a bit
 boring as a starting point. We instead decided to relate our talk back
 to our favourite board game, Articulate, as well as playing a HX version
-in our talk. The game focuses on the ability to explain words to
+during our talk. The game focuses on the ability to explain words to
 team-mates without using the actual word on the card. We felt this
 related well to what it's like to start as an IP, joining into a world
 of jargon where things must be deeply broken down for us. We felt this
@@ -1539,7 +1530,7 @@ having overcome challenges I never imagined. Part of my naivety was
 starting my year with very few goals, mainly focusing on gaining
 experience in the industry and confirming that this was the career I
 wanted. However, thanks to the help and guidance from my manager I
-managed to find more fulfilling goals early on. This included goals
+managed to find truly fulfilling goals early on. This included goals
 surrounding my self-reflection and communication, which became core
 focuses of my time at HX.
 
@@ -1559,7 +1550,7 @@ in tandem, something I hadn't really tried before. It's helped me hugely
 to be able see these areas come together and work as a full stack
 developer. My work in Dev Foundations has also given me a wealth of
 infrastructural and deep architectural knowledge that I would have never
-had otherwise. I'm glad to be walking away with such a vast array of
+gained otherwise. I'm glad to be walking away with such a vast array of
 learnings that I can apply throughout my future.
 
 Communication was one of my weaknesses coming into this year, but I feel
